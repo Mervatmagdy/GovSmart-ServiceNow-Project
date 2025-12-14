@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>head_of_family_name</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-14 07:54:21</sys_created_on>
+        <sys_id>51be3cbd83bd761078c11a30ceaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>head_of_family_name</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_51be3cbd83bd761078c11a30ceaad37b</sys_update_name>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-14 07:54:21</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <ui_policy display_value="Family registration ">d9be3cbd83bd761078c11a30ceaad376</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=51be3cbd83bd761078c11a30ceaad37b"/>
+</record_update>

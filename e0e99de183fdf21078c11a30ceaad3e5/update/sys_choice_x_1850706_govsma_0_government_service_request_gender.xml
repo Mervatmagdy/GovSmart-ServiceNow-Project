@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="gender" table="x_1850706_govsma_0_government_service_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:00:36</sys_created_on>
+            <sys_id>87a4a4bd83b5761078c11a30ceaad3c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>gender</sys_name>
+            <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+            <sys_update_name>sys_choice_x_1850706_govsma_0_government_service_request_gender</sys_update_name>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:00:36</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Female</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:00:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8fa4a4bd83b5761078c11a30ceaad3c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:00:36</sys_updated_on>
+            <value>female</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Male</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:00:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c7a4a4bd83b5761078c11a30ceaad3cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:00:36</sys_updated_on>
+            <value>male</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
