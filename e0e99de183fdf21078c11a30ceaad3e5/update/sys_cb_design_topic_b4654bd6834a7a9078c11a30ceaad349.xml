@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__7127424fa30d43929107eabdf3dc418e">7c654bd6834a7a9078c11a30ceaad343</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"ebb660aad3644bf2adf84f161754737c","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"ebb660aad3644bf2adf84f161754737c"}],"goals":[{"name":"primary","trigger_id":"ebb660aad3644bf2adf84f161754737c","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"OK {0} Lets Start !\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"},"id":"0a5ce23a788e4525a4d3abc657122582","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"55f03252788a457aaded9d34ff5e7e88","name":"End","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"script","value":"(function execute() {\n\n    var reqNumber = vaInputs.request_number + ''; // user input\n\n    // 1️⃣ Validate format (EMP or GOV + numbers)\n    var pattern = /^(EMP|GOV)\\d{7}$/;\n    if (!pattern.test(reqNumber)) {\n        return \"❌ Invalid request number format. Please enter a valid number like GOV0001251.\";\n    }\n\n    // 2️⃣ Query Reviewer Employee table\n    var gr = new GlideRecord('u_reviewer_employee'); // change if needed\n    gr.addQuery('number', reqNumber);\n    gr.query();\n\n    if (!gr.next()) {\n        return \"❌ No request found with number: \" + reqNumber;\n    }\n\n    // 3️⃣ Read fields\n    var state = gr.getValue('state');\n    var workNotes = gr.getValue('work_notes');\n    var assignedTo = gr.getDisplayValue('assigned_to');\n\n    // 4️⃣ Build response based on state\n    var message = \"📄 **Request Number:** \" + reqNumber + \"\\n\";\n\n    if (state == 'New') {\n        message += \"🕒 Status: New\\nYour request has been received and will be reviewed shortly.\";\n    }\n    else if (state == 'In Review') {\n        message += \"🔍 Status: In Review\\nYour request is currently being reviewed by our team.\";\n    }\n    else if (state == 'Awaiting User Update') {\n        message += \"⚠️ Status: Action Required\\n\";\n        message += \"Your request needs additional information.\\n\";\n        message += \"📝 Reviewer Note:\\n\" + (workNotes || \"No notes provided.\");\n    }\n    else if (state == 'Approved' || state == 'Completed') {\n        message += \"✅ Status: Completed\\nYour request has been successfully completed.\";\n    }\n    else if (state == 'Rejected') {\n        message += \"❌ Status: Rejected\\nPlease review the comments and submit again.\";\n    }\n    else {\n        message += \"ℹ️ Status: \" + state;\n    }\n\n    if (assignedTo) {\n        message += \"\\n👤 Assigned Reviewer: \" + assignedTo;\n    }\n\n    return message;\n\n})();\n"}],"request_feedback":true,"isCollapsible":true,"id":"f555a30000d84bac8a58529333cee48b","name":"what happend?","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false}],"edges":[{"type":"Edge","source_node_id":"0a5ce23a788e4525a4d3abc657122582","target_node_id":"f555a30000d84bac8a58529333cee48b","id":"2d083a51ee564709a6dc3dda2176b59d"},{"type":"Edge","source_node_id":"f555a30000d84bac8a58529333cee48b","target_node_id":"55f03252788a457aaded9d34ff5e7e88","id":"a3a0f32b6b8c4a8591e78113e6f9210b"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"e0e99de183fdf21078c11a30ceaad3e5","library-usage":{"type":"Library","input-parameters":[],"return-values-mapping":[]},"domain":"global","topic_type":"TOPIC_BLOCK","channels":[],"dialog_acts_enabled":false,"id":"c847838a83bd3a1078c11a30ceaad303","name":"_PRVW__7127424fa30d43929107eabdf3dc418e","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"3efd22da0b203300a1b16c2367673a10"},{"name":null,"visible":false,"sysId":"a5ce18a1536b101024faddeeff7b12bb"},{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"},{"name":null,"visible":false,"sysId":"059dcf85d8675010fa9b0745d3ebb71b"},{"name":null,"visible":false,"sysId":"bfdd66da0b203300a1b16c2367673a1f"}],"triggerable_by_notification":false,"model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Request Status Tracker","library":true,"csTopicId":"8be7c38e83bd3a1078c11a30ceaad342","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>c847838a83bd3a1078c11a30ceaad303</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "0a5ce23a788e4525a4d3abc657122582": {
+          "id": "0a5ce23a788e4525a4d3abc657122582",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "OK "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": " Lets Start !"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "55f03252788a457aaded9d34ff5e7e88": {
+          "id": "55f03252788a457aaded9d34ff5e7e88",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "6d7c373391ae486b97cab83ae0fd795c": {
+          "id": "6d7c373391ae486b97cab83ae0fd795c",
+          "stepType": "TextPrompt",
+          "name": "enter request number",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter your Service Request number to track it😊"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "edc0ca2d78764ea19a434bce1dab42f1",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Custom",
+            "script": "function validate(value) {\n    // Trim spaces\n    value = value.trim();\n\n    // Regex for GOV request number (e.g. GOV0001251)\n    var pattern = /^GOV\\d{7}$/;\n\n    var isValid = pattern.test(value);\n\n    return {\n        valid: isValid,\n        error: isValid ? undefined : \"Please enter a valid Request Number (e.g. GOV0001251).\"\n    };\n}\n"
+          },
+          "requestFeedback": true
+        },
+        "f555a30000d84bac8a58529333cee48b": {
+          "id": "f555a30000d84bac8a58529333cee48b",
+          "stepType": "TextOutput",
+          "name": "what happend?",
+          "secure": false,
+          "value": [
+            {
+              "value": "",
+              "mode": "simple",
+              "_key": "0ac4302659d04acfbcf05151d8ed5570"
+            },
+            {
+              "value": "(function execute() {\n\n    var reqNumber = vaInputs.request_number + ''; // user input\n\n    // 1️⃣ Validate format (EMP or GOV + numbers)\n    var pattern = /^(EMP|GOV)\\d{7}$/;\n    if (!pattern.test(reqNumber)) {\n        return \"❌ Invalid request number format. Please enter a valid number like GOV0001251.\";\n    }\n\n    // 2️⃣ Query Reviewer Employee table\n    var gr = new GlideRecord('u_reviewer_employee'); // change if needed\n    gr.addQuery('number', reqNumber);\n    gr.query();\n\n    if (!gr.next()) {\n        return \"❌ No request found with number: \" + reqNumber;\n    }\n\n    // 3️⃣ Read fields\n    var state = gr.getValue('state');\n    var workNotes = gr.getValue('work_notes');\n    var assignedTo = gr.getDisplayValue('assigned_to');\n\n    // 4️⃣ Build response based on state\n    var message = \"📄 **Request Number:** \" + reqNumber + \"\\n\";\n\n    if (state == 'New') {\n        message += \"🕒 Status: New\\nYour request has been received and will be reviewed shortly.\";\n    }\n    else if (state == 'In Review') {\n        message += \"🔍 Status: In Review\\nYour request is currently being reviewed by our team.\";\n    }\n    else if (state == 'Awaiting User Update') {\n        message += \"⚠️ Status: Action Required\\n\";\n        message += \"Your request needs additional information.\\n\";\n        message += \"📝 Reviewer Note:\\n\" + (workNotes || \"No notes provided.\");\n    }\n    else if (state == 'Approved' || state == 'Completed') {\n        message += \"✅ Status: Completed\\nYour request has been successfully completed.\";\n    }\n    else if (state == 'Rejected') {\n        message += \"❌ Status: Rejected\\nPlease review the comments and submit again.\";\n    }\n    else {\n        message += \"ℹ️ Status: \" + state;\n    }\n\n    if (assignedTo) {\n        message += \"\\n👤 Assigned Reviewer: \" + assignedTo;\n    }\n\n    return message;\n\n})();\n",
+              "mode": "script"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "2d083a51ee564709a6dc3dda2176b59d",
+          "edgeType": "Edge",
+          "source": "0a5ce23a788e4525a4d3abc657122582",
+          "target": "6d7c373391ae486b97cab83ae0fd795c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "be37e5818b754cdb91585d6bcd525b36",
+          "edgeType": "Edge",
+          "source": "6d7c373391ae486b97cab83ae0fd795c",
+          "target": "f555a30000d84bac8a58529333cee48b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a3a0f32b6b8c4a8591e78113e6f9210b",
+          "edgeType": "Edge",
+          "source": "f555a30000d84bac8a58529333cee48b",
+          "target": "55f03252788a457aaded9d34ff5e7e88",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "edc0ca2d78764ea19a434bce1dab42f1": {
+      "id": "edc0ca2d78764ea19a434bce1dab42f1",
+      "name": "enter_request_number",
+      "label": "Enter Request Number",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc2NjkzOTMzNjY1NCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "6d7c373391ae486b97cab83ae0fd795c",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>_PRVW__7127424fa30d43929107eabdf3dc418e</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 17:15:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b4654bd6834a7a9078c11a30ceaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_cb_design_topic_b4654bd6834a7a9078c11a30ceaad349</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 17:15:26</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

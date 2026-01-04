@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"start":19,"end":25,"annotatedString":"I want to update a {{phrase=\"comment\"}} to an incident","cat":"A comment"}]</annotation>
+        <entity display_value="updatetype">cee0d8fa83357e1078c11a30ceaad379</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:08:15</sys_created_on>
+        <sys_id>0be09cfa83357e1078c11a30ceaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>updatetype.I want to update a comment to an incident</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_0be09cfa83357e1078c11a30ceaad3bf</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:08:15</sys_updated_on>
+        <utterance display_value="I want to update a comment to an incident">47e09cfa83357e1078c11a30ceaad3bb</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

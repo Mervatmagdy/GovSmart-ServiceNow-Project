@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__44cd7a3fa0d84555a39c00009f5e6c11">40a38bcb8379325078c11a30ceaad3f4</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"39aeb26f4f284296bb4e33f87b9eeff0","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"39aeb26f4f284296bb4e33f87b9eeff0"}],"goals":[{"name":"primary","trigger_id":"39aeb26f4f284296bb4e33f87b9eeff0","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"db2c2d037d0b413d8c370524a8b179d1","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"434fe0ec39fc4a08a1314a999ba4bb6d","name":"End","expert_mode":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"0f04a8c820c8403fa46ae1668a3ff7e7","name":"service type","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"1780cbaa7ee64004ac089666f42feb26","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which Service you want to get ticket for it?\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Renew your driver's license","expression":{"type":"Applicability","mode":"query","value":"service_type=Renew your driver's license"},"id":"5aa9fa306ce7499e88e4357ab4d5bb59","name":"Renew your driver's license","expert_mode":false},{"type":"Branch","label":"National ID Card Application","expression":{"type":"Applicability","mode":"query","value":"service_type=National ID Card Application"},"id":"09ff3aa6a76749a1821959ad9f0ec369","name":"National ID Card Application","expert_mode":false},{"type":"Branch","label":"Renew the national ID card","expression":{"type":"Applicability","mode":"query","value":"service_type=Renew the national ID card"},"id":"4a8680aa883a42fa98a36795cc542e68","name":"Renew the national ID card","expert_mode":false},{"type":"Branch","label":"Family registration extract","expression":{"type":"Applicability","mode":"query","value":"service_type=Family registration extract"},"id":"921ca1bcd2504234ae37c1fdc91946ef","name":"Family registration extract","expert_mode":false}],"id":"6c3dc4d521a3496689cf7c3cae5c2fb7","goal_id":"primary","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:6846efa883c24fa8aed84cb45e070af8:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"6846efa883c24fa8aed84cb45e070af8","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:b650d371bc844d97ba41e9fad29add73:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"b650d371bc844d97ba41e9fad29add73","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:26cbe0a1b70742d29570caeb2f21e7da:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"26cbe0a1b70742d29570caeb2f21e7da","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:acc8dfe617cf4cc0910b86023d390856:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"acc8dfe617cf4cc0910b86023d390856","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"baac544c2d7d4d73a75fe0ee488f68a0","name":"User Choose Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"85e18051bf4a4cd6994551321b5e45fa","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:baac544c2d7d4d73a75fe0ee488f68a0:field:Message\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"625179f8daa6464d80172132febc2c22","name":"User Choose Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"a11ac52be5ec4d2ba4a30dba4e4b8d35","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:625179f8daa6464d80172132febc2c22:field:Message\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"c4a62eca5b6f4306bdf147403d9ad97a","name":"User Choose Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"9405204bd5554b659ec25174e4e03529","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:c4a62eca5b6f4306bdf147403d9ad97a:field:Message\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"c0757a87ebb846c89118cd1fa14fbcea","name":"User Choose Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"36d932ae89d847d699d925b9893ba07f","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:c0757a87ebb846c89118cd1fa14fbcea:field:Message\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Alexandria","expression":{"type":"Applicability","mode":"query","value":"service_type=Renew the national ID card"},"id":"ef4dcd8d0c674599ac47393dd42f4c17","name":"Alexandria","expert_mode":false},{"type":"Branch","label":"Cairo","expression":{"type":"Applicability","mode":"query","value":"service_type=Renew the national ID card^user_choose_region=Cairo"},"id":"7b8b91ab561a4eebb017383cc10b144f","name":"Cairo","expert_mode":false}],"id":"28e5fe3416c6410baf0fcce201fdbc23","goal_id":"primary","expert_mode":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Alexandria","expression":{"type":"Applicability","mode":"query","value":"service_type=Family registration extract"},"id":"f30f343c92ea4c089a732c62e372781c","name":"Alexandria","expert_mode":false},{"type":"Branch","label":"Cairo","expression":{"type":"Applicability","mode":"query","value":"service_type=Family registration extract"},"id":"a37e7d01261d4e84a4f5a88af57de08d","name":"Cairo","expert_mode":false}],"id":"fd5a88ada4494d62803ff09e80cdae66","goal_id":"primary","expert_mode":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Alexandria","expression":{"type":"Applicability","mode":"query","value":"service_type=National ID Card Application"},"id":"1e88267cab3f4f29bf42761a51635e12","name":"Alexandria","expert_mode":false},{"type":"Branch","label":"Cairo","expression":{"type":"Applicability","mode":"query","value":"service_type=National ID Card Application"},"id":"5dd7c2f562b140a2ae5fe567fe8962d0","name":"Cairo","expert_mode":false}],"id":"52581e28575d40d69548a6c8e6270b72","goal_id":"primary","expert_mode":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Alexandria","expression":{"type":"Applicability","mode":"query","value":"service_type=Renew your driver's license"},"id":"7d9fd109768a4a7d88fa7ec4465cffb1","name":"Alexandria","expert_mode":false},{"type":"Branch","label":"Cairo","expression":{"type":"Applicability","mode":"query","value":"service_type=Renew your driver's license"},"id":"81ed3a493e474de2863e7f4c2c99d4ab","name":"Cairo","expert_mode":false}],"id":"14b4e55b0b2b49cdaac8cb125aadd2a2","goal_id":"primary","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:87912f2bcf8d40b5b44df604ff4e759a:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"87912f2bcf8d40b5b44df604ff4e759a","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:dd82d12393b34b6f9165581b7200a3ca:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"dd82d12393b34b6f9165581b7200a3ca","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:c737f91df12143e2912450f5df413bfc:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"c737f91df12143e2912450f5df413bfc","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:f8b37e0af1d34648b6ee5a56ca69179a:field:0\", vaContext.getRequesterLang())"}],"request_feedback":true,"isCollapsible":true,"id":"f8b37e0af1d34648b6ee5a56ca69179a","name":"Service Region","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"InputPrompt","variable_id":"e9a5b6eb8a8442ff8cc18b5a51e526e2","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:af660f0a83bd3a1078c11a30ceaad300:node:e211dba923074431bf92d08139606dc3:field:Message\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"metadataScript":"","cardName":"","cardFields":[],"id":"e211dba923074431bf92d08139606dc3","name":"Which this help","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""}],"edges":[{"type":"Edge","source_node_id":"0f04a8c820c8403fa46ae1668a3ff7e7","target_node_id":"6c3dc4d521a3496689cf7c3cae5c2fb7","id":"ea0063fc4db54ec3b05b18e34479258c"},{"type":"Edge","source_node_id":"db2c2d037d0b413d8c370524a8b179d1","target_node_id":"0f04a8c820c8403fa46ae1668a3ff7e7","id":"64ddcf4033914503a9c16b1fde67191c"},{"type":"Edge","source_node_id":"6846efa883c24fa8aed84cb45e070af8","target_node_id":"e211dba923074431bf92d08139606dc3","id":"04a98d58739747fba5fd0b4c6933b4fe"},{"type":"Edge","source_node_id":"b650d371bc844d97ba41e9fad29add73","target_node_id":"e211dba923074431bf92d08139606dc3","id":"052aabd93fec4b49854e17f7c8f9ca0d"},{"type":"Edge","source_node_id":"26cbe0a1b70742d29570caeb2f21e7da","target_node_id":"e211dba923074431bf92d08139606dc3","id":"22af4d34ec1e4aec9a788620b31ed47a"},{"type":"Edge","source_node_id":"6c3dc4d521a3496689cf7c3cae5c2fb7","target_node_id":"baac544c2d7d4d73a75fe0ee488f68a0","branch_id":"5aa9fa306ce7499e88e4357ab4d5bb59","id":"d764a47bbafb4a17be9d99b92dae62b9","name":"5aa9fa306ce7499e88e4357ab4d5bb59"},{"type":"Edge","source_node_id":"6c3dc4d521a3496689cf7c3cae5c2fb7","target_node_id":"625179f8daa6464d80172132febc2c22","branch_id":"09ff3aa6a76749a1821959ad9f0ec369","id":"95101cb8aff8469892a804932af69deb","name":"09ff3aa6a76749a1821959ad9f0ec369"},{"type":"Edge","source_node_id":"6c3dc4d521a3496689cf7c3cae5c2fb7","target_node_id":"c4a62eca5b6f4306bdf147403d9ad97a","branch_id":"4a8680aa883a42fa98a36795cc542e68","id":"63b5320408cb4a87a67ea5683c4d4fe3","name":"4a8680aa883a42fa98a36795cc542e68"},{"type":"Edge","source_node_id":"6c3dc4d521a3496689cf7c3cae5c2fb7","target_node_id":"c0757a87ebb846c89118cd1fa14fbcea","branch_id":"921ca1bcd2504234ae37c1fdc91946ef","id":"473bbad5d4804670b14743d42f9cc67b","name":"921ca1bcd2504234ae37c1fdc91946ef"},{"type":"Edge","source_node_id":"c4a62eca5b6f4306bdf147403d9ad97a","target_node_id":"28e5fe3416c6410baf0fcce201fdbc23","id":"97b0cafa470a426390d01990583c8e46"},{"type":"Edge","source_node_id":"28e5fe3416c6410baf0fcce201fdbc23","target_node_id":"26cbe0a1b70742d29570caeb2f21e7da","branch_id":"ef4dcd8d0c674599ac47393dd42f4c17","id":"7f6051d003b24de0be08de54e6bc6d32","name":"ef4dcd8d0c674599ac47393dd42f4c17"},{"type":"Edge","source_node_id":"c0757a87ebb846c89118cd1fa14fbcea","target_node_id":"fd5a88ada4494d62803ff09e80cdae66","id":"0bb299436b0a48d696e9b6c8b6e6a819"},{"type":"Edge","source_node_id":"fd5a88ada4494d62803ff09e80cdae66","target_node_id":"b650d371bc844d97ba41e9fad29add73","branch_id":"f30f343c92ea4c089a732c62e372781c","id":"3004217a72b0477eb3939a7df78e6476","name":"f30f343c92ea4c089a732c62e372781c"},{"type":"Edge","source_node_id":"625179f8daa6464d80172132febc2c22","target_node_id":"52581e28575d40d69548a6c8e6270b72","id":"589e0ab9565a428298696ca290d7cc5a"},{"type":"Edge","source_node_id":"52581e28575d40d69548a6c8e6270b72","target_node_id":"acc8dfe617cf4cc0910b86023d390856","branch_id":"1e88267cab3f4f29bf42761a51635e12","id":"0d2897c822dd4a8ea18d4933f788ce33","name":"1e88267cab3f4f29bf42761a51635e12"},{"type":"Edge","source_node_id":"baac544c2d7d4d73a75fe0ee488f68a0","target_node_id":"14b4e55b0b2b49cdaac8cb125aadd2a2","id":"1fa2d4a9f8714b63933bdeade1264a5b"},{"type":"Edge","source_node_id":"14b4e55b0b2b49cdaac8cb125aadd2a2","target_node_id":"6846efa883c24fa8aed84cb45e070af8","branch_id":"7d9fd109768a4a7d88fa7ec4465cffb1","id":"a84c2089f00a4797a6093ae6f03f47b1","name":"7d9fd109768a4a7d88fa7ec4465cffb1"},{"type":"Edge","source_node_id":"14b4e55b0b2b49cdaac8cb125aadd2a2","target_node_id":"87912f2bcf8d40b5b44df604ff4e759a","branch_id":"81ed3a493e474de2863e7f4c2c99d4ab","id":"44d492eb8cd94442a58d8080825dcdd4","name":"81ed3a493e474de2863e7f4c2c99d4ab"},{"type":"Edge","source_node_id":"87912f2bcf8d40b5b44df604ff4e759a","target_node_id":"e211dba923074431bf92d08139606dc3","id":"d23d86f45daf47a795457779fdacf113"},{"type":"Edge","source_node_id":"52581e28575d40d69548a6c8e6270b72","target_node_id":"dd82d12393b34b6f9165581b7200a3ca","branch_id":"5dd7c2f562b140a2ae5fe567fe8962d0","id":"ecdafd5de06a4f23a41a7ed551b60f41","name":"5dd7c2f562b140a2ae5fe567fe8962d0"},{"type":"Edge","source_node_id":"dd82d12393b34b6f9165581b7200a3ca","target_node_id":"e211dba923074431bf92d08139606dc3","id":"6001d7adab63414ebfeaf6c2e4f5845d"},{"type":"Edge","source_node_id":"fd5a88ada4494d62803ff09e80cdae66","target_node_id":"c737f91df12143e2912450f5df413bfc","branch_id":"a37e7d01261d4e84a4f5a88af57de08d","id":"d39baee6459d410788a4b1e4c42ea605","name":"a37e7d01261d4e84a4f5a88af57de08d"},{"type":"Edge","source_node_id":"c737f91df12143e2912450f5df413bfc","target_node_id":"e211dba923074431bf92d08139606dc3","id":"50e591e7ad3f4dc4b132f098bb3a6936"},{"type":"Edge","source_node_id":"28e5fe3416c6410baf0fcce201fdbc23","target_node_id":"f8b37e0af1d34648b6ee5a56ca69179a","branch_id":"7b8b91ab561a4eebb017383cc10b144f","id":"23f6294c329b485b9f336dd35427147f","name":"7b8b91ab561a4eebb017383cc10b144f"},{"type":"Edge","source_node_id":"f8b37e0af1d34648b6ee5a56ca69179a","target_node_id":"e211dba923074431bf92d08139606dc3","id":"e2cedfe912a843999d5df35f76f315de"},{"type":"Edge","source_node_id":"acc8dfe617cf4cc0910b86023d390856","target_node_id":"e211dba923074431bf92d08139606dc3","id":"77692394743a4f85bccde5854390d456"},{"type":"Edge","source_node_id":"e211dba923074431bf92d08139606dc3","target_node_id":"434fe0ec39fc4a08a1314a999ba4bb6d","id":"5889ae1aa0114efb9b1a8edba510d700"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Renew your driver's license","element":"Renew your driver's license"},{"name":"Family registration extract","element":"Family registration extract"},{"name":"National ID Card Application","element":"National ID Card Application"},{"name":"Renew the national ID card","element":"Renew the national ID card"}],"id":"1780cbaa7ee64004ac089666f42feb26","name":"service_type","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"Service Type"},{"type":"Choice","choices":[{"name":"Cairo","element":"Cairo"},{"name":"Alexandria","element":"Alexandria"}],"id":"85e18051bf4a4cd6994551321b5e45fa","name":"user_choose_region_3","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"User Choose Region (3)"},{"type":"Choice","choices":[{"name":"Cairo","element":"Cairo"},{"name":"Alexandria","element":"Alexandria"}],"id":"a11ac52be5ec4d2ba4a30dba4e4b8d35","name":"user_choose_region_4","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"User Choose Region (4)"},{"type":"Choice","choices":[{"name":"Cairo","element":"Cairo"},{"name":"Alexandria","element":"Alexandria"}],"id":"9405204bd5554b659ec25174e4e03529","name":"user_choose_region","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"User Choose Region"},{"type":"Choice","choices":[{"name":"Cairo","element":"Cairo"},{"name":"Alexandria","element":"Alexandria"}],"id":"36d932ae89d847d699d925b9893ba07f","name":"user_choose_region_2","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"User Choose Region (2)"},{"type":"String","name":"which_this_help","list":false,"id":"e9a5b6eb8a8442ff8cc18b5a51e526e2","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"e0e99de183fdf21078c11a30ceaad3e5","library-usage":{"type":"Library","input-parameters":[],"return-values-mapping":[]},"domain":"global","topic_type":"TOPIC_BLOCK","channels":[],"dialog_acts_enabled":false,"id":"af660f0a83bd3a1078c11a30ceaad300","name":"_PRVW__44cd7a3fa0d84555a39c00009f5e6c11","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"3efd22da0b203300a1b16c2367673a10"},{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"},{"name":null,"visible":false,"sysId":"059dcf85d8675010fa9b0745d3ebb71b"}],"triggerable_by_notification":false,"model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Nearest Service Location For Ticket","library":true,"csTopicId":"3d97c74e83bd3a1078c11a30ceaad362","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>af660f0a83bd3a1078c11a30ceaad300</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "db2c2d037d0b413d8c370524a8b179d1": {
+          "id": "db2c2d037d0b413d8c370524a8b179d1",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "parameters": [],
+          "variableIds": []
+        },
+        "434fe0ec39fc4a08a1314a999ba4bb6d": {
+          "id": "434fe0ec39fc4a08a1314a999ba4bb6d",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "0f04a8c820c8403fa46ae1668a3ff7e7": {
+          "name": "service type",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which Service you want to get ticket for it?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "1780cbaa7ee64004ac089666f42feb26",
+          "detailDescription": "",
+          "id": "0f04a8c820c8403fa46ae1668a3ff7e7",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "6c3dc4d521a3496689cf7c3cae5c2fb7": {
+          "id": "6c3dc4d521a3496689cf7c3cae5c2fb7",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "6846efa883c24fa8aed84cb45e070af8": {
+          "id": "6846efa883c24fa8aed84cb45e070af8",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "To Renew your driver's license From Alexandria You will go to TrafficUnits🚦",
+                          "bold": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "These All Available Places , You can Choose the Nearest one for you:",
+                          "bold": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "numbered-list",
+                      "children": [
+                        {
+                          "type": "list-item",
+                          "children": [
+                            {
+                              "text": "Abees Traffic Unit"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list-item",
+                          "children": [
+                            {
+                              "text": "Montazah Traffic Unit"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list-item",
+                          "children": [
+                            {
+                              "text": "El Montazah Traffic Licenses Unit"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "0187f1e258b94ae68e546498a5a4b162"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "b650d371bc844d97ba41e9fad29add73": {
+          "id": "b650d371bc844d97ba41e9fad29add73",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To Do Family registration extract From Alexandria You will go to CivilRegistry📋",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "These All Available Places , You can Choose the Nearest one for you:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Sidi Gaber"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Ibrahimia"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Mansheya"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "62258a16bf13453e9529280cfd5d86b0"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "26cbe0a1b70742d29570caeb2f21e7da": {
+          "id": "26cbe0a1b70742d29570caeb2f21e7da",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "To Renew the national ID card From Alexandria You will go to CivilRegistry📋",
+                          "bold": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "These All Available Places , You can Choose the Nearest one for you:",
+                          "bold": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "numbered-list",
+                      "children": [
+                        {
+                          "type": "list-item",
+                          "children": [
+                            {
+                              "text": "Civil Registry – Sidi Gaber"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list-item",
+                          "children": [
+                            {
+                              "text": "Civil Registry – Ibrahimia"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "list-item",
+                          "children": [
+                            {
+                              "text": "Civil Registry – Mansheya"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "b6388e581f7d4b0fb51859cb4735ddd5"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "acc8dfe617cf4cc0910b86023d390856": {
+          "id": "acc8dfe617cf4cc0910b86023d390856",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To Do National ID Card Application From Alexandria You will go to CivilRegistry📋",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "These All Available Places , You can Choose the Nearest one for you:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Sidi Gaber"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Ibrahimia"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Mansheya"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "c046918af86345d2a31d35213accb37b"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "baac544c2d7d4d73a75fe0ee488f68a0": {
+          "name": "User Choose Region",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which Government you want to get Ticket from it ? "
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Note these All Available Governments We work To Add more In the Future☺️"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "85e18051bf4a4cd6994551321b5e45fa",
+          "detailDescription": "",
+          "id": "baac544c2d7d4d73a75fe0ee488f68a0",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "625179f8daa6464d80172132febc2c22": {
+          "name": "User Choose Region",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which Government you want to get Ticket from it ? "
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Note these All Available Governments We work To Add more In the Future☺️"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "a11ac52be5ec4d2ba4a30dba4e4b8d35",
+          "detailDescription": "",
+          "id": "625179f8daa6464d80172132febc2c22",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "c4a62eca5b6f4306bdf147403d9ad97a": {
+          "name": "User Choose Region",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which Government you want to get Ticket from it ? "
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Note these All Available Governments We work To Add more In the Future☺️"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "9405204bd5554b659ec25174e4e03529",
+          "detailDescription": "",
+          "id": "c4a62eca5b6f4306bdf147403d9ad97a",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "c0757a87ebb846c89118cd1fa14fbcea": {
+          "name": "User Choose Region",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which Government you want to get Ticket from it ? "
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Note these All Available Governments We work To Add more In the Future☺️"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "36d932ae89d847d699d925b9893ba07f",
+          "detailDescription": "",
+          "id": "c0757a87ebb846c89118cd1fa14fbcea",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "28e5fe3416c6410baf0fcce201fdbc23": {
+          "id": "28e5fe3416c6410baf0fcce201fdbc23",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "fd5a88ada4494d62803ff09e80cdae66": {
+          "id": "fd5a88ada4494d62803ff09e80cdae66",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "52581e28575d40d69548a6c8e6270b72": {
+          "id": "52581e28575d40d69548a6c8e6270b72",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "14b4e55b0b2b49cdaac8cb125aadd2a2": {
+          "id": "14b4e55b0b2b49cdaac8cb125aadd2a2",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "87912f2bcf8d40b5b44df604ff4e759a": {
+          "id": "87912f2bcf8d40b5b44df604ff4e759a",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To Renew your driver's license From Cairo You will go to TrafficUnits🚦",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "These All Available Places , You can Choose the Nearest one for you:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Ain El Sira Traffic Office"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Heliopolis Traffic Office"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "New Nasr City Traffic Office"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "6afec8da1662456aa68e3aee222014aa"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "dd82d12393b34b6f9165581b7200a3ca": {
+          "id": "dd82d12393b34b6f9165581b7200a3ca",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To Do National ID Card Application From Cairo You will go to CivilRegistry📋",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "These All Available Places , You can Choose the Nearest one for you:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Abbasia (Main HQ)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "8ac24c261ca244ab910f01f0c14affc0"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "c737f91df12143e2912450f5df413bfc": {
+          "id": "c737f91df12143e2912450f5df413bfc",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To Do Family registration extract From Cairo You will go to CivilRegistry📋",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "These All Available Places , You can Choose the Nearest one for you:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Abbasia (Main HQ)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "77096344235c45819f41070e418a105e"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "f8b37e0af1d34648b6ee5a56ca69179a": {
+          "id": "f8b37e0af1d34648b6ee5a56ca69179a",
+          "stepType": "TextOutput",
+          "name": "Service Region",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To Renew the national ID card From Cairo You will go to CivilRegistry📋",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "These All Available Places , You can Choose the Nearest one for you:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "Civil Registry – Abbasia (Main HQ)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "3afb80a289184fe1a46fa8e79ca2ea2b"
+            }
+          ],
+          "isCollapsible": true,
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "e211dba923074431bf92d08139606dc3": {
+          "id": "e211dba923074431bf92d08139606dc3",
+          "stepType": "TextPrompt",
+          "name": "Which this help",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "GovAssist Wish this helps you🙏🏻"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "e9a5b6eb8a8442ff8cc18b5a51e526e2",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        }
+      },
+      "edges": [
+        {
+          "id": "ea0063fc4db54ec3b05b18e34479258c",
+          "edgeType": "Edge",
+          "source": "0f04a8c820c8403fa46ae1668a3ff7e7",
+          "target": "6c3dc4d521a3496689cf7c3cae5c2fb7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "64ddcf4033914503a9c16b1fde67191c",
+          "edgeType": "Edge",
+          "source": "db2c2d037d0b413d8c370524a8b179d1",
+          "target": "0f04a8c820c8403fa46ae1668a3ff7e7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "04a98d58739747fba5fd0b4c6933b4fe",
+          "edgeType": "Edge",
+          "source": "6846efa883c24fa8aed84cb45e070af8",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "052aabd93fec4b49854e17f7c8f9ca0d",
+          "edgeType": "Edge",
+          "source": "b650d371bc844d97ba41e9fad29add73",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "22af4d34ec1e4aec9a788620b31ed47a",
+          "edgeType": "Edge",
+          "source": "26cbe0a1b70742d29570caeb2f21e7da",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d764a47bbafb4a17be9d99b92dae62b9",
+          "edgeType": "Branch",
+          "source": "6c3dc4d521a3496689cf7c3cae5c2fb7",
+          "target": "baac544c2d7d4d73a75fe0ee488f68a0",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Renew your driver's license",
+            "mode": "query"
+          },
+          "label": "Renew your driver's license"
+        },
+        {
+          "id": "95101cb8aff8469892a804932af69deb",
+          "edgeType": "Branch",
+          "source": "6c3dc4d521a3496689cf7c3cae5c2fb7",
+          "target": "625179f8daa6464d80172132febc2c22",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=National ID Card Application",
+            "mode": "query"
+          },
+          "label": "National ID Card Application"
+        },
+        {
+          "id": "63b5320408cb4a87a67ea5683c4d4fe3",
+          "edgeType": "Branch",
+          "source": "6c3dc4d521a3496689cf7c3cae5c2fb7",
+          "target": "c4a62eca5b6f4306bdf147403d9ad97a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Renew the national ID card",
+            "mode": "query"
+          },
+          "label": "Renew the national ID card"
+        },
+        {
+          "id": "473bbad5d4804670b14743d42f9cc67b",
+          "edgeType": "Branch",
+          "source": "6c3dc4d521a3496689cf7c3cae5c2fb7",
+          "target": "c0757a87ebb846c89118cd1fa14fbcea",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Family registration extract",
+            "mode": "query"
+          },
+          "label": "Family registration extract"
+        },
+        {
+          "id": "97b0cafa470a426390d01990583c8e46",
+          "edgeType": "Edge",
+          "source": "c4a62eca5b6f4306bdf147403d9ad97a",
+          "target": "28e5fe3416c6410baf0fcce201fdbc23",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7f6051d003b24de0be08de54e6bc6d32",
+          "edgeType": "Branch",
+          "source": "28e5fe3416c6410baf0fcce201fdbc23",
+          "target": "26cbe0a1b70742d29570caeb2f21e7da",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Renew the national ID card",
+            "mode": "query"
+          },
+          "label": "Alexandria"
+        },
+        {
+          "id": "0bb299436b0a48d696e9b6c8b6e6a819",
+          "edgeType": "Edge",
+          "source": "c0757a87ebb846c89118cd1fa14fbcea",
+          "target": "fd5a88ada4494d62803ff09e80cdae66",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3004217a72b0477eb3939a7df78e6476",
+          "edgeType": "Branch",
+          "source": "fd5a88ada4494d62803ff09e80cdae66",
+          "target": "b650d371bc844d97ba41e9fad29add73",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Family registration extract",
+            "mode": "query"
+          },
+          "label": "Alexandria"
+        },
+        {
+          "id": "589e0ab9565a428298696ca290d7cc5a",
+          "edgeType": "Edge",
+          "source": "625179f8daa6464d80172132febc2c22",
+          "target": "52581e28575d40d69548a6c8e6270b72",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "0d2897c822dd4a8ea18d4933f788ce33",
+          "edgeType": "Branch",
+          "source": "52581e28575d40d69548a6c8e6270b72",
+          "target": "acc8dfe617cf4cc0910b86023d390856",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=National ID Card Application",
+            "mode": "query"
+          },
+          "label": "Alexandria"
+        },
+        {
+          "id": "1fa2d4a9f8714b63933bdeade1264a5b",
+          "edgeType": "Edge",
+          "source": "baac544c2d7d4d73a75fe0ee488f68a0",
+          "target": "14b4e55b0b2b49cdaac8cb125aadd2a2",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a84c2089f00a4797a6093ae6f03f47b1",
+          "edgeType": "Branch",
+          "source": "14b4e55b0b2b49cdaac8cb125aadd2a2",
+          "target": "6846efa883c24fa8aed84cb45e070af8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Renew your driver's license",
+            "mode": "query"
+          },
+          "label": "Alexandria"
+        },
+        {
+          "id": "44d492eb8cd94442a58d8080825dcdd4",
+          "edgeType": "Branch",
+          "source": "14b4e55b0b2b49cdaac8cb125aadd2a2",
+          "target": "87912f2bcf8d40b5b44df604ff4e759a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Renew your driver's license",
+            "mode": "query"
+          },
+          "label": "Cairo"
+        },
+        {
+          "id": "d23d86f45daf47a795457779fdacf113",
+          "edgeType": "Edge",
+          "source": "87912f2bcf8d40b5b44df604ff4e759a",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ecdafd5de06a4f23a41a7ed551b60f41",
+          "edgeType": "Branch",
+          "source": "52581e28575d40d69548a6c8e6270b72",
+          "target": "dd82d12393b34b6f9165581b7200a3ca",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=National ID Card Application",
+            "mode": "query"
+          },
+          "label": "Cairo"
+        },
+        {
+          "id": "6001d7adab63414ebfeaf6c2e4f5845d",
+          "edgeType": "Edge",
+          "source": "dd82d12393b34b6f9165581b7200a3ca",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d39baee6459d410788a4b1e4c42ea605",
+          "edgeType": "Branch",
+          "source": "fd5a88ada4494d62803ff09e80cdae66",
+          "target": "c737f91df12143e2912450f5df413bfc",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Family registration extract",
+            "mode": "query"
+          },
+          "label": "Cairo"
+        },
+        {
+          "id": "50e591e7ad3f4dc4b132f098bb3a6936",
+          "edgeType": "Edge",
+          "source": "c737f91df12143e2912450f5df413bfc",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "23f6294c329b485b9f336dd35427147f",
+          "edgeType": "Branch",
+          "source": "28e5fe3416c6410baf0fcce201fdbc23",
+          "target": "f8b37e0af1d34648b6ee5a56ca69179a",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.service_type=Renew the national ID card^vaInputs.user_choose_region=Cairo",
+            "mode": "query"
+          },
+          "label": "Cairo"
+        },
+        {
+          "id": "e2cedfe912a843999d5df35f76f315de",
+          "edgeType": "Edge",
+          "source": "f8b37e0af1d34648b6ee5a56ca69179a",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "77692394743a4f85bccde5854390d456",
+          "edgeType": "Edge",
+          "source": "acc8dfe617cf4cc0910b86023d390856",
+          "target": "e211dba923074431bf92d08139606dc3",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "5889ae1aa0114efb9b1a8edba510d700",
+          "edgeType": "Edge",
+          "source": "e211dba923074431bf92d08139606dc3",
+          "target": "434fe0ec39fc4a08a1314a999ba4bb6d",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "1780cbaa7ee64004ac089666f42feb26": {
+      "id": "1780cbaa7ee64004ac089666f42feb26",
+      "name": "service_type",
+      "label": "Service Type",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Renew your driver's license",
+          "value": "Renew your driver's license"
+        },
+        {
+          "label": "Family registration extract",
+          "value": "Family registration extract"
+        },
+        {
+          "label": "National ID Card Application",
+          "value": "National ID Card Application",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Renew the national ID card",
+          "value": "Renew the national ID card",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "0f04a8c820c8403fa46ae1668a3ff7e7",
+      "isHidden": false
+    },
+    "85e18051bf4a4cd6994551321b5e45fa": {
+      "id": "85e18051bf4a4cd6994551321b5e45fa",
+      "name": "user_choose_region_3",
+      "label": "User Choose Region (3)",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Cairo",
+          "value": "Cairo"
+        },
+        {
+          "label": "Alexandria",
+          "value": "Alexandria"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "baac544c2d7d4d73a75fe0ee488f68a0",
+      "isHidden": false
+    },
+    "a11ac52be5ec4d2ba4a30dba4e4b8d35": {
+      "id": "a11ac52be5ec4d2ba4a30dba4e4b8d35",
+      "name": "user_choose_region_4",
+      "label": "User Choose Region (4)",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Cairo",
+          "value": "Cairo"
+        },
+        {
+          "label": "Alexandria",
+          "value": "Alexandria"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "625179f8daa6464d80172132febc2c22",
+      "isHidden": false
+    },
+    "9405204bd5554b659ec25174e4e03529": {
+      "id": "9405204bd5554b659ec25174e4e03529",
+      "name": "user_choose_region",
+      "label": "User Choose Region",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Cairo",
+          "value": "Cairo"
+        },
+        {
+          "label": "Alexandria",
+          "value": "Alexandria"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "c4a62eca5b6f4306bdf147403d9ad97a",
+      "isHidden": false
+    },
+    "36d932ae89d847d699d925b9893ba07f": {
+      "id": "36d932ae89d847d699d925b9893ba07f",
+      "name": "user_choose_region_2",
+      "label": "User Choose Region (2)",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Cairo",
+          "value": "Cairo"
+        },
+        {
+          "label": "Alexandria",
+          "value": "Alexandria"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "c0757a87ebb846c89118cd1fa14fbcea",
+      "isHidden": false
+    },
+    "e9a5b6eb8a8442ff8cc18b5a51e526e2": {
+      "id": "e9a5b6eb8a8442ff8cc18b5a51e526e2",
+      "name": "which_this_help",
+      "label": "Which This Help",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTc2NjA2NzQ3NjgyNSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "e211dba923074431bf92d08139606dc3",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>_PRVW__44cd7a3fa0d84555a39c00009f5e6c11</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-18 14:47:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>44a3cf0f8379325078c11a30ceaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_cb_design_topic_44a3cf0f8379325078c11a30ceaad348</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 14:47:29</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

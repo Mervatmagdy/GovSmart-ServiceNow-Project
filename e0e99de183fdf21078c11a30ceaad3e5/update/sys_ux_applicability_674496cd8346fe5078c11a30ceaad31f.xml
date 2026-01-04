@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_applicability">
+    <sys_ux_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <api_name>x_1850706_govsma_0.Audience for app govsmart-review-amp-visit-management-system</api_name>
+        <description/>
+        <name>Audience for app govsmart-review-amp-visit-management-system</name>
+        <role_names/>
+        <roles>64e9dde183fdf21078c11a30ceaad34d,da63693d83f1b61078c11a30ceaad32f,41332d3d83f1b61078c11a30ceaad3b9,8c6b593083427e5078c11a30ceaad376,a8e9dde183fdf21078c11a30ceaad359</roles>
+        <sys_class_name>sys_ux_applicability</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-24 16:28:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>674496cd8346fe5078c11a30ceaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Audience for app govsmart-review-amp-visit-management-system</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_applicability_674496cd8346fe5078c11a30ceaad31f</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-24 16:28:36</sys_updated_on>
+    </sys_ux_applicability>
+</record_update>

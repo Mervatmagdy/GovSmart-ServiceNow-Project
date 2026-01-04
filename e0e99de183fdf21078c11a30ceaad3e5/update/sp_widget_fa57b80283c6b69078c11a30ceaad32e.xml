@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $http, $timeout, cabrillo) {
+    /* widget controller */
+    var c = this;
+    c.isNative = cabrillo.isNative() && c.data.isMEE;
+    $scope.m = $scope.data.msgs;
+
+    displayCabrilloElements();
+
+    c.cancel = function() {
+        removeCabrilloElements();
+        $rootScope.$broadcast("$sp.service_catalog.save.cancel");
+    }
+
+    c.save = function() {
+        if (!c.data.draftName || c.data.draftName.length > 200) {
+            var errMsg = !c.data.draftName ? $scope.m.mandatoryMessage : $scope.m.maxLengthExceededMsg;
+            if (c.isNative)
+                cabrillo.message.showMessage(cabrillo.message.ERROR_MESSAGE_STYLE, errMsg);
+            else
+                c.errorMessage = errMsg;
+            return;
+        }
+
+        removeCabrilloElements();
+        $rootScope.$broadcast('$sp.service_catalog.save.submitted', {
+            draft_name: c.data.draftName
+        });
+    }
+
+    function removeCabrilloElements() {
+        if (c.isNative) {
+            cabrillo.viewLayout.setTitle(c.oldTitle);
+            cabrillo.viewLayout.setNavigationBarButtons();
+            cabrillo.viewLayout.setBottomButtons();
+        }
+    }
+
+    function displayCabrilloElements() {
+        if (c.isNative) {
+            if (typeof cabrillo.viewLayout.getTitle == 'function') {
+                cabrillo.viewLayout.getTitle().then(function(title) {
+                    c.oldTitle = title;
+                    cabrillo.viewLayout.setTitle($scope.m.saveDraft);
+                });
+            }
+
+            cabrillo.viewLayout.hideBackButton();
+
+            cabrillo.viewLayout.setNavigationBarButtons([{
+                title: $scope.m.cancel,
+                enabled: true
+            }], function() {
+                c.cancel();
+            });
+
+            var buttons = [{
+                title: $scope.m.saveDraft,
+                enabled: true,
+                backgroundColor: $scope.data.sys_properties.isPolaris == "true" ? null : $scope.data.sys_properties.mobileNativeColor,
+                textColor: $scope.data.sys_properties.isPolaris == "true" ? null : '#FFFFFF'
+            }];
+
+            cabrillo.viewLayout.setBottomButtons(buttons, function() {
+                c.save();
+            });
+        }
+    }
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Copy of Catalog item save</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    data.isMEE = options.native_mobile == 'true';
+    data.draftName = options.draftName;
+    data.modalMessage = options.message;
+	data.modalInfoMessage = options.infoMessage;
+
+    var m = data.msgs = {};
+    m.saveDraft = gs.getMessage("Save draft");
+    m.closeModal = gs.getMessage("Close modal");
+    m.cancel = gs.getMessage("Cancel");
+    m.save = gs.getMessage("Save");
+    m.label = gs.getMessage("Save draft as");
+    m.maxLengthExceededMsg = gs.getMessage("Draft Item name should not exceed 200 characters.");
+    m.mandatoryMessage = gs.getMessage("Draft Item name should not be empty.");
+
+    data.sys_properties = {
+        mobileNativeColor: gs.getProperty("glide.sc.mobile.primary_color", "#1f8476"),
+        isPolaris: gs.getProperty("glide.ui.polaris.experience", "false")
+    };
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-27 12:16:25</sys_created_on>
+        <sys_id>fa57b80283c6b69078c11a30ceaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Catalog item save</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_widget_fa57b80283c6b69078c11a30ceaad32e</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 12:16:25</sys_updated_on>
+        <template><![CDATA[<div id="sc_cat_item_save" ng-class="{'panel panel-default': !c.isNative}">
+   <div ng-if="::!c.isNative" class="modal-header">
+      <button type="button" class="close pull-right" ng-click="c.cancel()" data-toggle="tooltip" data-placement="bottom" title="{{m.closeModal}}" aria-label="{{m.closeModal}}" role="button" autofocus>×</button>
+      <h2 class="modal-title h4">{{m.saveDraft}}</h2>
+   </div> 
+   <div class="modal-body">
+     <p ng-if="::(c.data.modalInfoMessage && !c.isNative)" class="alert alert-info" role="alert">{{c.data.modalInfoMessage}}</p>
+     <p ng-bind-html="::c.data.modalMessage"></p>
+     <p ng-if="::(c.errorMessage && !c.isNative)" class="alert alert-danger" role="alert">{{c.errorMessage}}</p>
+      <form>
+         <div class="form-group">
+            <label for="draft_item_name" ><span class="field-decorations"><span class="fa fa-asterisk mandatory sp-field-label-padding" title="Required"></span>{{m.label}}</span></label>
+            <input sn-focus="true" ng-model="c.data.draftName" id="draft_item_name" type="text" class="form-control" required="true" >
+         </div>
+      </form>
+      <div ng-if="::!c.isNative" class="modal-footer">
+         <button  class="btn btn-default" ng-click="c.cancel()" >{{m.cancel}}</button>
+         <button  class="btn btn-default  btn-primary" ng-click="c.save()" ng-disabled="!c.data.draftName">{{m.save}}</button>
+      </div>
+   </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

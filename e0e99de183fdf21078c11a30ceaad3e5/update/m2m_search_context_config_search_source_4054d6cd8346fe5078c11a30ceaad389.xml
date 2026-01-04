@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <search_context_config display_value="GovSmart Review &amp;amp; Visit Management System - Workspace Search">2e44d2cd1146fe50b249107bf53868ff</search_context_config>
+        <source display_value="GovSmart Review &amp;amp; Visit Management System - x_">fb44d6cd8346fe5078c11a30ceaad365</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-24 16:28:38</sys_created_on>
+        <sys_id>4054d6cd8346fe5078c11a30ceaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_4054d6cd8346fe5078c11a30ceaad389</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-24 16:28:38</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

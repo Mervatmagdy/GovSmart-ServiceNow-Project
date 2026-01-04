@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:1612878e837d3a1078c11a30ceaad39a:node:8ec9bec4177743c5ba6b0669e7985d93:field:0</key>
+        <language>en</language>
+        <message>**Documents Required to Renew Your National ID Card:**
+
+**The required documents vary depending on the purpose of the renewal:**
+
+1. Renewal: A copy of the old ID card is required.
+2. First-time issuance: A copy of the electronic birth certificate is required.
+3.  Proof of residence: A recent utility bill (electricity, water, or gas).
+4.  Proof of occupation: An official document certified by the employer or professional syndicate.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 19:20:20</sys_created_on>
+        <sys_id>9745245a83b97a1078c11a30ceaad381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>va:topic:1612878e837d3a1078c11a30ceaad39a:node:8ec9bec4177743c5ba6b0669e7985d93:field:0</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ui_message_9745245a83b97a1078c11a30ceaad381</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 19:20:20</sys_updated_on>
+    </sys_ui_message>
+</record_update>

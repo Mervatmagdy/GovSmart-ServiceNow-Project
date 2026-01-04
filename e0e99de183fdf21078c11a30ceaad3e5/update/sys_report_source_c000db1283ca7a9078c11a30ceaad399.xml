@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>Manager Tasks (Reviewer Employee)</display>
+        <filter table="x_1850706_govsma_0_empl_task">assignment_group.managerDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=7<item endquery="false" field="assignment_group.manager" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item display_value="Completed" endquery="false" field="state" goto="false" newquery="false" operator="!=" or="false" value="7"/>
+        </filter>
+        <name>Manager Tasks</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-28 18:05:34</sys_created_on>
+        <sys_id>c000db1283ca7a9078c11a30ceaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manager Tasks (Reviewer Employee)</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_report_source_c000db1283ca7a9078c11a30ceaad399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 18:05:34</sys_updated_on>
+        <table>x_1850706_govsma_0_empl_task</table>
+    </sys_report_source>
+</record_update>

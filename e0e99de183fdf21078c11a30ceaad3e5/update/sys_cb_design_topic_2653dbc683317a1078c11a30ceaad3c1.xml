@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__f6cd5d3e42f9415191316bbd65ab86c0">ea53dbc683317a1078c11a30ceaad3bb</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"af2fed142c8b4bd58a6a834d03d614eb","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"af2fed142c8b4bd58a6a834d03d614eb"}],"goals":[{"name":"primary","trigger_id":"af2fed142c8b4bd58a6a834d03d614eb","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hi {0}\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"},"id":"9401508670ca4be287ad29a7e01771dd","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"b746af41718448708bafff6f10c64379","name":"End","expert_mode":false},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"script","value":"(function execute() {\n    var result;\n       if (vaInputs.user.first_name.getDisplayValue()) {\n  return  gs.getMessageLang('Hi {0}, {1}', vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue(), vaSystem.getGreetingMessage()]);\n       } else {\n            return gs.getMessageLang('Hi {0}, {1}', vaContext.getRequesterLang(), [gs.getUser().getFirstName(), vaSystem.getGreetingMessage()]);\n       }\n})()\n"}],"request_feedback":true,"isCollapsible":true,"id":"317f592db0a04d169944e836cf0d6f1f","name":"Get Personalized Greeting topic message","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false}],"edges":[{"type":"Edge","source_node_id":"9401508670ca4be287ad29a7e01771dd","target_node_id":"317f592db0a04d169944e836cf0d6f1f","id":"5a5ebca3afe749109554492e8f73088e"},{"type":"Edge","source_node_id":"317f592db0a04d169944e836cf0d6f1f","target_node_id":"b746af41718448708bafff6f10c64379","id":"9c469c6072984f1aa974b1aa64156965"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"45c77e0f3d7c41e388b51d219fce2a48","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":["public"],"scope":"e0e99de183fdf21078c11a30ceaad3e5","domain":"global","topic_type":"SETUP_TOPIC","channels":[],"dialog_acts_enabled":false,"id":"d1d25f4683317a1078c11a30ceaad336","name":"_PRVW__f6cd5d3e42f9415191316bbd65ab86c0","key_phrases":["greeting(GovAssit)","Personalized Greeting Topic"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"3efd22da0b203300a1b16c2367673a10"},{"name":null,"visible":false,"sysId":"a5ce18a1536b101024faddeeff7b12bb"},{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"},{"name":null,"visible":false,"sysId":"059dcf85d8675010fa9b0745d3ebb71b"}],"triggerable_by_notification":false,"description":"Personalized Greeting Topic","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"greeting(GovAssit)","library":false,"csTopicId":"4103138683317a1078c11a30ceaad3a4","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>d1d25f4683317a1078c11a30ceaad336</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "9401508670ca4be287ad29a7e01771dd": {
+          "id": "9401508670ca4be287ad29a7e01771dd",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hi "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "b746af41718448708bafff6f10c64379": {
+          "id": "b746af41718448708bafff6f10c64379",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          }
+        },
+        "317f592db0a04d169944e836cf0d6f1f": {
+          "id": "317f592db0a04d169944e836cf0d6f1f",
+          "stepType": "TextOutput",
+          "name": "Get Personalized Greeting topic message",
+          "value": [
+            {
+              "value": "(function execute() {\n    var result;\n       if (vaInputs.user.first_name.getDisplayValue()) {\n  return  gs.getMessageLang('Hi {0}, {1}', vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue(), vaSystem.getGreetingMessage()]);\n       } else {\n            return gs.getMessageLang('Hi {0}, {1}', vaContext.getRequesterLang(), [gs.getUser().getFirstName(), vaSystem.getGreetingMessage()]);\n       }\n})()\n",
+              "mode": "script"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "secure": false,
+          "requestFeedback": true,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "isCollapsible": true
+        }
+      },
+      "edges": [
+        {
+          "id": "5a5ebca3afe749109554492e8f73088e",
+          "edgeType": "Edge",
+          "source": "9401508670ca4be287ad29a7e01771dd",
+          "target": "317f592db0a04d169944e836cf0d6f1f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9c469c6072984f1aa974b1aa64156965",
+          "edgeType": "Edge",
+          "source": "317f592db0a04d169944e836cf0d6f1f",
+          "target": "b746af41718448708bafff6f10c64379",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "45c77e0f3d7c41e388b51d219fce2a48": {
+      "category": "vaInputs",
+      "id": "45c77e0f3d7c41e388b51d219fce2a48",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <name>_PRVW__f6cd5d3e42f9415191316bbd65ab86c0</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 13:22:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2653dbc683317a1078c11a30ceaad3c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_cb_design_topic_2653dbc683317a1078c11a30ceaad3c1</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 13:22:17</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

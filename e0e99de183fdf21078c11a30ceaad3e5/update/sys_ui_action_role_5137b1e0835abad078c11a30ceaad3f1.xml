@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-04 11:24:02</sys_created_on>
+        <sys_id>5137b1e0835abad078c11a30ceaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_1850706_govsma_0.Service Reviwer</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_ui_action display_value="">9037b9a0835abad078c11a30ceaad3fb</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_5137b1e0835abad078c11a30ceaad3f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 11:24:02</sys_updated_on>
+        <sys_user_role display_value="x_1850706_govsma_0.Service Reviwer" name="x_1850706_govsma_0.Service Reviwer">41332d3d83f1b61078c11a30ceaad3b9</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

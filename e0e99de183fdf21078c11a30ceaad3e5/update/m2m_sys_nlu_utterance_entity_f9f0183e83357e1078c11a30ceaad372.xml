@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"start":10,"end":17,"annotatedString":"How can I {{phrase=\"check in\"}} for my walkup support","cat":"Check-in"}]</annotation>
+        <entity display_value="walkupActionType">82e0d8fa83357e1078c11a30ceaad3dc</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:08:26</sys_created_on>
+        <sys_id>f9f0183e83357e1078c11a30ceaad372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>walkupActionType.How can I check in for my walkup support</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_f9f0183e83357e1078c11a30ceaad372</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:08:26</sys_updated_on>
+        <utterance display_value="How can I check in for my walkup support">39f0183e83357e1078c11a30ceaad36e</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

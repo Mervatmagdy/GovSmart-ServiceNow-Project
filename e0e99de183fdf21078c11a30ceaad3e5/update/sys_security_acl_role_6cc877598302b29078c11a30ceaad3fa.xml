@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-25 18:25:57</sys_created_on>
+        <sys_id>6cc877598302b29078c11a30ceaad3fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1850706_govsma_0_empl_task.x_1850706_govsma_0.Service Admin Region</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_security_acl display_value="x_1850706_govsma_0_empl_task">e8c877598302b29078c11a30ceaad3c3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6cc877598302b29078c11a30ceaad3fa</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 18:25:57</sys_updated_on>
+        <sys_user_role display_value="x_1850706_govsma_0.Service Admin Region" name="x_1850706_govsma_0.Service Admin Region">da63693d83f1b61078c11a30ceaad32f</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

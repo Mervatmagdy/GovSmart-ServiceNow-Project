@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>service_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get region by service type</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var serviceType = newValue; 
+   var location = g_form.getValue('government');
+
+
+   g_form.clearOptions('region');
+
+   if (
+      serviceType == 'national_id_card_application' ||
+      serviceType == 'renew_the_national_id_card' ||
+      serviceType == 'family_registration_extract'
+   ) {
+
+      if (location =='alexandria') {
+         addAlexCivilRegistry();
+      }
+
+      if (location == 'cairo') {
+         g_form.addOption('region', 'Civil Registry – Abbasia (Main HQ)', 'Civil Registry – Abbasia (Main HQ)');
+      }
+   }
+
+
+   if (serviceType == 'renew_your_driver_s_license') {
+
+      if (location == 'alexandria') {
+         addAlexTrafficUnits();
+      }
+
+      if (location == 'cairo') {
+         addCairoTrafficUnits();
+      }
+   }
+}
+
+
+function addAlexCivilRegistry() {
+   g_form.addOption('region', 'Civil Registry – Sidi Gaber', 'Civil Registry – Sidi Gaber');
+   g_form.addOption('region', 'Civil Registry – Ibrahimia', 'Civil Registry – Ibrahimia');
+   g_form.addOption('region', 'Civil Registry – Mansheya', 'Civil Registry – Mansheya');
+}
+
+function addAlexTrafficUnits() {
+   g_form.addOption('region', 'Abees Traffic Unit', 'Abees Traffic Unit');
+   g_form.addOption('region', 'Montazah Traffic Unit', 'Montazah Traffic Unit');
+   g_form.addOption('region', 'El Montazah Traffic Licenses Unit', 'El Montazah Traffic Licenses Unit');
+}
+
+function addCairoTrafficUnits() {
+   g_form.addOption('region', 'Ain El Sira Traffic Office', 'Ain El Sira Traffic Office');
+   g_form.addOption('region', 'Heliopolis Traffic Office', 'Heliopolis Traffic Office');
+   g_form.addOption('region', 'New Nasr City Traffic Office', 'New Nasr City Traffic Office');
+   
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-14 05:40:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>00cf5c3583b5761078c11a30ceaad3f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Get region by service type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_client_00cf5c3583b5761078c11a30ceaad3f1</sys_update_name>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 08:35:25</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

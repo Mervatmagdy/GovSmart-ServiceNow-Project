@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"start":14,"end":19,"annotatedString":"I want to add {{phrase=\"myself\"}} to a dl","cat":"Self"}]</annotation>
+        <entity display_value="userToAdd">4ee0d8fa83357e1078c11a30ceaad3c9</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:08:21</sys_created_on>
+        <sys_id>28f0d03e83357e1078c11a30ceaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>userToAdd.I want to add myself to a dl</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_28f0d03e83357e1078c11a30ceaad3dc</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:08:21</sys_updated_on>
+        <utterance display_value="I want to add myself to a dl">64f0d03e83357e1078c11a30ceaad3d8</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

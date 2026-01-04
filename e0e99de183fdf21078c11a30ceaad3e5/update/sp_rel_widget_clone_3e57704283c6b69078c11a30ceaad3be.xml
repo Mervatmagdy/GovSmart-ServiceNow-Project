@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Copy of Catalog item save">fa57b80283c6b69078c11a30ceaad32e</child>
+        <cloned>2025-12-27 12:16:25</cloned>
+        <last_validated>2025-12-27 12:16:25</last_validated>
+        <parent display_value="Catalog item save">2654147577303110121e8f1a5b5a9990</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller = function($scope, $http, $timeout, cabrillo) {
+    /* widget controller */
+    var c = this;
+    c.isNative = cabrillo.isNative() &amp;&amp; c.data.isMEE;
+    $scope.m = $scope.data.msgs;
+
+    displayCabrilloElements();
+
+    c.cancel = function() {
+        removeCabrilloElements();
+        $rootScope.$broadcast("$sp.service_catalog.save.cancel");
+    }
+
+    c.save = function() {
+        if (!c.data.draftName || c.data.draftName.length &gt; 200) {
+            var errMsg = !c.data.draftName ? $scope.m.mandatoryMessage : $scope.m.maxLengthExceededMsg;
+            if (c.isNative)
+                cabrillo.message.showMessage(cabrillo.message.ERROR_MESSAGE_STYLE, errMsg);
+            else
+                c.errorMessage = errMsg;
+            return;
+        }
+
+        removeCabrilloElements();
+        $rootScope.$broadcast('$sp.service_catalog.save.submitted', {
+            draft_name: c.data.draftName
+        });
+    }
+
+    function removeCabrilloElements() {
+        if (c.isNative) {
+            cabrillo.viewLayout.setTitle(c.oldTitle);
+            cabrillo.viewLayout.setNavigationBarButtons();
+            cabrillo.viewLayout.setBottomButtons();
+        }
+    }
+
+    function displayCabrilloElements() {
+        if (c.isNative) {
+            if (typeof cabrillo.viewLayout.getTitle == 'function') {
+                cabrillo.viewLayout.getTitle().then(function(title) {
+                    c.oldTitle = title;
+                    cabrillo.viewLayout.setTitle($scope.m.saveDraft);
+                });
+            }
+
+            cabrillo.viewLayout.hideBackButton();
+
+            cabrillo.viewLayout.setNavigationBarButtons([{
+                title: $scope.m.cancel,
+                enabled: true
+            }], function() {
+                c.cancel();
+            });
+
+            var buttons = [{
+                title: $scope.m.saveDraft,
+                enabled: true,
+                backgroundColor: $scope.data.sys_properties.isPolaris == "true" ? null : $scope.data.sys_properties.mobileNativeColor,
+                textColor: $scope.data.sys_properties.isPolaris == "true" ? null : '#FFFFFF'
+            }];
+
+            cabrillo.viewLayout.setBottomButtons(buttons, function() {
+                c.save();
+            });
+        }
+    }
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;sc-item-save&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Catalog item save&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    data.isMEE = options.native_mobile == 'true';
+    data.draftName = options.draftName;
+    data.modalMessage = options.message;
+	data.modalInfoMessage = options.infoMessage;
+
+    var m = data.msgs = {};
+    m.saveDraft = gs.getMessage("Save draft");
+    m.closeModal = gs.getMessage("Close modal");
+    m.cancel = gs.getMessage("Cancel");
+    m.save = gs.getMessage("Save");
+    m.label = gs.getMessage("Save draft as");
+    m.maxLengthExceededMsg = gs.getMessage("Draft Item name should not exceed 200 characters.");
+    m.mandatoryMessage = gs.getMessage("Draft Item name should not be empty.");
+
+    data.sys_properties = {
+        mobileNativeColor: gs.getProperty("glide.sc.mobile.primary_color", "#1f8476"),
+        isPolaris: gs.getProperty("glide.ui.polaris.experience", "false")
+    };
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-08-22 03:01:54&lt;/sys_created_on&gt;&lt;sys_id&gt;2654147577303110121e8f1a5b5a9990&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Catalog item save&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Service Catalog (do not activate...see plugin description)" source="com.glide.service-portal.service-catalog"&gt;f152659d30643210559066cad9e252c4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_2654147577303110121e8f1a5b5a9990&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-08-31 05:05:21&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div id="sc_cat_item_save" ng-class="{'panel panel-default': !c.isNative}"&gt;
+   &lt;div ng-if="::!c.isNative" class="modal-header"&gt;
+      &lt;button type="button" class="close pull-right" ng-click="c.cancel()" data-toggle="tooltip" data-placement="bottom" title="{{m.closeModal}}" aria-label="{{m.closeModal}}" role="button" autofocus&gt;×&lt;/button&gt;
+      &lt;h2 class="modal-title h4"&gt;{{m.saveDraft}}&lt;/h2&gt;
+   &lt;/div&gt; 
+   &lt;div class="modal-body"&gt;
+     &lt;p ng-if="::(c.data.modalInfoMessage &amp;&amp; !c.isNative)" class="alert alert-info" role="alert"&gt;{{c.data.modalInfoMessage}}&lt;/p&gt;
+     &lt;p ng-bind-html="::c.data.modalMessage"&gt;&lt;/p&gt;
+     &lt;p ng-if="::(c.errorMessage &amp;&amp; !c.isNative)" class="alert alert-danger" role="alert"&gt;{{c.errorMessage}}&lt;/p&gt;
+      &lt;form&gt;
+         &lt;div class="form-group"&gt;
+            &lt;label for="draft_item_name" &gt;&lt;span class="field-decorations"&gt;&lt;span class="fa fa-asterisk mandatory sp-field-label-padding" title="Required"&gt;&lt;/span&gt;{{m.label}}&lt;/span&gt;&lt;/label&gt;
+            &lt;input sn-focus="true" ng-model="c.data.draftName" id="draft_item_name" type="text" class="form-control" required="true" &gt;
+         &lt;/div&gt;
+      &lt;/form&gt;
+      &lt;div ng-if="::!c.isNative" class="modal-footer"&gt;
+         &lt;button  class="btn btn-default" ng-click="c.cancel()" &gt;{{m.cancel}}&lt;/button&gt;
+         &lt;button  class="btn btn-default  btn-primary" ng-click="c.save()" ng-disabled="!c.data.draftName"&gt;{{m.save}}&lt;/button&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-27 12:16:25</sys_created_on>
+        <sys_id>3e57704283c6b69078c11a30ceaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fa57b80283c6b69078c11a30ceaad32e</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_3e57704283c6b69078c11a30ceaad3be</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 12:16:25</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

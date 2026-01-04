@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "conditionals": null,
+        "definition": {
+            "id": "39dc3c19bd4d123411e95151c0c2b31a",
+            "type": "MACROPONENT"
+        },
+        "elementId": "kpi_details_1",
+        "elementLabel": "KPI Details 1",
+        "eventMappings": [
+            {
+                "eventMappingId": "clemqpffaagaaeewddddbhhvccffoeewgdii",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_kpi_details_con.SN_KPI_DETAILS#FORMULA_COMPONENT_CLICKED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_kpi_details_con.SN_KPI_DETAILS#FORMULA_COMPONENT_CLICKED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": null,
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": {
+                            "apiName": "x_1850706_govsma_0.NAV_ITEM_SELECTED_RELAY_77334e5a83427a9078c11a30ceaad32a",
+                            "payload": {
+                                "container": {
+                                    "external": null,
+                                    "fields": {
+                                        "container": {
+                                            "uuid": {
+                                                "binding": {
+                                                    "address": [
+                                                        "indicatorSysid"
+                                                    ]
+                                                },
+                                                "type": "EVENT_PAYLOAD_BINDING"
+                                            }
+                                        },
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "multiInstField": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "params": {
+                                        "container": {
+                                            "breakdowns": {
+                                                "binding": {
+                                                    "address": [
+                                                        "breakdowns"
+                                                    ]
+                                                },
+                                                "type": "EVENT_PAYLOAD_BINDING"
+                                            },
+                                            "domain": {
+                                                "binding": {
+                                                    "address": [
+                                                        "domain"
+                                                    ]
+                                                },
+                                                "type": "EVENT_PAYLOAD_BINDING"
+                                            },
+                                            "scoreDate": {
+                                                "binding": {
+                                                    "address": [
+                                                        "scoreDate"
+                                                    ]
+                                                },
+                                                "type": "EVENT_PAYLOAD_BINDING"
+                                            }
+                                        },
+                                        "type": "MAP_CONTAINER"
+                                    },
+                                    "passiveNavigation": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "redirect": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "route": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "ac_kpi_details"
+                                    },
+                                    "targetRoute": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "title": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "KPI Details"
+                                    }
+                                },
+                                "type": "MAP_CONTAINER"
+                            },
+                            "sysId": "d8582a2fc7601110ed6cdd34f2c260f1"
+                        },
+                        "operation": null,
+                        "targetId": "clemqpffaagaaeeweeddbhhvxvrcszpe",
+                        "type": "EVENT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "clpqvpyggiaaddrfddbhhtzaaxiwiipcc",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_kpi_details_con.SN_KPI_DETAILS#RECORD_LIST_ROW_CLICKED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_kpi_details_con.SN_KPI_DETAILS#RECORD_LIST_ROW_CLICKED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            },
+                            "sysId": "bf334e5a83427a9078c11a30ceaad37f"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "clpqvpyggiaaddrgddbhhtbbrmubjjjl",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            }
+        ],
+        "extensionPoints": [],
+        "isHero": false,
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "isNonDestructive": false,
+        "items": [],
+        "preset": null,
+        "propertyValues": {
+            "aggregate": {
+                "binding": {
+                    "address": [
+                        "aggregate"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "breakdowns": {
+                "binding": {
+                    "address": [
+                        "breakdowns"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "domain": {
+                "binding": {
+                    "address": [
+                        "domain"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "endDateProp": {
+                "binding": {
+                    "address": [
+                        "endDate"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "indicatorSysid": {
+                "binding": {
+                    "address": [
+                        "uuid"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "kpiDetailsView": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "panel": {
+                "binding": {
+                    "address": [
+                        "panel"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "recordsListView": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "operation": {
+                                    "left": {
+                                        "binding": {
+                                            "address": [
+                                                "listView"
+                                            ],
+                                            "category": "props"
+                                        },
+                                        "type": "CONTEXT_BINDING"
+                                    },
+                                    "operator": "EQUAL",
+                                    "right": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "-1"
+                                    }
+                                },
+                                "type": "BINARY"
+                            },
+                            "",
+                            {
+                                "binding": {
+                                    "address": [
+                                        "listView"
+                                    ],
+                                    "category": "props"
+                                },
+                                "type": "CONTEXT_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "IF"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "scoreDate": {
+                "binding": {
+                    "address": [
+                        "scoreDate"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "showCompareRecords": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "showHorizontalStatisticOrientation": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "showRealTime": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "showRecordQuickEdit": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "showRecordsView": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "showTargetBadge": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "startDateProp": {
+                "binding": {
+                    "address": [
+                        "startDate"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "statisticsOrientation": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "user": {
+                "binding": {
+                    "address": [
+                        "user"
+                    ],
+                    "category": "session"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "268e647553121010c495ddeeff7b1250",
+            "type": "COMPOSITE"
+        },
+        "dependencies": {},
+        "elementId": "look_up_polaris",
+        "elementLabel": "Look Up Polaris",
+        "eventMappings": [],
+        "inputValues": {
+            "properties": {
+                "type": "JSON_LITERAL",
+                "value": "glide.ui.polaris.experience"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description>Provides an exploratory view of indicators for detailed analysis. It lets users see trends, predictions, breakdowns, and associated records for a specific indicator. The KPI Details page also enables users to aggregate changes in indicators into discrete time intervals by selecting a time aggregation.</description>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>b7334e5a83427a9078c11a30ceaad398</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "kpi_details_1",
+                "styles": {
+                    "height": "100%"
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "flex-direction": "column",
+            "height": "100%"
+        },
+        "templateId": null,
+        "type": "flex"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Default</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "description": "",
+        "fieldType": "string",
+        "label": "endDate",
+        "mandatory": false,
+        "name": "endDate",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "label": "startDate",
+        "mandatory": false,
+        "name": "startDate",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": null,
+        "fieldType": "string",
+        "label": "aggregate",
+        "mandatory": false,
+        "name": "aggregate",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": null,
+        "fieldType": "string",
+        "label": "domain",
+        "mandatory": false,
+        "name": "domain",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "label": "Breakdowns",
+        "mandatory": false,
+        "name": "breakdowns",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": null,
+        "fieldType": "string",
+        "label": "scoreDate",
+        "mandatory": false,
+        "name": "scoreDate",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "label": "uuid",
+        "mandatory": false,
+        "name": "uuid",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "Record list view when Show records is enabled",
+        "fieldType": "string",
+        "label": "listView",
+        "mandatory": false,
+        "name": "listView",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "",
+        "fieldType": "string",
+        "id": "clmjccjqjjtaaccglddbiiiiyoydjpac",
+        "inherited": false,
+        "label": "panel",
+        "mandatory": false,
+        "name": "panel",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[]</state_properties>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 12:26:28</sys_created_on>
+        <sys_id>77334e5a83427a9078c11a30ceaad32a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Default</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_macroponent_77334e5a83427a9078c11a30ceaad32a</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 12:26:29</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="delete_multiple" query="documentkey=77334e5a83427a9078c11a30ceaad32a"/>
+</record_update>

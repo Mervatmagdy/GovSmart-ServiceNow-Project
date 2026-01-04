@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:d1d25f4683317a1078c11a30ceaad336:node:5bd825543c49446c85acc792b74bf4cf:field:0 {0}</key>
+        <language>en</language>
+        <message>**Hi** **{0}****☺️**
+**Welcome To GovAssist !  How i can help You Today?**</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 14:36:37</sys_created_on>
+        <sys_id>6b54670a83b17a1078c11a30ceaad322</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>va:topic:d1d25f4683317a1078c11a30ceaad336:node:5bd825543c49446c85acc792b74bf4cf:field:0 {0}</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ui_message_6b54670a83b17a1078c11a30ceaad322</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 14:57:18</sys_updated_on>
+    </sys_ui_message>
+</record_update>

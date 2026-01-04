@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__5077a94092ca46d7a129f45c82bcf883">2cb4d8de83f57a1078c11a30ceaad3d4</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"8f11c00387624b4b9a62bd74c6a20386","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"8f11c00387624b4b9a62bd74c6a20386"}],"goals":[{"name":"primary","trigger_id":"8f11c00387624b4b9a62bd74c6a20386","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"0943f8b1ea50446ebd0bef4f1b1fe3e6","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"6449938fc594477cad6dd59d87e49ec8","name":"End","expert_mode":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"959eeb9785104dddaa88c0127ebb2630","name":"four services","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"e0d75254a67e4e23bfc253e6ff8b9d00","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which service are you interested in?\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"National ID Card Application","expression":{"type":"Applicability","mode":"query","value":"four_services=National ID Card Application"},"id":"cff44d0abcbb4e6bb70d529076952266","name":"National ID Card Application","expert_mode":false},{"type":"Branch","label":"Renew the national ID card","expression":{"type":"Applicability","mode":"query","value":"four_services=Renew the national ID card"},"id":"552ff9fa33c94cf380e0fc580db3ca5f","name":"Renew the national ID card","expert_mode":false},{"type":"Branch","label":"Family registration extract","expression":{"type":"Applicability","mode":"query","value":"four_services=Family registration extract"},"id":"c13d6a29b36d4d868f36dcb36a8ba685","name":"Family registration extract","expert_mode":false},{"type":"Branch","label":"Renew your driver license","expression":{"type":"Applicability","mode":"query","value":"four_services=Renew your driver's license"},"id":"0eb2edd91fb9439284db3ff0a0051be8","name":"Renew your driver license","expert_mode":false}],"id":"0d0c8b0ec0e64d24b0074cc2c45fc5f2","goal_id":"primary","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"88713d4377f441cbb44757028683bd21","name":"ImplicitEnd__03ae788433c94a91bcae829e7860af6f","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"3dfb1eb32c134970973e644babf65748","name":"ImplicitEnd__30368c2df993469588d2e1a8e2f4064d","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","id":"21f99824d25040739aa119e6c904853c","name":"ImplicitEnd__7cfbad42d2bc4e8f957bfa3c075e7a4f","expert_mode":false},{"type":"ReferenceChoiceInputPrompt","mode":"glide_record","id":"6c9c32c6fab74f6693e5582dbc5e7929","name":"show all required docs","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"b5f5c32f550e4f9d935b080834530441","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"The Documents you Should have is:\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"metadataScript":"","cardName":"","cardFields":[],"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"expression_mode":"simple","no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"not found\", vaContext.getRequesterLang())"},"condition":{"type":"Condition","mode":"glide_query","value":"service_type=Renew your driver's license"},"description":""}],"edges":[{"type":"Edge","source_node_id":"0943f8b1ea50446ebd0bef4f1b1fe3e6","target_node_id":"959eeb9785104dddaa88c0127ebb2630","id":"51dce57b2c20409b948ba73b01ba03ff"},{"type":"Edge","source_node_id":"959eeb9785104dddaa88c0127ebb2630","target_node_id":"0d0c8b0ec0e64d24b0074cc2c45fc5f2","id":"57b6ac260eea4d05b5cc6509a23255ee"},{"type":"Edge","source_node_id":"0d0c8b0ec0e64d24b0074cc2c45fc5f2","target_node_id":"6449938fc594477cad6dd59d87e49ec8","branch_id":"cff44d0abcbb4e6bb70d529076952266","id":"77be69dfc424459db5bcd8615e5ffa03","name":"cff44d0abcbb4e6bb70d529076952266"},{"type":"Edge","source_node_id":"0d0c8b0ec0e64d24b0074cc2c45fc5f2","target_node_id":"88713d4377f441cbb44757028683bd21","branch_id":"552ff9fa33c94cf380e0fc580db3ca5f","id":"9eb3c83fc5d04f4d9e1eaf98026b9073","name":"552ff9fa33c94cf380e0fc580db3ca5f"},{"type":"Edge","source_node_id":"0d0c8b0ec0e64d24b0074cc2c45fc5f2","target_node_id":"21f99824d25040739aa119e6c904853c","branch_id":"c13d6a29b36d4d868f36dcb36a8ba685","id":"b37392a989584727b6d0d3c51c713d44","name":"c13d6a29b36d4d868f36dcb36a8ba685"},{"type":"Edge","source_node_id":"0d0c8b0ec0e64d24b0074cc2c45fc5f2","target_node_id":"6c9c32c6fab74f6693e5582dbc5e7929","branch_id":"0eb2edd91fb9439284db3ff0a0051be8","id":"59c5fb5fc0634b47a37d6ea644edb721","name":"0eb2edd91fb9439284db3ff0a0051be8"},{"type":"Edge","source_node_id":"6c9c32c6fab74f6693e5582dbc5e7929","target_node_id":"3dfb1eb32c134970973e644babf65748","id":"350f8db1188840919d45d65afcd3d30a"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Renew your driver's license","element":"Renew your driver's license"},{"name":"Family registration extract","element":"Family registration extract"},{"name":"National ID Card Application","element":"National ID Card Application"},{"name":"Renew the national ID card","element":"Renew the national ID card"}],"id":"e0d75254a67e4e23bfc253e6ff8b9d00","name":"four_services","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"Four Services"},{"type":"Reference","table":"x_1850706_govsma_0_government_services","reference_qualifier_condition":"service_type=Renew your driver's license","auto_select":false,"id":"b5f5c32f550e4f9d935b080834530441","name":"show_all_required_docs","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"e0e99de183fdf21078c11a30ceaad3e5","library-usage":{"type":"Library","input-parameters":[],"return-values-mapping":[]},"domain":"global","topic_type":"TOPIC_BLOCK","channels":[],"dialog_acts_enabled":false,"id":"1612878e837d3a1078c11a30ceaad39a","name":"_PRVW__5077a94092ca46d7a129f45c82bcf883","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"a5ce18a1536b101024faddeeff7b12bb"},{"name":null,"visible":false,"sysId":"059dcf85d8675010fa9b0745d3ebb71b"},{"name":null,"visible":false,"sysId":"3efd22da0b203300a1b16c2367673a10"},{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"}],"triggerable_by_notification":false,"description":"guides the user through the four services and returns the required documents","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Service Requirements Guide","library":true,"csTopicId":"7693474683bd3a1078c11a30ceaad377","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>1612878e837d3a1078c11a30ceaad39a</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "0943f8b1ea50446ebd0bef4f1b1fe3e6": {
+          "id": "0943f8b1ea50446ebd0bef4f1b1fe3e6",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "parameters": [],
+          "variableIds": []
+        },
+        "6449938fc594477cad6dd59d87e49ec8": {
+          "id": "6449938fc594477cad6dd59d87e49ec8",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "959eeb9785104dddaa88c0127ebb2630": {
+          "name": "four services",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which service are you interested in?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "e0d75254a67e4e23bfc253e6ff8b9d00",
+          "detailDescription": "",
+          "id": "959eeb9785104dddaa88c0127ebb2630",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "0d0c8b0ec0e64d24b0074cc2c45fc5f2": {
+          "id": "0d0c8b0ec0e64d24b0074cc2c45fc5f2",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "88713d4377f441cbb44757028683bd21": {
+          "id": "88713d4377f441cbb44757028683bd21",
+          "stepType": "ImplicitEnd"
+        },
+        "3dfb1eb32c134970973e644babf65748": {
+          "id": "3dfb1eb32c134970973e644babf65748",
+          "stepType": "ImplicitEnd"
+        },
+        "21f99824d25040739aa119e6c904853c": {
+          "id": "21f99824d25040739aa119e6c904853c",
+          "stepType": "ImplicitEnd"
+        },
+        "6c9c32c6fab74f6693e5582dbc5e7929": {
+          "name": "show all required docs",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "The Documents you Should have is:"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "b5f5c32f550e4f9d935b080834530441",
+          "detailDescription": "",
+          "id": "6c9c32c6fab74f6693e5582dbc5e7929",
+          "stepType": "ReferenceChoicePrompt",
+          "mode": "glide_record",
+          "script": "",
+          "metadataScript": "",
+          "cardData": {},
+          "isMultipleSelect": false,
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "not found"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "service_type=Renew your driver's license"
+          },
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        }
+      },
+      "edges": [
+        {
+          "id": "51dce57b2c20409b948ba73b01ba03ff",
+          "edgeType": "Edge",
+          "source": "0943f8b1ea50446ebd0bef4f1b1fe3e6",
+          "target": "959eeb9785104dddaa88c0127ebb2630",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "57b6ac260eea4d05b5cc6509a23255ee",
+          "edgeType": "Edge",
+          "source": "959eeb9785104dddaa88c0127ebb2630",
+          "target": "0d0c8b0ec0e64d24b0074cc2c45fc5f2",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "77be69dfc424459db5bcd8615e5ffa03",
+          "edgeType": "Branch",
+          "source": "0d0c8b0ec0e64d24b0074cc2c45fc5f2",
+          "target": "6449938fc594477cad6dd59d87e49ec8",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.four_services=National ID Card Application",
+            "mode": "query"
+          },
+          "label": "National ID Card Application"
+        },
+        {
+          "id": "9eb3c83fc5d04f4d9e1eaf98026b9073",
+          "edgeType": "Branch",
+          "source": "0d0c8b0ec0e64d24b0074cc2c45fc5f2",
+          "target": "88713d4377f441cbb44757028683bd21",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.four_services=Renew the national ID card",
+            "mode": "query"
+          },
+          "label": "Renew the national ID card"
+        },
+        {
+          "id": "b37392a989584727b6d0d3c51c713d44",
+          "edgeType": "Branch",
+          "source": "0d0c8b0ec0e64d24b0074cc2c45fc5f2",
+          "target": "21f99824d25040739aa119e6c904853c",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.four_services=Family registration extract",
+            "mode": "query"
+          },
+          "label": "Family registration extract"
+        },
+        {
+          "id": "59c5fb5fc0634b47a37d6ea644edb721",
+          "edgeType": "Branch",
+          "source": "0d0c8b0ec0e64d24b0074cc2c45fc5f2",
+          "target": "6c9c32c6fab74f6693e5582dbc5e7929",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.four_services=Renew your driver's license",
+            "mode": "query"
+          },
+          "label": "Renew your driver license"
+        },
+        {
+          "id": "350f8db1188840919d45d65afcd3d30a",
+          "edgeType": "Edge",
+          "source": "6c9c32c6fab74f6693e5582dbc5e7929",
+          "target": "3dfb1eb32c134970973e644babf65748",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "e0d75254a67e4e23bfc253e6ff8b9d00": {
+      "id": "e0d75254a67e4e23bfc253e6ff8b9d00",
+      "name": "four_services",
+      "label": "Four Services",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Renew your driver's license",
+          "value": "Renew your driver's license"
+        },
+        {
+          "label": "Family registration extract",
+          "value": "Family registration extract"
+        },
+        {
+          "label": "National ID Card Application",
+          "value": "National ID Card Application",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Renew the national ID card",
+          "value": "Renew the national ID card",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "959eeb9785104dddaa88c0127ebb2630",
+      "isHidden": false
+    },
+    "b5f5c32f550e4f9d935b080834530441": {
+      "id": "b5f5c32f550e4f9d935b080834530441",
+      "name": "show_all_required_docs",
+      "label": "Show All Required Docs",
+      "varType": "reference",
+      "table": "x_1850706_govsma_0_government_services",
+      "category": "vaInputs",
+      "autoSelect": false,
+      "autoSelectExpression": "",
+      "nodeId": "6c9c32c6fab74f6693e5582dbc5e7929",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>_PRVW__5077a94092ca46d7a129f45c82bcf883</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 18:07:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a0b4d8de83f57a1078c11a30ceaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_cb_design_topic_a0b4d8de83f57a1078c11a30ceaad3da</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 18:07:46</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

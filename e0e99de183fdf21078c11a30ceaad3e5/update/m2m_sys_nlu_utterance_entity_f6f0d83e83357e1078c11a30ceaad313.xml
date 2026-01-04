@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"start":23,"end":29,"annotatedString":"How could I erase some {{phrase=\"members\"}} from a distribution list","cat":"Other"}]</annotation>
+        <entity display_value="userToRemove">52e01cfa83357e1078c11a30ceaad303</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:08:30</sys_created_on>
+        <sys_id>f6f0d83e83357e1078c11a30ceaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>userToRemove.How could I erase some members from a distribution list</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_f6f0d83e83357e1078c11a30ceaad313</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:08:30</sys_updated_on>
+        <utterance display_value="How could I erase some members from a distribution list">36f0d83e83357e1078c11a30ceaad30f</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

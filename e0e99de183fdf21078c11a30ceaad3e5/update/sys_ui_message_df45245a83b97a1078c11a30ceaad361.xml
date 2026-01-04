@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:1612878e837d3a1078c11a30ceaad39a:node:ab1364cbe06f4b84adebad923b33e8e8:field:0</key>
+        <language>en</language>
+        <message>**Steps and Required Documents for Renewing a Driver's License:**
+
+
+1.  Go to the relevant traffic unit according to your address as listed on your national ID card.
+2. Submit a copy of your national ID card and present the original for verification.
+3. Fill out Form 256 (driver’s license application form).
+4. Submit a copy of your graduation certificate and present the original.
+5. Undergo a medical examination to obtain a certificate of good vision and internal health.
+6. Submit four recent passport-size photos with a white background.
+7. Submit a stamped medical certificate from a hospital confirming good vision and no internal diseases.
+8. Submit the license renewal file from the relevant traffic department.
+9. Submit a certificate of clearance (no traffic violations).
+10. Pay the required fees and have your photo taken at the traffic unit.
+11. Receive the renewed driver’s license.
+
+**Driver's License Renewal Fees for 2025:**
+
+1. • The renewal fee for a private driver's license starts at 1,105 EGP for applicants with no traffic violations.
+
+**Detailed Steps to Renew a Private Driver’s License:**
+
+1. Obtain a traffic violation certificate (50 EGP + violation fees).
+2. Undergo a medical examination at the traffic unit (300 EGP).
+3. Purchase the application form (125 EGP).
+4. Take the driver’s license photo at the photo booth.
+5. Submit all required documents at the designated window.
+6. Pay 630 EGP in taxes via Visa.
+7. Submit the tax payment receipt and send the file to the printing unit.
+8. Receive the renewed driver’s license.
+
+**Requirements for Renewing a Driver's License:**
+
+1. Submit a drug test certificate issued by competent authorities.
+2. • The applicant must not have a final conviction involving moral turpitude or dishonesty.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 19:20:19</sys_created_on>
+        <sys_id>df45245a83b97a1078c11a30ceaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>va:topic:1612878e837d3a1078c11a30ceaad39a:node:ab1364cbe06f4b84adebad923b33e8e8:field:0</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ui_message_df45245a83b97a1078c11a30ceaad361</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 19:20:19</sys_updated_on>
+    </sys_ui_message>
+</record_update>

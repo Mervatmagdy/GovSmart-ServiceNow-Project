@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>layout</category>
+        <description/>
+        <media_type/>
+        <name>approval_managers</name>
+        <scoped_name>x_1850706_govsma_0_approval_managers</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-04 12:46:00</sys_created_on>
+        <sys_id>63b60e2083debad078c11a30ceaad3f0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>approval_managers</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ui_macro_63b60e2083debad078c11a30ceaad3f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 13:17:10</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <style>
+        #approve_manager{
+            background-color: #28a745;
+            color: #ffffff;
+        }
+
+        #reject_manager{
+            background-color: #dc3545;
+            color: #ffffff;
+        }
+    </style>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

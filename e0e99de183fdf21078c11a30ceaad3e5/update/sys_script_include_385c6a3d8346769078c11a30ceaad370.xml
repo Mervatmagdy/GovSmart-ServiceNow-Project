@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1850706_govsma_0.GetEmployeeTaskState</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetEmployeeTaskState</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetEmployeeTaskState = Class.create();
+GetEmployeeTaskState.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getTaskState: function () {
+
+        var requestSysId = this.getParameter('sysparm_request_sys_id');
+        if (!requestSysId) {
+            return '';
+        }
+
+        var gr = new GlideRecord('x_1850706_govsma_0_empl_task');
+        gr.addQuery('requester_data', requestSysId); 
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('state');
+        }
+
+        return '';
+    },
+
+    type: 'GetEmployeeTaskState'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 02:11:19</sys_created_on>
+        <sys_id>385c6a3d8346769078c11a30ceaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmployeeTaskState</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_include_385c6a3d8346769078c11a30ceaad370</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 02:11:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

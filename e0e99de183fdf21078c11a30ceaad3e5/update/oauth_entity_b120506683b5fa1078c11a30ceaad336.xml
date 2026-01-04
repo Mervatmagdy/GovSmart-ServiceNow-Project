@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>60</auth_code_lifespan>
+        <auth_url/>
+        <certificate_url/>
+        <client_id>00c5e62f8c8a4394ac62423d1526b3ef</client_id>
+        <client_secret>﷞﷟﷒8051d0e683b5fa1078c11a30ceaad370﷬﷔1﷬﷭IU2c1sCeWJLtjRl6jY1JiQ==LO4WoMX9ga6zZapZJqQdRQ00UpKS3KBz6XM=﷮﷯</client_secret>
+        <client_type/>
+        <client_uuid>7120506683b5fa1078c11a30ceaad336</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>password</default_grant_type>
+        <extend_refresh_token_expiry>false</extend_refresh_token_expiry>
+        <id_token_lifespan>86400</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url>https://cdn.zappy.app/d63b44a595100fcd1571372934b3448e.jpg</logo_url>
+        <message_signature_lifespan>60</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>testOAuth1</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>true</public_client>
+        <redirect_url>https://zapier.com/dashboard/auth/oauth/return/ServiceNowCLIAPI/</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt/>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sub_claim>user_name</sub_claim>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-16 12:31:28</sys_created_on>
+        <sys_id>b120506683b5fa1078c11a30ceaad336</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>testOAuth1</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>oauth_entity_b120506683b5fa1078c11a30ceaad336</sys_update_name>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-16 12:36:08</sys_updated_on>
+        <token_format>opaque</token_format>
+        <token_url/>
+        <type>client</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <use_pkce>false</use_pkce>
+        <user/>
+    </oauth_entity>
+</record_update>

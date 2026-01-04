@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE">
+        <annotation>[{"start":17,"end":26,"annotatedString":"I want to modify {{phrase=\"CHG1234567\"}}","cat":null}]</annotation>
+        <entity display_value="changenumber">4ae0d8fa83357e1078c11a30ceaad3a3</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:08:16</sys_created_on>
+        <sys_id>17e0dcfa83357e1078c11a30ceaad3c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>changenumber.I want to modify CHG1234567</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_17e0dcfa83357e1078c11a30ceaad3c3</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:08:16</sys_updated_on>
+        <utterance display_value="I want to modify CHG1234567">53e0dcfa83357e1078c11a30ceaad3bf</utterance>
+    </m2m_sys_nlu_utterance_entity>
+</record_update>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__498ec081644a4aa59ed456db7e94cd7c">52d38f4683bd3a1078c11a30ceaad38a</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"beb5c50b9a464b1b9536777baa4bdb4c","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"beb5c50b9a464b1b9536777baa4bdb4c"}],"goals":[{"name":"primary","trigger_id":"beb5c50b9a464b1b9536777baa4bdb4c","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:1612878e837d3a1078c11a30ceaad39a:node:0943f8b1ea50446ebd0bef4f1b1fe3e6:field:GreetingMsg {0}\", vaContext.getRequesterLang(), [vaInputs.user.first_name.getDisplayValue()])"},"id":"0943f8b1ea50446ebd0bef4f1b1fe3e6","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"6449938fc594477cad6dd59d87e49ec8","name":"End","expert_mode":false}],"edges":[{"type":"Edge","source_node_id":"0943f8b1ea50446ebd0bef4f1b1fe3e6","target_node_id":"6449938fc594477cad6dd59d87e49ec8","id":"51dce57b2c20409b948ba73b01ba03ff"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"e0e99de183fdf21078c11a30ceaad3e5","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"1612878e837d3a1078c11a30ceaad39a","name":"_PRVW__498ec081644a4aa59ed456db7e94cd7c","key_phrases":["Service Requirements Guide","Required Documents","Guide for Governement Services Requirements","All papers and Documents that user will need in his choosen Service"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"a5ce18a1536b101024faddeeff7b12bb"},{"name":null,"visible":false,"sysId":"059dcf85d8675010fa9b0745d3ebb71b"},{"name":null,"visible":false,"sysId":"3efd22da0b203300a1b16c2367673a10"},{"name":null,"visible":false,"sysId":"0a9d30bdebc31110add0ddde23522847"}],"triggerable_by_notification":false,"description":"guides the user through the four services and returns the required documents","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"Service Requirements Guide","library":false,"csTopicId":"7693474683bd3a1078c11a30ceaad377","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>1612878e837d3a1078c11a30ceaad39a</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.82",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "0943f8b1ea50446ebd0bef4f1b1fe3e6": {
+          "id": "0943f8b1ea50446ebd0bef4f1b1fe3e6",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hi "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": " ☺️"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Welcome to GovAssist !"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "6449938fc594477cad6dd59d87e49ec8": {
+          "id": "6449938fc594477cad6dd59d87e49ec8",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "51dce57b2c20409b948ba73b01ba03ff",
+          "edgeType": "Edge",
+          "source": "0943f8b1ea50446ebd0bef4f1b1fe3e6",
+          "target": "6449938fc594477cad6dd59d87e49ec8",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <name>_PRVW__498ec081644a4aa59ed456db7e94cd7c</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 12:14:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5ad38f4683bd3a1078c11a30ceaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_cb_design_topic_5ad38f4683bd3a1078c11a30ceaad38f</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 12:14:33</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

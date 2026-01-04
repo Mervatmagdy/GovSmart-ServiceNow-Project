@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="KPI Details">77334e5a83427a9078c11a30ceaad32a</macroponent>
+        <name>Navigate to classic incident page</name>
+        <preset/>
+        <required_translations>[
+    {
+        "message": "Form Record"
+    }
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const isPolarisOn = api.data.look_up_polaris.properties.booleanValue;
+    const coreUIParam = `${event.payload.table}.do?sys_id=${event.payload.sys_id || '-1'}`;
+
+    if (isPolarisOn) {
+
+        const sendPayload = {
+            context: {
+                path: 'now/nav/ui'
+            },
+            params: {
+                target: coreUIParam,
+            },
+            route: 'classic',
+            title: event.payload.listTitle || helpers.translate('Form Record'),
+        };
+        api.emit('NAV_ITEM_SELECTED', sendPayload);
+    } else {
+
+        helpers.timing.setTimeout(function() {
+            const urlPrefix = '/nav_to.do?uri=/';
+            this.open(urlPrefix + coreUIParam, '_self');
+        });
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 12:26:28</sys_created_on>
+        <sys_id>bf334e5a83427a9078c11a30ceaad37f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Navigate to classic incident page</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_client_script_bf334e5a83427a9078c11a30ceaad37f</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 12:26:28</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>
