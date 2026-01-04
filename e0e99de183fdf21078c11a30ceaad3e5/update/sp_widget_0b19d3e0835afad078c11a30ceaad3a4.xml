@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* إزالة الحواف الافتراضية */&#13;
+.gov-navbar {&#13;
+  background-color: #003366; /* لون أزرق داكن رسمي */&#13;
+  border: none;&#13;
+  border-radius: 0;&#13;
+  margin-bottom: 0;&#13;
+  min-height: 60px; /* زيادة الارتفاع قليلاً */&#13;
+}&#13;
+&#13;
+/* تنسيق العلامة التجارية */&#13;
+.navbar-brand {&#13;
+  height: 60px;&#13;
+  line-height: 30px;&#13;
+  color: #ffffff !important;&#13;
+  font-weight: 700;&#13;
+  font-size: 20px;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+}&#13;
+&#13;
+.brand-icon {&#13;
+  margin-right: 10px;&#13;
+  font-size: 24px;&#13;
+  color: #4da6ff; /* لون أفتح للأيقونة */&#13;
+}&#13;
+&#13;
+/* تنسيق الروابط */&#13;
+.gov-navbar .navbar-nav &gt; li &gt; a {&#13;
+  color: #e6e6e6 !important;&#13;
+  font-size: 14px;&#13;
+  line-height: 30px; /* لضبط المحاذاة العمودية */&#13;
+  transition: all 0.3s ease;&#13;
+}&#13;
+&#13;
+.gov-navbar .navbar-nav &gt; li &gt; a:hover,&#13;
+.gov-navbar .navbar-nav &gt; li.open &gt; a {&#13;
+  background-color: #002244 !important; /* لون أغمق عند التحويم */&#13;
+  color: #ffffff !important;&#13;
+}&#13;
+&#13;
+/* تنسيق قائمة المستخدم */&#13;
+.user-dropdown {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+}&#13;
+&#13;
+.user-icon {&#13;
+  margin-right: 8px;&#13;
+  font-size: 18px;&#13;
+}&#13;
+&#13;
+/* تنسيق القائمة المنسدلة */&#13;
+.dropdown-menu {&#13;
+  border: none;&#13;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#13;
+  border-top: 3px solid #4da6ff; /* خط ملون أعلى القائمة */&#13;
+}&#13;
+&#13;
+.dropdown-menu &gt; li &gt; a {&#13;
+  padding: 10px 20px;&#13;
+  color: #333;&#13;
+}&#13;
+&#13;
+.dropdown-menu &gt; li &gt; a:hover {&#13;
+  background-color: #f5f5f5;&#13;
+  color: #003366;&#13;
+}&#13;
+&#13;
+.dropdown-menu .fa {&#13;
+  margin-right: 10px;&#13;
+  width: 15px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+/* تنسيق زر الموبايل */&#13;
+.gov-navbar .navbar-toggle {&#13;
+  border-color: rgba(255,255,255,0.2);&#13;
+  margin-top: 13px;&#13;
+}&#13;
+.gov-navbar .navbar-toggle:hover {&#13;
+  background-color: #002244;&#13;
+}&#13;
+.gov-navbar .navbar-toggle .icon-bar {&#13;
+  background-color: #fff;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>govheader</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>govHeader</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.isLoggedIn = gs.getSession().isLoggedIn();
+  
+  if (data.isLoggedIn) {
+    data.userName = gs.getUserDisplayName();
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mina.admin</sys_created_by>
+        <sys_created_on>2026-01-04 18:29:26</sys_created_on>
+        <sys_id>0b19d3e0835afad078c11a30ceaad3a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>govHeader</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_widget_0b19d3e0835afad078c11a30ceaad3a4</sys_update_name>
+        <sys_updated_by>mina.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 18:33:30</sys_updated_on>
+        <template><![CDATA[<nav class="navbar navbar-default gov-navbar" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gov-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="?id=home">
+        <i class="fa fa-university brand-icon"></i>
+        <span class="brand-text">GovSmart Portal</span>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gov-navbar-collapse">
+      
+      <ul class="nav navbar-nav navbar-right" ng-if="data.isLoggedIn">
+        <li><a href="?id=home">Home</a></li>
+        <li><a href="?id=my_requests">My Requests</a></li>
+        
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle user-dropdown" data-toggle="dropdown">
+            <i class="fa fa-user-circle-o user-icon"></i>
+            <span class="user-name">{{data.userName}}</span> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="?id=user_profile"><i class="fa fa-address-card"></i> My Profile</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="logout.do?sysparm_goto_url=/govsmart?id=govlogin"><i class="fa fa-sign-out"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right" ng-if="!data.isLoggedIn">
+        <li><a href="?id=govlogin" class="login-link"><i class="fa fa-sign-in"></i> Login</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>]]></template>
+    </sp_widget>
+</record_update>
