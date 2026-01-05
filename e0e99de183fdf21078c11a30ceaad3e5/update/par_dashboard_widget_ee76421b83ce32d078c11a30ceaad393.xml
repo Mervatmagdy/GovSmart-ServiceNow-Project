@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">71adb957838e32d078c11a30ceaad3ca</canvas>
+        <component display_value="Donut">a2b0596cec6b9d49dd1ff9bf76b5084b</component>
+        <component_props>{"drilldownLabel":null,"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartSize":null,"showDataLabels":true,"dataLabelsType":"both","maxLabelSize":null,"truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":true,"showRegisterValue":true,"legendHorizontalAlignment":"center","legendMaxItemWidth":null,"legendExpandToFit":true,"showRegisterPercentage":true,"colorConfig":{"type":"default"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Reviewer Employee","sourceType":"table","tableOrViewName":"x_1850706_govsma_0_empl_task","filterQuery":"approval=requested^ORapproval=approved^ORapproval=rejected","reportSourceSysId":null,"preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE4NTA3MDZfZ292c21hXzBfZW1wbF90YXNrMTc2NzE5NDAxMzg4NA==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"title":null,"headerTitle":"Tasks Approval Status","headingLevel":2,"description":null,"showBorder":true,"groupByConfig":null,"bareBorder":false,"formats":null,"dataCategory":null,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE4NTA3MDZfZ292c21hXzBfZW1wbF90YXNrMTc2NzE5NDAxMzg4NA==","id":"ZEdGaWJHVjRYekU0TlRBM01EWmZaMjkyYzIxaFh6QmZaVzF3YkY5MFlYTnJNVGMyTnpFNU5EQXhNemc0TkE9PTE3NjcxOTQwMTYyNDY=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE4NTA3MDZfZ292c21hXzBfZW1wbF90YXNrMTc2NzE5NDAxMzg4NA==","groupByField":"approval","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":null,"disableRanges":false}],"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"forecastConfig":null,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"showTotalValue":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":true,"enableCustomEmptyState":false,"componentId":"ie5zcbw9","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"backgroundRefreshInterval":null,"standardFormatData":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"chartExtraConfig":null,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","startTime":null,"endTime":null,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"isComponentInView":null,"pageId":null,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"dataPassthrough","value":null,"noDebounce":true,"propLabel":"Data"}</component_props>
+        <h>26</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 15:14:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ee76421b83ce32d078c11a30ceaad393</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_widget_ee76421b83ce32d078c11a30ceaad393</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-05 13:37:17</sys_updated_on>
+        <visualization/>
+        <w>24</w>
+        <widget_props/>
+        <x>24</x>
+        <y>82</y>
+    </par_dashboard_widget>
+</record_update>
