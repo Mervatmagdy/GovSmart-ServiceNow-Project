@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">fce599e88316bad078c11a30ceaad3dd</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"lg","headingPosition":"top","sparklineStyle":"area","scoreIcon":"clock-fill","iconStyle":"background","showScoreDate":false,"chartSize":null,"useRelativeScoreTime":true,"showScoreUpdateTime":true,"showZero":true,"colorConfig":{"type":"singleColor","values":[{"color":"65b30395a9fe3dba00175667ec52620d","backgroundColor":null,"iconColor":"65b30395a9fe3dba00175667ec52620d","metric":"ZEdGaWJHVjRYekU0TlRBM01EWmZaMjkyYzIxaFh6QmZaVzF3YkY5MFlYTnJNVGMyTnpFeE1USTFOVFV3Tnc9PTE3NjcxMTEyNTc3NDQ=","rules":[]}]},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Reviewer Employee","sourceType":"table","tableOrViewName":"x_1850706_govsma_0_empl_task","filterQuery":"state=1^assignment_groupDYNAMICd6435e965f510100a9ad2572f2b47744","reportSourceSysId":null,"preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE4NTA3MDZfZ292c21hXzBfZW1wbF90YXNrMTc2NzExMTI1NTUwNw==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":true,"contextMenuActions":[],"title":null,"headerTitle":"Pending Requests","headingLevel":2,"description":null,"showBorder":true,"groupByConfig":null,"bareBorder":false,"formats":null,"dataCategory":null,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":[{"dataSource":"dGFibGV4XzE4NTA3MDZfZ292c21hXzBfZW1wbF90YXNrMTc2NzExMTI1NTUwNw==","id":"ZEdGaWJHVjRYekU0TlRBM01EWmZaMjkyYzIxaFh6QmZaVzF3YkY5MFlYTnJNVGMyTnpFeE1USTFOVFV3Tnc9PTE3NjcxMTEyNTc3NDQ=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"forecastConfig":null,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"5ag8gtdw","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"backgroundRefreshInterval":null,"standardFormatData":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"chartExtraConfig":null,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"startTime":null,"endTime":null,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"isComponentInView":null,"pageId":null,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"dataSources","value":[{"isDatabaseView":false,"allowRealTime":true,"label":"Reviewer Employee","sourceType":"table","tableOrViewName":"x_1850706_govsma_0_empl_task","filterQuery":"state=1^assignment_groupDYNAMICd6435e965f510100a9ad2572f2b47744","reportSourceSysId":null,"preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE4NTA3MDZfZ292c21hXzBfZW1wbF90YXNrMTc2NzExMTI1NTUwNw==","dataCategories":["trend","group","simple"]}],"noDebounce":true,"propLabel":"Data sources"}</component_props>
+        <h>12</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 08:54:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>09e5d9e88316bad078c11a30ceaad378</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_widget_09e5d9e88316bad078c11a30ceaad378</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-05 14:36:03</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props/>
+        <x>36</x>
+        <y>4</y>
+    </par_dashboard_widget>
+</record_update>
