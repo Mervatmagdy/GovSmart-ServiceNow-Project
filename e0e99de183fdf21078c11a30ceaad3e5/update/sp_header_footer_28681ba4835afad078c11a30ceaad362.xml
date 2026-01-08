@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>standard</category>
+        <client_script><![CDATA[api.controller = function($window) {
+  var c = this;
+
+  c.logout = function() {
+    var portalSuffix = "govsmart"; 
+    var loginPageID = "govlogin"; 
+    $window.location.href = "logout.do?sysparm_goto_url=/" + portalSuffix + "?id=" + loginPageID;
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* إزالة الحواف الافتراضية */&#13;
+.gov-navbar {&#13;
+  background-color: #003366; /* لون أزرق داكن رسمي */&#13;
+  border: none;&#13;
+  border-radius: 0;&#13;
+  margin-bottom: 0;&#13;
+  min-height: 60px; /* زيادة الارتفاع قليلاً */&#13;
+}&#13;
+&#13;
+/* تنسيق العلامة التجارية */&#13;
+.navbar-brand {&#13;
+  height: 60px;&#13;
+  line-height: 30px;&#13;
+  color: #ffffff !important;&#13;
+  font-weight: 700;&#13;
+  font-size: 20px;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+}&#13;
+&#13;
+.brand-icon {&#13;
+  margin-right: 10px;&#13;
+  font-size: 24px;&#13;
+  color: #4da6ff; /* لون أفتح للأيقونة */&#13;
+}&#13;
+&#13;
+/* تنسيق الروابط */&#13;
+.gov-navbar .navbar-nav &gt; li &gt; a {&#13;
+  color: #e6e6e6 !important;&#13;
+  font-size: 14px;&#13;
+  line-height: 30px; /* لضبط المحاذاة العمودية */&#13;
+  transition: all 0.3s ease;&#13;
+}&#13;
+&#13;
+.gov-navbar .navbar-nav &gt; li &gt; a:hover,&#13;
+.gov-navbar .navbar-nav &gt; li.open &gt; a {&#13;
+  background-color: #002244 !important; /* لون أغمق عند التحويم */&#13;
+  color: #ffffff !important;&#13;
+}&#13;
+&#13;
+/* تنسيق قائمة المستخدم */&#13;
+.user-dropdown {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+}&#13;
+&#13;
+.user-icon {&#13;
+  margin-right: 8px;&#13;
+  font-size: 18px;&#13;
+}&#13;
+&#13;
+/* تنسيق القائمة المنسدلة */&#13;
+.dropdown-menu {&#13;
+  border: none;&#13;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#13;
+  border-top: 3px solid #4da6ff; /* خط ملون أعلى القائمة */&#13;
+}&#13;
+&#13;
+.dropdown-menu &gt; li &gt; a {&#13;
+  padding: 10px 20px;&#13;
+  color: #333;&#13;
+}&#13;
+&#13;
+.dropdown-menu &gt; li &gt; a:hover {&#13;
+  background-color: #f5f5f5;&#13;
+  color: #003366;&#13;
+}&#13;
+&#13;
+.dropdown-menu .fa {&#13;
+  margin-right: 10px;&#13;
+  width: 15px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+/* تنسيق زر الموبايل */&#13;
+.gov-navbar .navbar-toggle {&#13;
+  border-color: rgba(255,255,255,0.2);&#13;
+  margin-top: 13px;&#13;
+}&#13;
+.gov-navbar .navbar-toggle:hover {&#13;
+  background-color: #002244;&#13;
+}&#13;
+.gov-navbar .navbar-toggle .icon-bar {&#13;
+  background-color: #fff;&#13;
+}&#13;
+&#13;
+&#13;
+/* 1. إعدادات الناف بار الأساسية */&#13;
+.gov-navbar {&#13;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* الأزرق الملكي */&#13;
+  border: none;&#13;
+  border-radius: 0;&#13;
+  margin-bottom: 0;&#13;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* ظل ناعم */&#13;
+  padding: 5px 0;&#13;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;&#13;
+}&#13;
+&#13;
+/* 2. اللوجو والبراند */&#13;
+.navbar-brand {&#13;
+  padding: 10px 15px;&#13;
+  height: auto;&#13;
+}&#13;
+&#13;
+.brand-wrapper {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  color: #fff;&#13;
+}&#13;
+&#13;
+.brand-icon {&#13;
+  font-size: 24px;&#13;
+  margin-right: 10px;&#13;
+  color: #4facfe; /* لون سماوي للأيقونة */&#13;
+}&#13;
+&#13;
+.brand-text {&#13;
+  font-size: 20px;&#13;
+  font-weight: 700;&#13;
+  letter-spacing: 0.5px;&#13;
+  text-transform: uppercase;&#13;
+}&#13;
+&#13;
+/* 3. الروابط العادية */&#13;
+.navbar-nav &gt; li &gt; a {&#13;
+  color: rgba(255, 255, 255, 0.85) !important;&#13;
+  font-size: 15px;&#13;
+  font-weight: 500;&#13;
+  transition: all 0.3s ease;&#13;
+  padding: 15px 18px;&#13;
+}&#13;
+&#13;
+.navbar-nav &gt; li &gt; a:hover, &#13;
+.navbar-nav &gt; li.active &gt; a {&#13;
+  color: #ffffff !important;&#13;
+  background-color: rgba(255, 255, 255, 0.1) !important; /* خلفية شفافة عند الوقوف */&#13;
+  border-radius: 4px;&#13;
+}&#13;
+&#13;
+/* 4. قائمة المستخدم (User Dropdown) */&#13;
+.user-menu .user-link {&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  padding: 10px 15px !important;&#13;
+}&#13;
+&#13;
+.user-avatar {&#13;
+  width: 32px;&#13;
+  height: 32px;&#13;
+  background: rgba(255,255,255,0.2);&#13;
+  border-radius: 50%;&#13;
+  display: flex;&#13;
+  align-items: center;&#13;
+  justify-content: center;&#13;
+  margin-right: 10px;&#13;
+}&#13;
+&#13;
+.user-name {&#13;
+  font-weight: 600;&#13;
+  margin-right: 5px;&#13;
+}&#13;
+&#13;
+/* القائمة المنسدلة */&#13;
+.dropdown-menu {&#13;
+  border: none;&#13;
+  border-radius: 8px;&#13;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);&#13;
+  padding: 10px 0;&#13;
+  margin-top: 10px;&#13;
+}&#13;
+&#13;
+.dropdown-menu &gt; li &gt; a {&#13;
+  padding: 10px 20px;&#13;
+  color: #555;&#13;
+  font-size: 14px;&#13;
+  transition: 0.2s;&#13;
+}&#13;
+&#13;
+.dropdown-menu &gt; li &gt; a:hover {&#13;
+  background-color: #f8f9fa;&#13;
+  color: #1e3c72;&#13;
+  transform: translateX(5px); /* حركة بسيطة لليمين */&#13;
+}&#13;
+&#13;
+.dropdown-menu .divider {&#13;
+  margin: 8px 0;&#13;
+  background-color: #eee;&#13;
+}&#13;
+&#13;
+.dropdown-header {&#13;
+  font-size: 11px;&#13;
+  text-transform: uppercase;&#13;
+  color: #999;&#13;
+  padding: 5px 20px;&#13;
+}&#13;
+&#13;
+.logout-link {&#13;
+  color: #e74c3c !important; /* لون أحمر للخروج */&#13;
+}&#13;
+&#13;
+/* 5. زر تسجيل الدخول (Login Button) */&#13;
+.login-btn {&#13;
+  background: #4facfe;&#13;
+  color: #fff !important;&#13;
+  border-radius: 50px; /* زر دائري */&#13;
+  padding: 8px 25px !important;&#13;
+  margin-top: 7px;&#13;
+  margin-left: 10px;&#13;
+  font-weight: 600 !important;&#13;
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);&#13;
+  transition: all 0.3s ease;&#13;
+}&#13;
+&#13;
+.login-btn:hover {&#13;
+  background: #fff !important;&#13;
+  color: #1e3c72 !important;&#13;
+  transform: translateY(-2px);&#13;
+}&#13;
+&#13;
+/* 6. تحسينات الموبايل */&#13;
+.navbar-toggle {&#13;
+  border-color: rgba(255,255,255,0.5);&#13;
+}&#13;
+.navbar-toggle .icon-bar {&#13;
+  background-color: #fff;&#13;
+}&#13;
+.navbar-toggle:hover {&#13;
+  background-color: rgba(255,255,255,0.2) !important;&#13;
+}&#13;
+&#13;
+/* حركة بسيطة للقائمة (Animation) */&#13;
+@keyframes fadeIn {&#13;
+  from { opacity: 0; transform: translateY(10px); }&#13;
+  to { opacity: 1; transform: translateY(0); }&#13;
+}&#13;
+.animated {&#13;
+  animation-duration: 0.3s;&#13;
+  animation-fill-mode: both;&#13;
+}&#13;
+.fadeIn {&#13;
+  animation-name: fadeIn;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Copy of Stock Header</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.isLoggedIn = gs.getSession().isLoggedIn();
+  
+  // بنجيب اسم الصفحة الحالية عشان نعرف إحنا فين
+  data.page_id = $sp.getParameter('id');
+
+  if (data.isLoggedIn) {
+    data.userName = gs.getUserDisplayName();
+    // ممكن مستقبلاً نجيب صورة اليوزر لو متاحة
+    // data.userPhoto = ...
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>mina.admin</sys_created_by>
+        <sys_created_on>2026-01-04 18:24:46</sys_created_on>
+        <sys_id>28681ba4835afad078c11a30ceaad362</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Copy of Stock Header</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_header_footer_28681ba4835afad078c11a30ceaad362</sys_update_name>
+        <sys_updated_by>mina.admin</sys_updated_by>
+        <sys_updated_on>2026-01-08 21:46:23</sys_updated_on>
+        <template><![CDATA[<nav class="navbar navbar-default gov-navbar" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gov-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="?id=index">
+        <div class="brand-wrapper">
+          <i class="fa fa-university brand-icon"></i>
+          <span class="brand-text">GovSmart</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="gov-navbar-collapse">
+      
+      <ul class="nav navbar-nav navbar-right" ng-if="data.isLoggedIn">
+        <li ng-class="{active: c.data.page_id == 'index'}"><a href="?id=index">Home</a></li>
+        <li ng-class="{active: c.data.page_id == 'gov_user_request'}"><a href="?id=gov_user_request">My Requests</a></li>
+        
+        <li class="dropdown user-menu">
+          <a href="javascript:void(0)" class="dropdown-toggle user-link" data-toggle="dropdown">
+            <span class="user-avatar">
+              <i class="fa fa-user"></i>
+            </span>
+            <span class="user-name">{{::data.userName}}</span> 
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu animated fadeIn">
+            <li class="dropdown-header">Account Settings</li>
+            <li><a href="?id=user_profile"><i class="fa fa-id-card-o"></i> My Profile</a></li>
+            <li><a href="?id=my_tickets"><i class="fa fa-ticket"></i> My Tickets</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="javascript:void(0)" ng-click="c.logout()" class="logout-link"><i class="fa fa-power-off"></i> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right" ng-if="!data.isLoggedIn">
+        <li>
+          <a href="?id=govlogin" class="login-btn">
+            <i class="fa fa-sign-in"></i> Login / Register
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>]]></template>
+    </sp_header_footer>
+</record_update>
