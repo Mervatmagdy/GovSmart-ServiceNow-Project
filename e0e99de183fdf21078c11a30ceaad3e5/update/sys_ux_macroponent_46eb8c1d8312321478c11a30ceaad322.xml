@@ -88,6 +88,7 @@
                                 "elementId": "record_list_header_1",
                                 "elementLabel": "Record List Header",
                                 "eventMappings": [],
+                                "isHidden": null,
                                 "preset": {
                                     "controllerElementId": "list_controller",
                                     "disabledEventTargetIds": [],
@@ -135,45 +136,9 @@
                                                 "id": "33f6672f7d096e5a32e4e96b497748e4"
                                             },
                                             "propertyValues": {
-                                                "cellEditingEnabled": {
+                                                "options": {
                                                     "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "clickableTextEnabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "columnDragDropEnabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "columnResizingEnabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "expandAllGroups": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "maxCharacters": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "rowDragDropEnabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "selectAllEnabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "selectionEnabled": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
-                                                },
-                                                "wrapCellContent": {
-                                                    "type": "JSON_LITERAL",
-                                                    "value": null
+                                                    "value": {}
                                                 }
                                             },
                                             "slot": "left",
@@ -183,10 +148,6 @@
                                             "bundleLink": {
                                                 "bundleInstanceId": "record_list_1",
                                                 "elementType": "member"
-                                            },
-                                            "defaultRoute": {
-                                                "type": "JSON_LITERAL",
-                                                "value": "4d9e0c2143efa11041505119ebb8f270"
                                             },
                                             "definition": {
                                                 "id": "MACROPONENT_VIEWPORT_HEADLESS",
@@ -273,7 +234,9 @@
                                     },
                                     {
                                         "element_id": "resizable_panes_2",
-                                        "styles": {}
+                                        "styles": {
+                                            "height": ""
+                                        }
                                     },
                                     {
                                         "element_id": "pagination_control_1",
@@ -283,8 +246,9 @@
                                 "root": null,
                                 "rules": null,
                                 "styles": {
-                                    "display": "flex",
-                                    "flex-direction": "column"
+                                    "flex-direction": "column",
+                                    "height": "100%",
+                                    "overflow-y": "hidden"
                                 },
                                 "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
                                 "type": "flex"
@@ -334,24 +298,6 @@
                     "elementId": "list_menu_1",
                     "elementLabel": "Menu 1",
                     "eventMappings": [],
-                    "isHidden": {
-                        "operation": {
-                            "operand": {
-                                "binding": {
-                                    "address": [
-                                        "list_controller",
-                                        "listMenu",
-                                        "model",
-                                        "paneProps",
-                                        "open"
-                                    ]
-                                },
-                                "type": "DATA_OUTPUT_BINDING"
-                            },
-                            "operator": "NOT"
-                        },
-                        "type": "UNARY"
-                    },
                     "preset": {
                         "controllerElementId": "list_controller",
                         "disabledEventTargetIds": [],
@@ -885,7 +831,7 @@
             },
             "listMenuConfigurationId": {
                 "type": "JSON_LITERAL",
-                "value": "eb4496cd8346fe5078c11a30ceaad32f"
+                "value": "36d84c9b83cefe9078c11a30ceaad392"
             },
             "listTitle": {
                 "type": "JSON_LITERAL",
@@ -959,7 +905,7 @@
                     "type": "JSON_LITERAL",
                     "value": {}
                 },
-                "sysId": "49912e3283c27e9078c11a30ceaad30a"
+                "sysId": "42eb8c1d8312321478c11a30ceaad328"
             },
             "conditional": null,
             "declarativeAction": null,
@@ -1004,7 +950,9 @@
         "items": [
             {
                 "element_id": "resizable_panes_1",
-                "styles": {}
+                "styles": {
+                    "height": "100%"
+                }
             }
         ],
         "root": null,
@@ -1019,7 +967,7 @@
     "version": "3.0.0"
 }</layout>
         <macroponent_dependencies/>
-        <name>Default</name>
+        <name>Admin Region List</name>
         <output_prop_mapping/>
         <props>[
     {
@@ -1071,20 +1019,31 @@
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
         <state_persistence_config/>
-        <state_properties>[]</state_properties>
+        <state_properties>[
+    {
+        "id": "x743iiP7mBkNj9ZIJBaoNmjl3",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "name": "newClientStateParam1",
+        "shape": "",
+        "valueType": "string"
+    }
+]</state_properties>
         <style_config>{}</style_config>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-12-30 03:55:57</sys_created_on>
-        <sys_id>b491ea3283c27e9078c11a30ceaad3f8</sys_id>
-        <sys_mod_count>41</sys_mod_count>
-        <sys_name>Default</sys_name>
+        <sys_created_on>2026-01-06 11:26:50</sys_created_on>
+        <sys_id>46eb8c1d8312321478c11a30ceaad322</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Admin Region List</sys_name>
         <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
         <sys_policy/>
         <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
-        <sys_update_name>sys_ux_macroponent_b491ea3283c27e9078c11a30ceaad3f8</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-06 11:04:16</sys_updated_on>
+        <sys_update_name>sys_ux_macroponent_46eb8c1d8312321478c11a30ceaad322</sys_update_name>
+        <sys_updated_by>allyson.gillispie</sys_updated_by>
+        <sys_updated_on>2026-01-06 12:31:26</sys_updated_on>
     </sys_ux_macroponent>
-    <sys_translated_text action="delete_multiple" query="documentkey=b491ea3283c27e9078c11a30ceaad3f8"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=46eb8c1d8312321478c11a30ceaad322"/>
 </record_update>

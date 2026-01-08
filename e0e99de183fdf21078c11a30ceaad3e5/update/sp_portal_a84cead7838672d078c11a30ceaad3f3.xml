@@ -30,14 +30,14 @@
         <sys_created_by>menna.admin</sys_created_by>
         <sys_created_on>2025-12-31 18:09:38</sys_created_on>
         <sys_id>a84cead7838672d078c11a30ceaad3f3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>GovSmart Citizen Portal</sys_name>
         <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
         <sys_policy/>
         <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
         <sys_update_name>sp_portal_a84cead7838672d078c11a30ceaad3f3</sys_update_name>
-        <sys_updated_by>mina.admin</sys_updated_by>
-        <sys_updated_on>2026-01-04 18:15:59</sys_updated_on>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 17:11:34</sys_updated_on>
         <theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme>
         <title>GovSmart Citizen Portal</title>
         <ts_index_group/>
