@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1850706_govsma_0_government_service_ticket</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1850706_govsma_0_government_service_ticket">status=booked^EQ<item display_value="Booked" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="booked"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>whatsapp notification</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+    gs.info(" WhatsApp START Ticket: " + current.number);
+
+    var userGR = new GlideRecord('sys_user');
+
+    if (userGR.get(current.opened_by.toString())) {
+
+        var userNumber = userGR.getValue('mobile_phone') || userGR.getValue('phone');
+
+        if (userNumber && userNumber.startsWith('+')) {
+
+            var location = current.getDisplayValue('location') || 'N/A';
+            var orderNumber = current.getValue('order_number') || current.number;
+            var dateValue = current.getDisplayValue('date') || gs.nowDateTime();
+
+            var messageText =
+                "*Ticket Details*\n\n" +
+                "*Location:* " + location + "\n" +
+                "*Number:* " + orderNumber + "\n" +
+                "*Date:* " + dateValue + "\n\n" +
+                "Thank you for using our service";
+
+            try {
+                var rm = new sn_ws.RESTMessageV2('whatsapp sandbox', 'send whatsapp message');
+                rm.setStringParameterNoEscape('from', 'whatsapp:+14155238886');
+                rm.setStringParameterNoEscape('to', 'whatsapp:' + userNumber);
+                rm.setStringParameterNoEscape('body', messageText);
+
+                var response = rm.execute();
+                gs.info("Twilio Status: " + response.getStatusCode());
+                gs.info("Twilio Body: " + response.getBody());
+
+            } catch (ex) {
+                gs.error("WhatsApp error: " + ex.message);
+            }
+
+        } else {
+            gs.error("Invalid or missing phone number for user: " + userGR.getDisplayValue());
+        }
+
+    } else {
+        gs.error("User not found for ticket " + current.number);
+    }
+
+    gs.info("WhatsApp BR END ");
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-31 12:54:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e416e9d383ca32d078c11a30ceaad37d</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>whatsapp notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_e416e9d383ca32d078c11a30ceaad37d</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 18:06:26</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=e416e9d383ca32d078c11a30ceaad37d"/>
+</record_update>
