@@ -3,22 +3,36 @@
         <category>custom</category>
         <client_script><![CDATA[api.controller = function($scope, $http, $window) {
   var c = this;
-  
-  // 1. التحقق لو المستخدم مسجل دخول أصلاً -> حوله لصفحة Home
-  if (c.data.isLoggedIn) {
-    $window.location = '?id=index'; // تأكد إن id الصفحة الرئيسية عندك هو home
-    return; 
-  }
 
-  c.loggingIn = false;
+  if (c.data.isLoggedIn) {
+    $window.location = '?id=index';
+    return;
+  }
 
   c.login = function() {
     c.loggingIn = true;
     c.data.error = null;
 
+    c.server.get({
+      action: 'lookup_user',
+      national_id: c.national_id
+    }).then(function(r) {
+ 
+      if (r.data.error) {
+        c.loggingIn = false;
+        c.data.error = r.data.error;
+        return;
+      }
+
+  
+      performLogin(r.data.found_username, c.password);
+    });
+  };
+
+  function performLogin(realUserName, password) {
     var params = {
-      user_name: c.username,
-      user_password: c.password,
+      user_name: realUserName, 
+      user_password: password,
       action: 'glidedesigner',
       sys_action: 'sysverb_login'
     };
@@ -32,36 +46,37 @@
         return str.join("&");
       }
     }).then(function(response) {
-      if (response.data.indexOf("logout") > -1 || response.data.indexOf("sysparm_url") > -1) {
-        $window.location = "?id=index";
-      } else {
+      var respHTML = response.data;
+      if (respHTML.indexOf("sysverb_login") > -1 || respHTML.indexOf("login_cpw") > -1) {
         c.loggingIn = false;
-        c.data.error = "Invalid username or password.";
+        c.data.error = "Invalid Password."; 
+      } else {
+        $window.location = "?id=index";
       }
-    }, function() {
+    }, function(err) {
       c.loggingIn = false;
-      c.data.error = "An error occurred.";
+      c.data.error = "Connection error.";
     });
-  };
+  }
 };]]></client_script>
         <controller_as>c</controller_as>
         <css>.auth-container {&#13;
   display: flex;&#13;
   justify-content: center;&#13;
   align-items: center;&#13;
-  min-height: 70vh; /* عشان تيجي في نص الشاشة */&#13;
+  min-height: 70vh;&#13;
 }&#13;
 &#13;
 .auth-panel {&#13;
   width: 100%;&#13;
-  max-width: 400px; /* حجم مناسب للفورم */&#13;
+  max-width: 400px;&#13;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);&#13;
   border: none;&#13;
   border-radius: 8px;&#13;
 }&#13;
 &#13;
 .panel-heading {&#13;
-  background-color: #2b6cb0 !important; /* نفس لون موقعك الأزرق */&#13;
+  background-color: #2b6cb0 !important; &#13;
   color: white !important;&#13;
   border-radius: 8px 8px 0 0;&#13;
   padding: 15px;&#13;
@@ -94,30 +109,43 @@
 }]]></link>
         <name>GovLigin</name>
         <option_schema/>
-        <public>false</public>
+        <public>true</public>
         <roles/>
         <script><![CDATA[(function() {
-  // نتحقق من حالة الدخول ونرسل النتيجة للـ Client
   data.isLoggedIn = gs.getSession().isLoggedIn();
+  
+
+  if (input && input.action === 'lookup_user') {
+    var grUser = new GlideRecord('sys_user');
+    grUser.addQuery('u_national_id', input.national_id); 
+    grUser.addActiveQuery();
+    grUser.query();
+    
+    if (grUser.next()) {
+      data.found_username = grUser.getValue('user_name');
+    } else {
+      data.error = "National ID not found.";
+    }
+  }
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-04 18:00:15</sys_created_on>
         <sys_id>6b629f24831afad078c11a30ceaad356</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>GovLigin</sys_name>
         <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
         <sys_policy/>
         <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
         <sys_update_name>sp_widget_6b629f24831afad078c11a30ceaad356</sys_update_name>
         <sys_updated_by>mina.admin</sys_updated_by>
-        <sys_updated_on>2026-01-04 18:07:44</sys_updated_on>
+        <sys_updated_on>2026-01-13 17:24:40</sys_updated_on>
         <template><![CDATA[<div class="auth-container">
   <div class="panel panel-default auth-panel">
     <div class="panel-heading">
       <h3 class="panel-title text-center">
-        <i class="fa fa-sign-in"></i> Login to Government Services
+        <i class="fa fa-id-card"></i> Login via National ID
       </h3>
     </div>
     <div class="panel-body">
@@ -128,10 +156,10 @@
 
       <form ng-submit="c.login()">
         <div class="form-group">
-          <label>Username</label>
+          <label>National ID</label>
           <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-            <input type="text" class="form-control" ng-model="c.username" placeholder="Enter Username" required>
+            <span class="input-group-addon"><i class="fa fa-id-badge"></i></span>
+            <input type="text" class="form-control" ng-model="c.national_id" placeholder="Enter National ID" required>
           </div>
         </div>
 
