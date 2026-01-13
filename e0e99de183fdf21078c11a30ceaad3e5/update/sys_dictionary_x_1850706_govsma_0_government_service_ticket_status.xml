@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="government" table="x_1850706_govsma_0_government_service_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="status" table="x_1850706_govsma_0_government_service_ticket">
         <active>true</active>
         <array>false</array>
-        <attributes/>
+        <attributes>sla_basis,sla_closure=true</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>3</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Governorate</column_label>
+        <column_label>Status</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,16 +21,16 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>government</element>
+        <element>status</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Choice">choice</internal_type>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_1850706_govsma_0_government_service_request</name>
+        <name>x_1850706_govsma_0_government_service_ticket</name>
         <next_element/>
         <primary>false</primary>
         <read_only>true</read_only>
@@ -46,15 +46,15 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>mervet.admin</sys_created_by>
-        <sys_created_on>2025-12-13 18:05:23</sys_created_on>
-        <sys_id>56f006618335361078c11a30ceaad352</sys_id>
-        <sys_name>Governorate</sys_name>
+        <sys_created_on>2025-12-14 09:52:49</sys_created_on>
+        <sys_id>20d959b983b1b61078c11a30ceaad3bd</sys_id>
+        <sys_name>Status</sys_name>
         <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
         <sys_policy/>
         <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
-        <sys_update_name>sys_dictionary_x_1850706_govsma_0_government_service_request_government</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1850706_govsma_0_government_service_ticket_status</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-12 18:32:21</sys_updated_on>
+        <sys_updated_on>2026-01-10 22:26:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

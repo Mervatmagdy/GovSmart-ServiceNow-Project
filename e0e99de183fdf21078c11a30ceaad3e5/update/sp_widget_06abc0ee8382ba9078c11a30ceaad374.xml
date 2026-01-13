@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function (spUtil, $location, $window) {
+  var c = this;
+
+  c.submitting = false;
+  c.editingMode = !!$location.search().sys_id;
+
+  /* =====================
+     FORM MODEL
+     ===================== */
+  c.form = {
+    sys_id: '',
+    service_type: 'family_registration_extract',
+    location: 'Egypt',
+    government: '',
+    region: '',
+    profession: '',
+    head_name: '',
+    head_id: '',
+    register_num: '',
+    mother_name: '',
+    children: '',
+    applicant_relationship: '',
+    description: '',
+    fileName: '',
+    fileType: '',
+    fileData: ''
+  };
+
+  c.regions = [];
+  c.hasAttachment = false;
+
+  /* =====================
+     GOVERNMENT → REGION
+     ===================== */
+  c.onGovernmentChange = function (selectedRegion) {
+    c.form.region = '';
+    c.regions = [];
+
+    if (!c.form.government) return;
+
+    c.server.get({
+      action: 'get_regions',
+      government: c.form.government
+    }).then(function (r) {
+      c.regions = r.data.regions || [];
+      if (selectedRegion) {
+        c.form.region = selectedRegion;
+      }
+    });
+  };
+
+  /* =====================
+     LOAD REQUEST (EDIT)
+     ===================== */
+  if (c.editingMode) {
+    var sysId = $location.search().sys_id;
+
+    c.server.get({
+      action: 'load_request',
+      sys_id: sysId
+    }).then(function (r) {
+      if (r.data && r.data.form) {
+        c.form = angular.copy(r.data.form);
+        if (c.form.government) {
+          c.onGovernmentChange(c.form.region);
+        }
+      }
+    });
+  }
+
+  /* =====================
+     VALIDATION HELPERS
+     ===================== */
+  // Validate Head Of Family National ID like Old National ID
+  c.isHeadIdValid = function () {
+    return /^\d{14}$/.test(c.form.head_id || '');
+  };
+
+  // Check if all required fields are valid
+  c.canSubmit = function () {
+    return c.form.profession &&
+           c.form.government &&
+           c.form.region &&
+           c.form.head_name &&
+           c.isHeadIdValid() &&
+           c.form.register_num &&
+           c.form.mother_name &&
+           c.form.applicant_relationship &&
+           c.hasAttachment &&
+           !c.submitting;
+  };
+
+  /* =====================
+     SUBMIT
+     ===================== */
+  c.submit = function () {
+    if (c.submitting) return;
+
+    if (!c.canSubmit()) {
+      // Show appropriate error messages
+      if (!c.hasAttachment) {
+        spUtil.addErrorMessage("Please upload the supporting document.");
+      } else if (!c.isHeadIdValid()) {
+        spUtil.addErrorMessage("Head Of Family National ID must be exactly 14 digits.");
+      } else {
+        spUtil.addErrorMessage("Please fill in all required fields.");
+      }
+      return;
+    }
+
+    c.submitting = true;
+
+    var fileInput = $window.document.getElementById('fileInput');
+    if (fileInput && fileInput.files.length > 0) {
+      var file = fileInput.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        c.form.fileName = file.name;
+        c.form.fileType = file.type;
+        c.form.fileData = e.target.result.split(',')[1];
+        c.sendToServer();
+      };
+
+      reader.readAsDataURL(file);
+    } else {
+      // safety fallback
+      c.sendToServer();
+    }
+  };
+
+  /* =====================
+     SEND TO SERVER
+     ===================== */
+  c.sendToServer = function () {
+    var action = c.form.sys_id ? 'update_request' : 'insert_request';
+
+    c.server.get({
+      action: action,
+      payload: c.form
+    }).then(function (r) {
+      c.submitting = false;
+
+      if (r.data && r.data.success) {
+        spUtil.addInfoMessage(
+          c.editingMode
+            ? "Request updated successfully!"
+            : "Request submitted successfully!"
+        );
+        $location.search({ id: 'gov_user_request' });
+      } else if (r.data.error === 'DUPLICATE_SUBMIT') {
+        spUtil.addErrorMessage("You already submitted this request recently.");
+      } else {
+        spUtil.addErrorMessage("Error submitting request.");
+      }
+    });
+  };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>family_register_form</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>family register form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+
+  data.userDisplayName = gs.getUserDisplayName();
+  var userId = gs.getUserID();
+
+  /* ========= Regions ========= */
+  if (input && input.action === 'get_regions') {
+    data.regions = [];
+    if (input.government === 'cairo') {
+      data.regions.push(
+        { value: 'Civil Registry – Abbasia (Main HQ)', label: 'Civil Registry – Abbasia (Main HQ)' }
+      );
+    }
+    if (input.government === 'alexandria') {
+      data.regions.push(
+        { value: 'Civil Registry – Sidi Gaber', label: 'Civil Registry – Sidi Gaber' },
+        { value: 'Civil Registry – Ibrahimia', label: 'Civil Registry – Ibrahimia' },
+        { value: 'Civil Registry – Mansheya', label: 'Civil Registry – Mansheya' }
+      );
+    }
+    return;
+  }
+
+  /* ========= Load Request for Edit ========= */
+  if (input && input.action === 'load_request' && input.sys_id) {
+    var grLoad = new GlideRecord('x_1850706_govsma_0_government_service_request');
+    if (grLoad.get(input.sys_id)) {
+      data.form = {
+        sys_id: grLoad.getUniqueValue(),
+        service_type: grLoad.service_type.toString(),
+        location: grLoad.location.toString(),
+        profession: grLoad.profession.toString(),
+        government: grLoad.government.toString(),
+        region: grLoad.region.toString(),
+        head_name: grLoad.head_of_family_name.toString(),
+        head_id: grLoad.head_of_family_national_id.toString(),
+        register_num: grLoad.family_register_number.toString(),
+        mother_name: grLoad.mother_name.toString(),
+        children: grLoad.children_names.toString(),
+        applicant_relationship: grLoad.applicant_relationship.toString()
+      };
+
+      // Load task description if exists
+      var taskGr = new GlideRecord('x_1850706_govsma_0_empl_task');
+      taskGr.addQuery('requester_data', grLoad.getUniqueValue());
+      taskGr.query();
+      data.form.description = taskGr.next() ? taskGr.getValue('description') || '' : '';
+    }
+    return;
+  }
+
+  /* ========= Insert / Update Request ========= */
+  if (input && (input.action === 'insert_request' || input.action === 'update_request')) {
+    var gr;
+    var isUpdate = input.action === 'update_request';
+
+    if (isUpdate) {
+      gr = new GlideRecord('x_1850706_govsma_0_government_service_request');
+      if (!gr.get(input.payload.sys_id)) {
+        data.success = false;
+        return;
+      }
+
+      // Update fields
+      gr.profession = input.payload.profession;
+      gr.government = input.payload.government;
+      gr.region = input.payload.region;
+      gr.head_of_family_name = input.payload.head_name;
+      gr.head_of_family_national_id = input.payload.head_id;
+      gr.family_register_number = input.payload.register_num;
+      gr.mother_name = input.payload.mother_name;
+      gr.children_names = input.payload.children;
+      gr.applicant_relationship = input.payload.applicant_relationship;
+
+    } else {
+      gr = new GlideRecord('x_1850706_govsma_0_government_service_request');
+      gr.initialize();
+
+      // Set user info
+      var userGR = new GlideRecord('sys_user');
+      if (userGR.get(userId)) {
+        gr.user_name = userGR.first_name + ' ' + userGR.last_name;
+        gr.email = userGR.email;
+        gr.mobile_phone = userGR.mobile_phone;
+        gr.marital_status = userGR.u_marital_status;
+        gr.national_id = userGR.u_national_id;
+        gr.date_of_birth = userGR.u_date_of_birth;
+      }
+
+      // Set payload fields
+      gr.service_type = input.payload.service_type;
+      gr.location = input.payload.location;
+      gr.profession = input.payload.profession;
+      gr.government = input.payload.government;
+      gr.region = input.payload.region;
+      gr.head_of_family_name = input.payload.head_name;
+      gr.head_of_family_national_id = input.payload.head_id;
+      gr.family_register_number = input.payload.register_num;
+      gr.mother_name = input.payload.mother_name;
+      gr.children_names = input.payload.children;
+      gr.applicant_relationship = input.payload.applicant_relationship;
+    }
+
+    // Insert / Update record
+    var recordSysId = isUpdate ? gr.update() : gr.insert();
+
+    // Handle file attachment
+    if (input.payload.fileData && input.payload.fileData.length > 0) {
+      var attachment = new GlideSysAttachment();
+      attachment.writeBase64(gr, input.payload.fileName, input.payload.fileType, input.payload.fileData);
+    }
+
+    // Reset employee tasks after edit
+    if (isUpdate) {
+      var taskGr = new GlideRecord('x_1850706_govsma_0_empl_task');
+      taskGr.addQuery('requester_data', gr.getUniqueValue());
+      taskGr.query();
+      while (taskGr.next()) {
+        taskGr.document_status = '';
+        taskGr.state = 2; // Work in Progress
+        taskGr.update();
+      }
+    }
+
+    data.success = true;
+    data.recordSysId = gr.getUniqueValue();
+    return;
+  }
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-28 22:22:27</sys_created_on>
+        <sys_id>06abc0ee8382ba9078c11a30ceaad374</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_name>family register form</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_widget_06abc0ee8382ba9078c11a30ceaad374</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 14:28:07</sys_updated_on>
+        <template><![CDATA[<form name="familyForm" novalidate ng-submit="c.submit()" style="padding-bottom: 80px;">
+
+  <!-- ===================== FORM TITLE ===================== -->
+  <div class="text-center" style="margin-bottom: 25px;">
+    <h2 style="
+          font-weight: 700;
+          color: #2c3e50;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        ">
+      Family Registration Request
+    </h2>
+  </div>
+
+  <!-- ===================== REVIEW NOTES ===================== -->
+  <div class="form-group" ng-if="c.editingMode && c.form.description">
+    <label>Employee Review Notes</label>
+    <textarea class="form-control alert alert-danger"
+              ng-model="c.form.description"
+              readonly
+              rows="3">
+    </textarea>
+  </div>
+
+  <!-- ===================== LOCATION ===================== -->
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <label>Location</label>
+      <input type="text"
+             class="form-control"
+             ng-model="c.form.location"
+             readonly>
+    </div>
+
+    <div class="col-md-6 form-group">
+      <label>Requester Name</label>
+      <input type="text"
+             class="form-control"
+             ng-value="data.userDisplayName"
+             readonly>
+    </div>
+  </div>
+
+  <!-- ===================== GOVERNORATE ===================== -->
+  <div class="form-group">
+    <label>Governorate <span class="text-danger">*</span></label>
+    <select class="form-control"
+            name="government"
+            ng-model="c.form.government"
+            ng-change="c.onGovernmentChange()"
+            ng-required="true"
+            ng-disabled="c.editingMode || c.submitting">
+      <option value="">-- Select Governorate --</option>
+      <option value="cairo">Cairo</option>
+      <option value="alexandria">Alexandria</option>
+    </select>
+    <div class="error-text" ng-if="familyForm.government.$invalid && familyForm.$submitted">
+      Governorate is required
+    </div>
+  </div>
+
+  <!-- ===================== REGION ===================== -->
+  <div class="form-group">
+    <label>Region <span class="text-danger">*</span></label>
+    <select class="form-control"
+            name="region"
+            ng-model="c.form.region"
+            ng-options="r.value as r.label for r in c.regions"
+            ng-required="true"
+            ng-disabled="c.editingMode || !c.regions.length || c.submitting">
+      <option value="">-- Select Region --</option>
+    </select>
+    <div class="error-text" ng-if="familyForm.region.$invalid && familyForm.$submitted">
+      Region is required
+    </div>
+  </div>
+
+  <!-- ===================== PROFESSION ===================== -->
+  <div class="form-group">
+    <label>Profession <span class="text-danger">*</span></label>
+    <input type="text"
+           class="form-control"
+           name="profession"
+           ng-model="c.form.profession"
+           ng-required="true"
+           ng-disabled="c.submitting">
+    <div class="error-text" ng-if="familyForm.profession.$invalid && familyForm.$submitted">
+      Profession is required
+    </div>
+  </div>
+
+  <!-- ===================== HEAD OF FAMILY ===================== -->
+  <div class="form-group">
+    <label>Head Of Family Name <span class="text-danger">*</span></label>
+    <input type="text"
+           class="form-control"
+           name="head_name"
+           ng-model="c.form.head_name"
+           ng-required="true"
+           ng-disabled="c.submitting">
+    <div class="error-text" ng-if="familyForm.head_name.$invalid && familyForm.$submitted">
+      Head of Family Name is required
+    </div>
+  </div>
+
+ <!-- ===================== HEAD OF FAMILY NATIONAL ID ===================== -->
+<div class="form-group">
+  <label>Head Of Family National ID <span class="text-danger">*</span></label>
+  <input type="text"
+         class="form-control"
+         name="head_id"
+         ng-model="c.form.head_id"
+         placeholder="Enter 14-digit National ID"
+         maxlength="14"
+         ng-required="true"
+         ng-disabled="c.submitting"
+         ng-keypress="($event.which < 48 || $event.which > 57) && $event.preventDefault()"
+         ng-blur="c.headIdTouched = true">
+
+  <!-- Inline error message -->
+  <div class="error-text"
+       ng-if="c.headIdTouched && (!c.form.head_id || c.form.head_id.length !== 14)">
+    Head Of Family National ID must be exactly 14 digits
+  </div>
+</div>
+
+  <!-- ===================== FAMILY REGISTER ===================== -->
+  <div class="form-group">
+    <label>Family Register Number <span class="text-danger">*</span></label>
+    <input type="text"
+           class="form-control"
+           name="register_num"
+           ng-model="c.form.register_num"
+           ng-required="true"
+           ng-disabled="c.submitting">
+    <div class="error-text" ng-if="familyForm.register_num.$invalid && familyForm.$submitted">
+      Family Register Number is required
+    </div>
+  </div>
+
+  <!-- ===================== MOTHER NAME ===================== -->
+  <div class="form-group">
+    <label>Mother Name <span class="text-danger">*</span></label>
+    <input type="text"
+           class="form-control"
+           name="mother_name"
+           ng-model="c.form.mother_name"
+           ng-required="true"
+           ng-disabled="c.submitting">
+    <div class="error-text" ng-if="familyForm.mother_name.$invalid && familyForm.$submitted">
+      Mother Name is required
+    </div>
+  </div>
+
+  <!-- ===================== CHILDREN NAMES ===================== -->
+  <div class="form-group">
+    <label>Children Names</label>
+    <textarea class="form-control"
+              name="children"
+              ng-model="c.form.children"
+              rows="3"
+              ng-disabled="c.submitting">
+    </textarea>
+  </div>
+
+  <!-- ===================== APPLICANT RELATIONSHIP ===================== -->
+  <div class="form-group">
+    <label>Applicant Relationship <span class="text-danger">*</span></label>
+    <select class="form-control"
+            name="applicant_relationship"
+            ng-model="c.form.applicant_relationship"
+            ng-required="true"
+            ng-disabled="c.submitting">
+      <option value="">-- Select Relationship --</option>
+      <option value="head_of_family">Head of Family</option>
+      <option value="spouse">Spouse</option>
+      <option value="son_daughter">Son / Daughter</option>
+      <option value="brother_sister">Brother / Sister</option>
+      <option value="legal_guardian">Legal Guardian</option>
+      <option value="first_degree_relative">First Degree Relative</option>
+    </select>
+    <div class="error-text" ng-if="familyForm.applicant_relationship.$invalid && familyForm.$submitted">
+      Applicant Relationship is required
+    </div>
+  </div>
+
+  <!-- ===================== ATTACHMENT ===================== -->
+  <div class="form-group">
+    <label>Supporting Document <span class="text-danger">*</span></label>
+    <input type="file"
+           id="fileInput"
+           class="form-control"
+           ng-disabled="c.submitting"
+           onchange="angular.element(this).scope().c.hasAttachment = this.files.length > 0; angular.element(this).scope().$apply()">
+    <div class="error-text" ng-if="familyForm.$submitted && !c.hasAttachment">
+      Supporting document is required
+    </div>
+  </div>
+
+  <!-- ===================== STICKY SUBMIT BUTTON ===================== -->
+  <div class="sticky-submit">
+  <button type="submit"
+          class="btn"
+          ng-disabled="familyForm.$invalid || !c.hasAttachment || !c.form.head_id || c.form.head_id.length !== 14 || c.submitting"
+          ng-class="{
+            'btn-primary': familyForm.$valid && c.hasAttachment && c.form.head_id && c.form.head_id.length === 14,
+            'btn-lightgrey': familyForm.$invalid || !c.hasAttachment || !c.form.head_id || c.form.head_id.length !== 14
+          }">
+    <i class="fa fa-spinner fa-spin" ng-if="c.submitting"></i>
+    Submit Request
+  </button>
+</div>
+</form>
+
+<style>
+/* ===== GENERAL FORM ===== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ===== INPUTS ===== */
+.form-control {
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: all .2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 2px rgba(0,86,179,.15);
+}
+
+/* ===== READ ONLY ===== */
+input[readonly],
+textarea[readonly] {
+  background-color: #f8f9fa !important;
+  cursor: not-allowed;
+}
+
+/* ===== ANGULAR VALIDATION ===== */
+.ng-invalid.ng-touched,
+.ng-invalid.ng-submitted {
+  border-color: #dc3545 !important;
+}
+
+/* ===== ERROR MESSAGE ===== */
+.error-text {
+  font-size: 12px;
+  color: #dc3545;
+  margin-top: 4px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-lightgrey {
+  background-color: #d6d6d6;
+  color: #555;
+  border: none;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+}
+
+.btn-primary:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* ===== STICKY BUTTON CONTAINER ===== */
+.sticky-submit {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.sticky-submit .btn {
+  padding: 12px 36px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== SPINNER ===== */
+.fa-spinner {
+  margin-right: 6px;
+}
+</style>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>06abc0ee8382ba9078c11a30ceaad374</id>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-28 22:22:27</sys_created_on>
+        <sys_id>c2abc0ee8382ba9078c11a30ceaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 22:22:27</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

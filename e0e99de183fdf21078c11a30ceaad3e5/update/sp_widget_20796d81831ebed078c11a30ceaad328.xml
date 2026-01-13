@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function(spUtil, $location, $window) {
+  var c = this;
+  c.isSubmitting = false;
+  c.editingMode = !!$location.search().sys_id;
+
+  c.form = {
+    sys_id: '',
+    service_type: 'national_id_card_application',
+    location: 'Egypt',
+    profession: '',
+    government: '',
+    region: '',
+    religion: '',
+    employer_educational_institution: '',
+    spouse_name: '',
+    fileName: '',
+    fileType: '',
+    fileData: '',
+	description: ''
+  };
+
+  c.regions = [];
+  c.hasAttachment = false;
+
+  /* GOVERNMENT → REGION */
+  c.onGovernmentChange = function(selectedRegion) {
+    c.form.region = '';
+    c.regions = [];
+    if (!c.form.government) return;
+
+    c.server.get({ action: 'get_regions', government: c.form.government })
+      .then(function(r) {
+        c.regions = r.data.regions || [];
+        if (selectedRegion) c.form.region = selectedRegion;
+      });
+  };
+
+  /* LOAD REQUEST FOR EDIT */
+  if (c.editingMode) {
+    var sysId = $location.search().sys_id;
+    c.server.get({ action: 'load_request', sys_id: sysId }).then(function(r) {
+      if (r.data && r.data.form) {
+        c.form = angular.copy(r.data.form);
+        if (c.form.government) c.onGovernmentChange(c.form.region);
+      }
+    });
+  }
+
+  /* VALIDATION CHECK */
+  c.canSubmit = function() {
+    return c.form.profession &&
+           c.form.government &&
+           c.form.region &&
+           c.form.religion &&
+           c.form.employer_educational_institution &&
+           c.hasAttachment &&
+           !c.isSubmitting;
+  };
+
+  /* SUBMIT */
+  c.submit = function() {
+    if (c.isSubmitting) return;
+
+    if (!c.canSubmit()) {
+      spUtil.addErrorMessage("Please fill in all required fields and attach the document.");
+      return;
+    }
+
+    c.isSubmitting = true;
+    var fileInput = $window.document.getElementById('fileInput');
+
+    if (fileInput && fileInput.files.length > 0) {
+      var file = fileInput.files[0];
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        c.form.fileName = file.name;
+        c.form.fileType = file.type;
+        c.form.fileData = e.target.result.split(',')[1];
+        c.sendToServer();
+      };
+      reader.readAsDataURL(file);
+    } else {
+      c.sendToServer();
+    }
+  };
+
+  c.sendToServer = function() {
+    var actionName = c.form.sys_id ? 'update_request' : 'insert_request';
+    c.server.get({ action: actionName, payload: c.form }).then(function(r) {
+      c.isSubmitting = false;
+      if (r.data && r.data.success) {
+        spUtil.addInfoMessage("Request saved successfully!");
+        $location.search({ id: 'gov_user_request' });
+      } else {
+        spUtil.addErrorMessage("Error submitting request.");
+      }
+    }, function() {
+      c.isSubmitting = false;
+      spUtil.addErrorMessage("Server error occurred.");
+    });
+  };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* ===== GENERAL FORM ===== */&#13;
+.form-group {&#13;
+  margin-bottom: 18px;&#13;
+}&#13;
+&#13;
+label {&#13;
+  font-weight: 600;&#13;
+  color: #2c3e50;&#13;
+  display: block;&#13;
+  margin-bottom: 6px;&#13;
+}&#13;
+&#13;
+input.form-control,&#13;
+select.form-control,&#13;
+textarea.form-control {&#13;
+  height: 42px;&#13;
+  border-radius: 6px;&#13;
+  border: 1px solid #ced4da;&#13;
+  transition: all 0.2s ease-in-out;&#13;
+  padding: 6px 12px;&#13;
+  font-size: 14px;&#13;
+  width: 100%;&#13;
+}&#13;
+&#13;
+input.form-control:focus,&#13;
+select.form-control:focus,&#13;
+textarea.form-control:focus {&#13;
+  border-color: #0056b3;&#13;
+  box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.15);&#13;
+  outline: none;&#13;
+}&#13;
+&#13;
+/* ===== READONLY FIELDS ===== */&#13;
+input[readonly],&#13;
+textarea[readonly] {&#13;
+  background-color: #f8f9fa !important;&#13;
+  cursor: not-allowed;&#13;
+}&#13;
+&#13;
+/* ===== ANGULAR VALIDATION ===== */&#13;
+.ng-invalid.ng-touched,&#13;
+.ng-invalid.ng-submitted {&#13;
+  border-color: #dc3545 !important;&#13;
+}&#13;
+&#13;
+/* ===== ERROR TEXT ===== */&#13;
+.error-text {&#13;
+  font-size: 12px;&#13;
+  color: #dc3545;&#13;
+  margin-top: 4px;&#13;
+}&#13;
+&#13;
+/* ===== BUTTONS ===== */&#13;
+.btn-primary {&#13;
+  height: 46px;&#13;
+  font-weight: 600;&#13;
+  border-radius: 25px;&#13;
+  background-color: #0056b3;&#13;
+  color: #fff;&#13;
+  border: none;&#13;
+  min-width: 200px;&#13;
+  transition: all 0.3s ease;&#13;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);&#13;
+}&#13;
+&#13;
+.btn-primary:disabled {&#13;
+  background-color: #6c757d;&#13;
+  cursor: not-allowed;&#13;
+}&#13;
+&#13;
+.btn-lightgrey {&#13;
+  background-color: #d6d6d6;&#13;
+  color: #555;&#13;
+  border: none;&#13;
+  cursor: not-allowed;&#13;
+}&#13;
+&#13;
+/* ===== STICKY SUBMIT BUTTON ===== */&#13;
+.sticky-submit {&#13;
+  position: fixed;&#13;
+  bottom: 20px;&#13;
+  left: 50%;&#13;
+  transform: translateX(-50%);&#13;
+  z-index: 999;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+/* ===== SPINNER ICON ===== */&#13;
+.fa-spinner {&#13;
+  margin-right: 6px;&#13;
+}&#13;
+&#13;
+/* ===== FORM TITLE ===== */&#13;
+h2 {&#13;
+  font-weight: 700;&#13;
+  color: #2c3e50;&#13;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;&#13;
+  letter-spacing: 1px;&#13;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);&#13;
+  margin-bottom: 25px;&#13;
+}&#13;
+&#13;
+/* ===== TEXTAREA READONLY ALERT ===== */&#13;
+textarea[readonly].alert {&#13;
+  color: #721c24;&#13;
+  background-color: #f8d7da;&#13;
+  border-color: #f5c6cb;&#13;
+}&#13;
+&#13;
+/* ===== INPUT PLACEHOLDER ===== */&#13;
+input::placeholder {&#13;
+  color: #6c757d;&#13;
+  opacity: 1;&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>national id card application </name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+  data.userDisplayName = gs.getUserDisplayName();
+  var userId = gs.getUserID();
+
+  /* ===================== REGIONS ===================== */
+  if (input && input.action === 'get_regions') {
+    data.regions = [];
+    if (input.government === 'cairo') {
+      data.regions.push({
+        value: 'Civil Registry – Abbasia (Main HQ)',
+        label: 'Civil Registry – Abbasia (Main HQ)'
+      });
+    }
+    if (input.government === 'alexandria') {
+      data.regions.push(
+        { value: 'Civil Registry – Sidi Gaber', label: 'Civil Registry – Sidi Gaber' },
+        { value: 'Civil Registry – Ibrahimia', label: 'Civil Registry – Ibrahimia' },
+        { value: 'Civil Registry – Mansheya', label: 'Civil Registry – Mansheya' }
+      );
+    }
+    return;
+  }
+
+  /* ===================== LOAD REQUEST ===================== */
+  if (input && input.action === 'load_request' && input.sys_id) {
+    var grLoad = new GlideRecord('x_1850706_govsma_0_government_service_request');
+    if (grLoad.get(input.sys_id)) {
+      data.form = {
+        sys_id: grLoad.getUniqueValue(),
+        service_type: grLoad.service_type.toString(),
+        location: grLoad.location.toString(),
+        profession: grLoad.profession.toString(),
+        government: grLoad.government.toString(),
+        region: grLoad.region.toString(),
+        religion: grLoad.religion.toString(),
+        employer_educational_institution: grLoad.employer_educational_institution.toString(),
+        spouse_name: grLoad.spouse_name.toString()
+      };
+
+      // Task description
+      var taskGr = new GlideRecord('x_1850706_govsma_0_empl_task');
+      taskGr.addQuery('requester_data', grLoad.getUniqueValue());
+      taskGr.query();
+      data.form.description = taskGr.next() ? taskGr.getValue('description') || '' : '';
+    }
+    return;
+  }
+
+  /* ===================== INSERT / UPDATE ===================== */
+  if (input && (input.action === 'insert_request' || input.action === 'update_request')) {
+    var isUpdate = input.action === 'update_request';
+    var gr = new GlideRecord('x_1850706_govsma_0_government_service_request');
+
+    if (isUpdate) {
+      if (!gr.get(input.payload.sys_id)) {
+        data.success = false;
+        return;
+      }
+
+      gr.profession = input.payload.profession;
+      gr.government = input.payload.government;
+      gr.region = input.payload.region;
+      gr.religion = input.payload.religion;
+      gr.employer_educational_institution = input.payload.employer_educational_institution;
+      gr.spouse_name = input.payload.spouse_name;
+
+    } else {
+      gr.initialize();
+      var userGR = new GlideRecord('sys_user');
+      if (userGR.get(userId)) {
+        gr.user_name = userGR.first_name + ' ' + userGR.last_name;
+        gr.email = userGR.email;
+        gr.mobile_phone = userGR.mobile_phone;
+        gr.marital_status = userGR.u_marital_status;
+        gr.national_id = userGR.u_national_id;
+        gr.date_of_birth = userGR.u_date_of_birth;
+      }
+
+      gr.service_type = input.payload.service_type;
+      gr.location = input.payload.location;
+      gr.profession = input.payload.profession;
+      gr.government = input.payload.government;
+      gr.region = input.payload.region;
+      gr.religion = input.payload.religion;
+      gr.employer_educational_institution = input.payload.employer_educational_institution;
+      gr.spouse_name = input.payload.spouse_name;
+    }
+
+    var recordSysId = isUpdate ? gr.update() : gr.insert();
+
+    /* ===================== ATTACHMENT ===================== */
+    if (input.payload.fileData && input.payload.fileName && input.payload.fileType) {
+      try {
+        var attachment = new GlideSysAttachment();
+        attachment.writeBase64(gr, input.payload.fileName, input.payload.fileType, input.payload.fileData);
+      } catch (e) {
+        gs.error("Attachment upload failed: " + e.message);
+        data.success = false;
+        data.error = "ATTACHMENT_FAILED";
+        return;
+      }
+    }
+
+    /* ===================== RESET TASK (EDIT) ===================== */
+    if (isUpdate) {
+      var taskReset = new GlideRecord('x_1850706_govsma_0_empl_task');
+      taskReset.addQuery('requester_data', gr.getUniqueValue());
+      taskReset.query();
+      while (taskReset.next()) {
+        taskReset.document_status = '';
+        taskReset.state = 2; // Work in Progress
+        taskReset.update();
+      }
+    }
+
+    data.success = true;
+    data.recordSysId = gr.getUniqueValue();
+    return;
+  }
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-05 23:44:11</sys_created_on>
+        <sys_id>20796d81831ebed078c11a30ceaad328</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>national id card application </sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_widget_20796d81831ebed078c11a30ceaad328</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-13 14:49:15</sys_updated_on>
+        <template><![CDATA[<form name="idForm" novalidate ng-submit="c.submit()" style="padding-bottom: 90px;">
+
+  <!-- ===================== REVIEW NOTES ===================== -->
+  <div class="form-group"
+       ng-if="c.editingMode && c.form.description"
+       style="margin-bottom: 30px;">
+    <div class="alert alert-danger">
+      <strong>Employee Review Notes</strong>
+      <textarea class="form-control"
+                ng-model="c.form.description"
+                readonly
+                rows="3"
+                style="margin-top:8px; resize:none;">
+      </textarea>
+    </div>
+  </div>
+
+  <!-- ===================== FORM TITLE ===================== -->
+  <div class="text-center" style="margin-bottom: 30px;">
+    <h2>National ID Card Application</h2>
+  </div>
+
+  <!-- ===================== REQUEST INFO ===================== -->
+  <div class="row">
+
+    <!-- LEFT COLUMN -->
+    <div class="col-md-6">
+
+      <div class="form-group">
+        <label>Location</label>
+        <input type="text" class="form-control" ng-model="c.form.location" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Requester Name</label>
+        <input type="text" class="form-control" ng-value="data.userDisplayName" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>Governorate <span class="text-danger">*</span></label>
+        <select class="form-control"
+                ng-model="c.form.government"
+                ng-change="c.onGovernmentChange()"
+                ng-required="true"
+                ng-disabled="c.isSubmitting">
+          <option value="">-- Select Governorate --</option>
+          <option value="cairo">Cairo</option>
+          <option value="alexandria">Alexandria</option>
+        </select>
+        <div class="error-text"
+             ng-if="idForm.government.$invalid && idForm.$submitted">
+          Governorate is required
+        </div>
+      </div>
+
+      <!-- REGION -->
+      <div class="form-group">
+        <label>Region <span class="text-danger">*</span></label>
+        <select class="form-control"
+                ng-model="c.form.region"
+                ng-options="r.value as r.label for r in c.regions"
+                ng-required="true"
+                ng-disabled="!c.regions.length || c.isSubmitting">
+          <option value="">-- Select Region --</option>
+        </select>
+        <div class="error-text"
+             ng-if="idForm.region.$invalid && idForm.$submitted">
+          Region is required
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col-md-6">
+
+      <div class="form-group">
+        <label>Profession <span class="text-danger">*</span></label>
+        <input type="text"
+               class="form-control"
+               ng-model="c.form.profession"
+               ng-required="true"
+               ng-disabled="c.isSubmitting">
+        <div class="error-text"
+             ng-if="idForm.profession.$invalid && idForm.$submitted">
+          Profession is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Religion <span class="text-danger">*</span></label>
+        <select class="form-control"
+                ng-model="c.form.religion"
+                ng-required="true"
+                ng-disabled="c.isSubmitting">
+          <option value="">-- Select Religion --</option>
+          <option value="islam">Muslim</option>
+          <option value="christianity">Christian</option>
+        </select>
+        <div class="error-text"
+             ng-if="idForm.religion.$invalid && idForm.$submitted">
+          Religion is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Employer / Educational Institution <span class="text-danger">*</span></label>
+        <input type="text"
+               class="form-control"
+               ng-model="c.form.employer_educational_institution"
+               ng-required="true"
+               ng-disabled="c.isSubmitting">
+        <div class="error-text"
+             ng-if="idForm.employer_educational_institution.$invalid && idForm.$submitted">
+          Employer / Educational Institution is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Spouse Name</label>
+        <input type="text"
+               class="form-control"
+               ng-model="c.form.spouse_name"
+               ng-disabled="c.isSubmitting">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================== ATTACHMENT ===================== -->
+  <div class="form-group">
+    <label>Supporting Document <span class="text-danger">*</span></label>
+    <input type="file"
+           id="fileInput"
+           class="form-control"
+           ng-disabled="c.isSubmitting"
+           onchange="angular.element(this).scope().c.hasAttachment = this.files.length > 0; angular.element(this).scope().$apply()">
+    <div class="error-text"
+         ng-if="idForm.$submitted && !c.hasAttachment">
+      Supporting document is required
+    </div>
+  </div>
+
+  <!-- ===================== SUBMIT ===================== -->
+  <div class="sticky-submit">
+    <button type="submit"
+            class="btn"
+            ng-disabled="idForm.$invalid || !c.hasAttachment || c.isSubmitting"
+            ng-class="{
+              'btn-primary': idForm.$valid && c.hasAttachment,
+              'btn-lightgrey': !idForm.$valid || !c.hasAttachment
+            }">
+      <i class="fa fa-spinner fa-spin" ng-if="c.isSubmitting"></i>
+      Submit Request
+    </button>
+  </div>
+
+</form>
+]]></template>
+    </sp_widget>
+</record_update>

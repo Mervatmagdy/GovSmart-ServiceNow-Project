@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1828591000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>assign_to_manager</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.assignment_group.manager","label":"Trigger - Record Created or Updated➛Reviewer Employee Record➛Assignment group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_group","column_name":"manager","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["approval_conditions"]}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Reviewer Employee Table","reference":"x_1850706_govsma_0_empl_task","reference_display":"Reviewer Employee","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Reviewer Employee Record","reference":"x_1850706_govsma_0_empl_task","reference_display":"Reviewer Employee","type":"reference","base_type":"reference","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["record"],"a5630699-0df4-417c-a06e-b4a7fb6722f7":["record"],"f78e35d2-f5d8-4065-85e8-bd27b0b41057":["record"],"84a2263c-c71c-40ba-95f7-ed36b5956476":["record"],"19003716-3f9e-47df-87a3-797358a2963b":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.assignmen_group","label":"Trigger - Record Created or Updated➛Government Service Request Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1850706_govsma_0_government_service_request","column_name":"assignmen_group","usedInstances":{}},{"name":"Created or Updated_1.current.assignmen_group.manager","label":"Trigger - Record Created or Updated➛Government Service Request Record➛Assignment Group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_group","column_name":"manager","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["approval_conditions"]}},{"name":"d20fc559-a536-416b-b043-6f38e7bc9a4e.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"d35c43c8-4a60-4539-b23d-e9c5d89eec41":["condition"],"c8fbeb19-a688-423e-952b-6ba667ad3703":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Reviewer Employee Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1850706_govsma_0_empl_task","column_name":"number","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["approval_reason"]}}]</label_cache>
+        <master_snapshot>d6e4c8e483c6ba5078c11a30ceaad3bf</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Assign to Manager Reviewer</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>50499e428346f69078c11a30ceaad328</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:38:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3763042483c6ba5078c11a30ceaad3b2</sys_id>
+        <sys_mod_count>74</sys_mod_count>
+        <sys_name>Assign to Manager Reviewer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_hub_flow_3763042483c6ba5078c11a30ceaad3b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1850706_govsma_0_empl_task">state=1<item display_value="Pending Review Approval" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 19:24:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>50499e428346f69078c11a30ceaad328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 19:24:09</sys_updated_on>
+        <table>x_1850706_govsma_0_empl_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>3763042483c6ba5078c11a30ceaad3b2</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 20:35:14</sys_created_on>
+        <sys_id>31f28ddb8312325478c11a30ceaad3b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <trigger display_value="">50499e428346f69078c11a30ceaad328</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=3763042483c6ba5078c11a30ceaad3b2^sys_idNOT IN31f28ddb8312325478c11a30ceaad3b6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3763042483c6ba5078c11a30ceaad3b2^sys_idNOT INbb63042483c6ba5078c11a30ceaad3b3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3763042483c6ba5078c11a30ceaad3b2</id>
+        <name>Assign to Manager </name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:38:41</sys_created_on>
+        <sys_id>bb63042483c6ba5078c11a30ceaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:38:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=bb63042483c6ba5078c11a30ceaad3b3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3763042483c6ba5078c11a30ceaad3b2^sys_idNOT INb0a4446483c6ba5078c11a30ceaad3c3,c1a440e483c6ba5078c11a30ceaad3d7,f4a440e483c6ba5078c11a30ceaad3d1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</model>
+        <model_id>3763042483c6ba5078c11a30ceaad3b2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3763042483c6ba5078c11a30ceaad3b2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>b0a4446483c6ba5078c11a30ceaad3c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:43:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b0a4446483c6ba5078c11a30ceaad3c3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</model>
+        <model_id>3763042483c6ba5078c11a30ceaad3b2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3763042483c6ba5078c11a30ceaad3b2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>c1a440e483c6ba5078c11a30ceaad3d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:43:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c1a440e483c6ba5078c11a30ceaad3d7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</model>
+        <model_id>3763042483c6ba5078c11a30ceaad3b2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3763042483c6ba5078c11a30ceaad3b2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>f4a440e483c6ba5078c11a30ceaad3d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:43:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f4a440e483c6ba5078c11a30ceaad3d1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3763042483c6ba5078c11a30ceaad3b2^sys_idNOT IN49a480e483c6ba5078c11a30ceaad31b"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment>Triggered When State == 'Pending Review Approval'</comment>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>49a480e483c6ba5078c11a30ceaad31b</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:12</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3763042483c6ba5078c11a30ceaad3b2^sys_idNOT IN41a480e483c6ba5078c11a30ceaad320,fd9d8868830aba5078c11a30ceaad36f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Ask Manager Reviewer For Approval</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>41a480e483c6ba5078c11a30ceaad320</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:12</sys_updated_on>
+        <ui_id>d20fc559-a536-416b-b043-6f38e7bc9a4e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/iOBD+V1CeKecQEgJv1XUr7enuVqLtvpQqMs4EvJc4WTuh5RD/+44TB1JoacSx6u1qXxAee8bfN/7GP3K/tnhoja2hH/VhNOqTmU2IQ4jvMuI7MHOG3tChjFhdS9AEcKQElsoQ20saF9qwXv8ugeYQdlLZuctC/Tewe6yQEkS+2eDQkKsspqvPxgMtbMHjEPut8f1D18qoxOA5SGu83uvKVxkEMZ1BjI5XKSsSDNr5eIUx2gKvvSc18n0meg5shyZ6wLURuzQe0rXgKQcRAs4W0VhB10qoQJapXFnjXBZoQP7hJxGvtiMWXOQV0YQ+Kf4vhnf6elwEyIyZJGybgUlQnZuUM/iU5TwVlSWns7hOXBoXifi7YqBTCxEt4ryR2kJhPMg0ZA2iQhjdLNLHST3fNRclOYM2ThmNty2a55LPihyUXg2IocxJQrOMi3mQyXTJS2eEkvTmMTZ6UZw+4pyKz0WPMo27hwmivWu0X5Xmz1RyTeIvDIPOm5J88LXQ81Y0DOCg5FwRxlGKSZ7llxhzCQbhpms0O2NHl57tVroKt5PsU2D7LhkSL5inS5XQgASQZHGQU/XPoVwnsOTwCLLzAcekK4CT9XurcXTKxeu25vDM+ZCTEW/ZDEQV2mjXPq5dY2kjXp+8j3gNoh9MvW8JFwae4+LPMHKI3beJD57vsxGhzPc8d+DsFhnnQ8Q0DnCRFMZuu+v2RJHMQL60+bZ3PE3jN5h/Ma/13YJq7XhpuHYmNddXk2A0r+qpjN77Z9O77f2ggi/47V5uKsuf+6vzfSpDT3cn+NcCPurV9/ozb0T88CKMyOxi4DvuBWVALsCzXXBDj7m285+ridjHttDQf0FIEYe4eYWpOw6rpdFzWjlc66mebfkt8B6UxLUB/BoRUxBlc+8QOF9R+IS8U1X8vHcYdlQM0DgKvqSFFEe0Gyy4Kpf0VQ03RpxLyy3g185/VPj3pbxP64iSnV9K/h8reeAelQK8sHuxVIRc41MNPVd7HqgJfAGWq0uxurt/485ClSZVJmYu0yLroSroXN9iHg6r4ezxT6ul3W2niEHV9dQiidvXrPE7mlRTTbsblHEyFTU41+P2/Qrq53whsKM6iEa7dQ8LTAfqtfk0mFoVyKk1nloiFTC1ulNLjwq0IEozjkBw247Stl5vNpWlkNQEsBvNnXdIV6ocqdgCQhRVaX1mqZRu7Of8CHRjJuhcIe7fbnnjNHo7a9svSUXl/2Ii6+dFzaTKHG+eRe7ZzqLBr8LZe0AE20s3Hj24BZ1cTQ/fAAVMtgneFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=41a480e483c6ba5078c11a30ceaad320"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>State == 'In Review'</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>d35c43c8-4a60-4539-b23d-e9c5d89eec41</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 17:23:03</sys_created_on>
+        <sys_id>fd9d8868830aba5078c11a30ceaad36f</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:12</sys_updated_on>
+        <ui_id>f78e35d2-f5d8-4065-85e8-bd27b0b41057</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UUW/aMBD+K1Geo8ghwChv0xjSHtZKbOtLV1lOfIA1J85sJ8AQ/33nxKG03TpUIU2TxlN8vvvu+84fd7cPBQ+n4RA4Sa6ScZ4maTogZDAZJtk4zZIBTxlAEkZhyQrATA250hzPDZO1C+z37zQwCzxQOvhScfdJkzivtYbSHg6YyoWpJNvd+gqM5GshOd6H07v7KKyYRnALOpzun1zZXQVUsgwkFs5UXhcIGnyYIca5xPvqRc/8qRLXA8/co1Phgnjl+CQkCmFroeSA7ZZMGojCgpUoU+ldOLW6xgAOgN+UcnfMWIvSdkoLtjXiB+IPictbAkrL/RSOR+on1A9HiRxuKitU2UUsy2Q/OSXrorzuJLjZwpLV0p7MtjaIB5Wj7Eh0DJef1mqz6PvNRdmq82ylypk8npi1WmS1BeOeAyS0QylYVYlyRSutGtEWI5UiXkk8xEupNtjTiFUZs9zxjnFALJ5jfNaGb5kWTsRHhMHiQyuefq9d306GJ0xbza1g2j4Upppci8q+ReAGPM1D5J2bjV4yQH718N4nmA/u3dJkMiJvyJiuVGMKRgmFopLUMvPtuXMX0AjYgA7eY47aAbzayp8dmeC6I3OukEfFvxHmzfwo5r08upiXJ3/Jy57RP2bmP1mYDF7cYScv3brWnNjXWFy3X2tCUj54btcnt690qvs/IE7QoUZnc+4B5gIkN78Q0VvVN6CNb3BcvRfzazIm7e//Br7gBr7/CUmPmdk9CAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fd9d8868830aba5078c11a30ceaad36f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3763042483c6ba5078c11a30ceaad3b2^sys_idNOT IN399d8868830aba5078c11a30ceaad36d,cac9c6e98342f29078c11a30ceaad3f5"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">359d8868830aba5078c11a30ceaad36c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 17:23:03</sys_created_on>
+        <sys_id>399d8868830aba5078c11a30ceaad36d</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:12</sys_updated_on>
+        <ui_id>d35c43c8-4a60-4539-b23d-e9c5d89eec41</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4XPjuGP2GtyCzYUGLCtwFr0shUGLdGJMFnyJDltFuS/j/JHGmwJNgw97mY9iuR71KP3ge5c2zl7r1fWirUKll8ew0Aoj9H3PlDQYLAMmFZcOKFV2QNhsAXZ+YCwV6u2NXqLnFAubCth93A2yDZCcoNjjxYMVXJoguX+l5DbtVhKqFBSjTtnhFpTuuB0qmOokwVLWJYWWRrH6fU8qYqsSlKeAUJG96bEtxPlqw89El7U4vsRbqdO2nBPK4nDAJ8dKk70lzVIi2HQgOLgtNkdEYPAb5V8ATZCOSoX+MvPVvyg2mme+4s1kkaGQ/B4LMepDTDbaMHwtvUEB8RBJcccpmXXqE+DDj9vrKGTbpo3IZ2leth60p7FSKm+2+inz1PDG6F6gWNQagbyeAJHY6g6h9Y/DEpsqFDZQNvScEr/mKJPJi5NtJZ0iGqpn6ip908EzBOPaEYQ3RD+rocfwAiv4iOVoeSBZgVWsLL3GpVzhiQc+rGU3ztPaBA4SimHadAFy4xo3Yr6bHFkfQh/N+qJR/d7nsY1y/PFDPKsmM2ToppV8TybFXV2jW8qtoA5RtBbFWRpHTg8HL52cZxxuOju1yr7GnuxgLzOkzg/vxfz4txenNmIy8uQ/mEZ/PP95S7Ecfx/GU6XQdhyMPWorW/+z7vw6I0/dLCDbzgyYYnIvcfeT/92H9iRAQQ7hZ60+eYlvGCHn+Xkw+slBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8ac9c6e98342f29078c11a30ceaad3f4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>d35c43c8-4a60-4539-b23d-e9c5d89eec41</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-26 04:59:34</sys_created_on>
+        <sys_id>cac9c6e98342f29078c11a30ceaad3f5</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:12</sys_updated_on>
+        <ui_id>7c062bcc-d511-4a1c-aeb4-94216bc36dc3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3763042483c6ba5078c11a30ceaad3b2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>0da440e483c6ba5078c11a30ceaad3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:43:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3763042483c6ba5078c11a30ceaad3b2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>30a440e483c6ba5078c11a30ceaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:43:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3763042483c6ba5078c11a30ceaad3b2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:43:57</sys_created_on>
+        <sys_id>45a440e483c6ba5078c11a30ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:43:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3763042483c6ba5078c11a30ceaad3b2"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27800</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>assign_to_manager</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.assignment_group.manager","label":"Trigger - Record Created or Updated➛Reviewer Employee Record➛Assignment group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_group","column_name":"manager","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["approval_conditions"]}},{"name":"Created or Updated_1.table_name","label":"Trigger - Record Created or Updated➛Reviewer Employee Table","reference":"x_1850706_govsma_0_empl_task","reference_display":"Reviewer Employee","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Reviewer Employee Record","reference":"x_1850706_govsma_0_empl_task","reference_display":"Reviewer Employee","type":"reference","base_type":"reference","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["record"],"a5630699-0df4-417c-a06e-b4a7fb6722f7":["record"],"f78e35d2-f5d8-4065-85e8-bd27b0b41057":["record"],"84a2263c-c71c-40ba-95f7-ed36b5956476":["record"],"19003716-3f9e-47df-87a3-797358a2963b":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.assignmen_group","label":"Trigger - Record Created or Updated➛Government Service Request Record➛Assignment Group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"x_1850706_govsma_0_government_service_request","column_name":"assignmen_group","usedInstances":{}},{"name":"Created or Updated_1.current.assignmen_group.manager","label":"Trigger - Record Created or Updated➛Government Service Request Record➛Assignment Group➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_group","column_name":"manager","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["approval_conditions"]}},{"name":"d20fc559-a536-416b-b043-6f38e7bc9a4e.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"d35c43c8-4a60-4539-b23d-e9c5d89eec41":["condition"],"c8fbeb19-a688-423e-952b-6ba667ad3703":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Reviewer Employee Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1850706_govsma_0_empl_task","column_name":"number","usedInstances":{"d20fc559-a536-416b-b043-6f38e7bc9a4e":["approval_reason"]}}]</label_cache>
+        <master>true</master>
+        <name>Assign to Manager Reviewer</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Assign to Manager Reviewer">3763042483c6ba5078c11a30ceaad3b2</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d6e4c8e483c6ba5078c11a30ceaad3bf</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d6e4c8e483c6ba5078c11a30ceaad3bf^sys_idNOT INd6e4c8e483c6ba5078c11a30ceaad3c0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d6e4c8e483c6ba5078c11a30ceaad3bf</id>
+        <name>Assign to Manager </name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>d6e4c8e483c6ba5078c11a30ceaad3c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:45:08</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d6e4c8e483c6ba5078c11a30ceaad3c0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d6e4c8e483c6ba5078c11a30ceaad3bf^sys_idNOT IN12e4c8e483c6ba5078c11a30ceaad3e0,16e4c8e483c6ba5078c11a30ceaad3eb,dee4c8e483c6ba5078c11a30ceaad3c1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</model>
+        <model_id>d6e4c8e483c6ba5078c11a30ceaad3bf</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d6e4c8e483c6ba5078c11a30ceaad3bf</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>12e4c8e483c6ba5078c11a30ceaad3e0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 18:51:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=12e4c8e483c6ba5078c11a30ceaad3e0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</model>
+        <model_id>d6e4c8e483c6ba5078c11a30ceaad3bf</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d6e4c8e483c6ba5078c11a30ceaad3bf</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>16e4c8e483c6ba5078c11a30ceaad3eb</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=16e4c8e483c6ba5078c11a30ceaad3eb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</model>
+        <model_id>d6e4c8e483c6ba5078c11a30ceaad3bf</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_d6e4c8e483c6ba5078c11a30ceaad3bf</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>dee4c8e483c6ba5078c11a30ceaad3c1</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dee4c8e483c6ba5078c11a30ceaad3c1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d6e4c8e483c6ba5078c11a30ceaad3bf^sys_idNOT IN62e40ce483c6ba5078c11a30ceaad30f"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment>Triggered When State == 'Pending Review Approval'</comment>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>62e40ce483c6ba5078c11a30ceaad30f</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:13</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d6e4c8e483c6ba5078c11a30ceaad3bf^sys_idNOT IN8cc168e083caba5078c11a30ceaad351,a6e40ce483c6ba5078c11a30ceaad30c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>State == 'In Review'</comment>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>d35c43c8-4a60-4539-b23d-e9c5d89eec41</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 18:51:09</sys_created_on>
+        <sys_id>8cc168e083caba5078c11a30ceaad351</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 18:25:43</sys_updated_on>
+        <ui_id>f78e35d2-f5d8-4065-85e8-bd27b0b41057</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPUZQQYJS3CYY0qWsluvHSVZaJL2DNiTPb4WOI/77rxAEEVUelvqDxlPtln3M5J3neEcHJgHSAR/Fd3EuTOEnaUdTud+JZL5nFbZ4wgJgEJGcZYKeGVGmO8YrJ0iV2u6EGZoG3lG79KLh7pHGYllpDbvd7bOXCFJJtp34CM+lSSI51Mnh+CUjBNB5uQZPB7qx0LTrJZiCxddLAO4drt4WLuUrLDHFR0STv/eTIV1pfR1jBIQcnjgICGws5BwQyZ9JAQDKWI0ult2RgdYkJ5M8fc7k9dCxFbmuiGdsY8Qdv7kSubw7ILPVLOITUL6hOz0fMsic8ObWlPuxLiRRMvRMOc1ZKOzzN1Q2PhRUqr0csm8lmWskyyx/qjZDDASf/R2kQBBSOp0Ne05o/LdV60oAci7xaiacoVcrkIWLWajErrYOzIyCh2nHGikLkC1potRLVMELJwoXEIJxLtcY7jVjkIUsd7hC3ysIx5kdVesq0cCS+4TE4vA+I2ZqhZMYcqeAO6e/SIamJeQq02kK1AlopwQ2nWhT2M161Ag98H3j9z7pvKSy9Owrq5MyjBzY07nejT1GPLtTKZIxGFLJCUsvMr0v9T2AlYA269QV71Bbg3Ya4Am5jiO+VDF6H7z1xkbs/nW091AXviO6HOaJ/S47wNG7eEv8yQtR+81V7oqRK++bEBMbiq/9nGUUJb1+K/qz6Pr1fgarR+1iA5OYVmI3YnTERCq1hnwneF1tTXzx8Bj5M9XEvqn43pP3/5mvw8hfpBNQ0DwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8cc168e083caba5078c11a30ceaad351"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Ask Manager Reviewer For Approval</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>a6e40ce483c6ba5078c11a30ceaad30c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-09 20:15:42</sys_updated_on>
+        <ui_id>d20fc559-a536-416b-b043-6f38e7bc9a4e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2Y32/iOBDH/xWUZ8o6hITAW1Wu0p72h0TbfSlVZJwJeM9xsnZCyyL+95skDmShpXBiH3rdF4THM853JvOJndyvLB5aQ6vvR10YDLpkahPiEOK7jPgOTJ2+13coI1bbkjQG9FTAEhXieEFFXhhWqysFNIOwlajWXRoWfwO7w3KlQGbrNbqGXKeCLr+ZCLSwORchzlvD+4e2lVKFi2egrOFqZ+pYdYJOQaDruJa3KzdbpsU4TFgeo66A18ZPJnJkZlofRziDQYUc0rbgKQMZAuqIqNDQtmIqMclELa1hpnI0YPrhVymWG485l1mVZ0yfNP+JF3a6hV8EmBgzNdgMA1OfyhyNaEZvcGWW5WpTroQz0FVJQohoLrKrpq1y+JpmPJFVSEanoo5ORB7LL1VBrM0CjduRaxQBaZFnobxKK7qZJ4/jWuQ1l2VFTIoiYVRsRjTLFJ/mWSFnZYGAssQxTVMuZ0GqkgUvg1FK3JkJHHQikTziNTWfyQ5lhe4OVpV2rtE+Ks3fqOJFEp9xGQxety291FeCar1NBWsY/MgLJVViJoWgrEJVgiKOKZ5ml3iVBRjN67bp/Ck72Fts20rVctvGfwps3yV94gWzZKFjGpAA4lQEGdX/7Df9GBYcHkG1/kKfZAlwMgVHKK0puDVSd5QbBsphUM79ikAZ1vpSTRgC7MMEGMsWgap3niHAJ2+IAJPWm0fgte6Hnue4+NOPHGJ3beKD5/tsQCjzPc/tOdseQgWYAxUB3mqNax+7AXRkHk9BPbcPHB94GihHJFWDcmmyao3rrF5M18Cj8TbL2Q44N7XRQNM9EZqX9w3be0/Y5Px2p8qVZa/Ov4ev4nJ3kv/I4WPRR1536g2IH16EEZle9HzHvaAMyAV4tgtu6DHXdn4Dk8Q+9JwP/WeaNOIgmmeyemKfucbMaVAdoWoPqmsj6yW5Bqly+Nx+VMbv7EfnQ8sn5C2x9Z4OZexgs0FjW/qe5EoeICCYc112xoskNDxOI+IIkTURf1cqd4HYFf9feHD+8PD/56HnHmy1xlF/09UskSEvFOsGFdWTGfQYvgPL9KVc3t2/cgrDTDDNslQzleRpB5uLzopz2cM+U2df/zQijyjT5jtBLkC/VjbD4/YsaIKaTG5PkGbScNk715eDN4ble3lzYgd7LRpseyvMsUDY9c1XpolVyZ5Yw4klEwkTqz2xCq+gaK7SjB4objNR2lar9bqy5IqaBezGcBsd0qUuPTWbQ4i9WVp/sQQlDMZ+ju90R9Sk5m+UQ2tUFWW/TPWrVq2zqgvf2w9vjEO50odb3twX3bPti70/+J3jxSrYvHrgpodPvzMy+fAv8LrRW8cWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a6e40ce483c6ba5078c11a30ceaad30c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d6e4c8e483c6ba5078c11a30ceaad3bf^sys_idNOT IN5ac90ae98342f29078c11a30ceaad3d4,5cc168e083caba5078c11a30ceaad353"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8ac9c6e98342f29078c11a30ceaad3f4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>d35c43c8-4a60-4539-b23d-e9c5d89eec41</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-26 04:59:36</sys_created_on>
+        <sys_id>5ac90ae98342f29078c11a30ceaad3d4</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <ui_id>7c062bcc-d511-4a1c-aeb4-94216bc36dc3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">359d8868830aba5078c11a30ceaad36c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Assign to Manager Reviewer">d6e4c8e483c6ba5078c11a30ceaad3bf</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 18:51:09</sys_created_on>
+        <sys_id>5cc168e083caba5078c11a30ceaad353</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <ui_id>d35c43c8-4a60-4539-b23d-e9c5d89eec41</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0XPjpHt2GvyFlIKg26FtfRlK+Zakhsx2fIkOWkW8t935Y8kdClbWR/3Fp37de7xPWRHdOua1tl7vbBWPtVk/vUxILL2GP7ekRoqQeaE6ZpLJ3Wdd0BA1qBaH5D2YtE0Rq8FR5RL2yjYPpwNspVU3IhhRgMGOzlhyHz3IiQ51pYUymjGIpbEWRJTGl9OoyJLiijmCQhIsKGCQihMXY7kLm46JHiVtds2HrfOyPppeN8MXe5GUBvuWUU0IOLZiZoj+3kJyoqAVFBzcNpsD4gRwG9rdQRWsnbYjvjkZyt/4sA4TX1iKXBFJvrg4ZkPovVweQUOkErLXGuGVLbSkgnbi8NFCa1yy1OsT7ht/Kp9iYNCjdVatVX9uVeEHBqM3wiR1iIJ0fhNPfVhj/JupTdfRpbXsu5UGYJKM1CHFzjUrmid57MjQokKG+UVNA0qmvsDkF0xcqnCJ4WPsFR6g0P9zYXAPPEQhYXwGvGrDn4AI/0Wn7ANFvc0C7CS5d19YjuUSZB9QOzWLhVYe1wS1c1/tJ5iv/KwXN7r40uYkY1b4OS1GPbYB7+f+8ml73Y8piVL09kE0iSbTKOsmBR0mkyyMrkUHwo2g6kIoTt4ULl14MR+/62lNOHwqkfeq+3b3DWDtEwjmp531zQ7564zvnqjpeI/WMp/z790FKX0v6X+2VLS5r0Rht264e/oqEdvn37mQWsmLVK799jH8X/GB7Z4XJKdQhttvvuljtj+F+tkddmxBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d6e4c8e483c6ba5078c11a30ceaad3bf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>56e4c8e483c6ba5078c11a30ceaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:45:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d6e4c8e483c6ba5078c11a30ceaad3bf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>d2e4c8e483c6ba5078c11a30ceaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:45:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d6e4c8e483c6ba5078c11a30ceaad3bf</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:08</sys_created_on>
+        <sys_id>d6e4c8e483c6ba5078c11a30ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 16:45:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d6e4c8e483c6ba5078c11a30ceaad3bf"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3763042483c6ba5078c11a30ceaad3b2</sys_id>
+        <latest_snapshot>d6e4c8e483c6ba5078c11a30ceaad3bf</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch8-09-17-2025_10-11-2025_0527.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3763042483c6ba5078c11a30ceaad3b2^sys_idNOT IN22e40ce483c6ba5078c11a30ceaad324"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"22e40ce483c6ba5078c11a30ceaad324","name":"plan","plan_signature":null}}</plan>
+        <plan_id>3763042483c6ba5078c11a30ceaad3b2</plan_id>
+        <snapshot>d6e4c8e483c6ba5078c11a30ceaad3bf</snapshot>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 16:45:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>22e40ce483c6ba5078c11a30ceaad324</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:35:14</sys_updated_on>
+        <trigger display_value="">50499e428346f69078c11a30ceaad328</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3763042483c6ba5078c11a30ceaad3b2"/>
+</record_update>

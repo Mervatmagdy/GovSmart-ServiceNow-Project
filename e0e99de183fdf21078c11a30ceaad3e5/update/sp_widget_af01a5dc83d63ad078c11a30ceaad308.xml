@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function (spUtil, $location, $window) {
+  var c = this;
+
+  c.submitting = false;
+  c.editingMode = !!$location.search().sys_id;
+
+  c.form = {
+    sys_id: '',
+    service_type: 'renew_your_driver_s_license',
+    location: 'Egypt',
+    government: '',
+    region: '',
+    profession: '',
+    required_license_category: '',
+    blood_type: '',
+    does_the_applicant_have_any_medical_conditions_preventing_driving: '',
+    fileName: '',
+    fileType: '',
+    fileData: '',
+    description: ''
+  };
+
+  c.regions = [];
+
+  c.onGovernmentChange = function () {
+    c.regions = [];
+    if (!c.form.government) return;
+
+    c.server.get({ action: 'get_regions', government: c.form.government })
+      .then(function (r) {
+        c.regions = r.data.regions || [];
+      });
+  };
+
+  if (c.editingMode) {
+    var sysId = $location.search().sys_id;
+    c.server.get({ action: 'load_request', sys_id: sysId })
+      .then(function (r) {
+        if (r.data && r.data.form) {
+          c.form = angular.copy(r.data.form);
+          if (c.form.government) c.onGovernmentChange();
+        }
+      });
+  }
+
+  c.submit = function () {
+    if (c.submitting) return;
+
+    if (!c.form.government || !c.form.region || !c.form.profession ||
+        !c.form.required_license_category || !c.form.blood_type ||
+        !c.form.does_the_applicant_have_any_medical_conditions_preventing_driving) {
+      spUtil.addErrorMessage("Please fill in all required fields.");
+      return;
+    }
+
+    c.submitting = true;
+    var fileInput = $window.document.getElementById('fileInput');
+
+    if (fileInput && fileInput.files.length > 0) {
+      var file = fileInput.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        c.form.fileName = file.name;
+        c.form.fileType = file.type;
+        c.form.fileData = e.target.result.split(',')[1];
+        c.sendToServer();
+      };
+      reader.readAsDataURL(file);
+    } else {
+      c.sendToServer();
+    }
+  };
+
+  c.sendToServer = function () {
+    var action = c.form.sys_id ? 'update_request' : 'insert_request';
+
+    c.server.get({ action: action, payload: c.form })
+      .then(function (r) {
+        c.submitting = false;
+        if (r.data && r.data.success) {
+          spUtil.addInfoMessage("Request saved successfully!");
+          $location.search({ id: 'gov_user_request' });
+        } else {
+          spUtil.addErrorMessage("Error submitting request.");
+        }
+      });
+  };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>renew_driver_license</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Renew driver license</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+  data.userDisplayName = gs.getUserDisplayName();
+  var userId = gs.getUserID();
+
+  /* ========= Load Request for Edit ========= */
+  if (input && input.action === 'load_request' && input.sys_id) {
+    var gr = new GlideRecord('x_1850706_govsma_0_government_service_request');
+    if (gr.get(input.sys_id)) {
+      data.form = {
+        sys_id: gr.getUniqueValue(),
+        service_type: gr.service_type.toString(),
+        location: gr.location.toString(),
+        government: gr.government.toString(),
+        region: gr.region.toString(),
+        profession: gr.profession.toString(),
+        required_license_category: gr.required_license_category.toString(),
+        blood_type: gr.blood_type.toString(),
+        does_the_applicant_have_any_medical_conditions_preventing_driving: 
+          gr.does_the_applicant_have_any_medical_conditions_preventing_driving.toString()
+      };
+
+      var taskGr = new GlideRecord('x_1850706_govsma_0_empl_task');
+      taskGr.addQuery('requester_data', gr.getUniqueValue());
+      taskGr.query();
+      data.form.description = taskGr.next() ? taskGr.getValue('description') || '' : '';
+    }
+    return;
+  }
+
+  /* ========= Regions ========= */
+  if (input && input.action === 'get_regions') {
+    data.regions = [];
+    if (input.government === 'cairo') {
+      data.regions.push(
+        { value: 'Ain El Sira Traffic Office', label: 'Ain El Sira Traffic Office' },
+        { value: 'Heliopolis Traffic Office', label: 'Heliopolis Traffic Office' },
+        { value: 'New Nasr City Traffic Office', label: 'New Nasr City Traffic Office' }
+      );
+    }
+    if (input.government === 'alexandria') {
+      data.regions.push(
+        { value: 'Abees Traffic Unit', label: 'Abees Traffic Unit' },
+        { value: 'Montazah Traffic Unit', label: 'Montazah Traffic Unit' },
+        { value: 'El Montazah Traffic Licenses Unit', label: 'El Montazah Traffic Licenses Unit' }
+      );
+    }
+    return;
+  }
+
+  /* ========= Insert / Update Request ========= */
+  if (input && (input.action === 'insert_request' || input.action === 'update_request')) {
+    var gr;
+    var isUpdate = input.action === 'update_request';
+
+    if (isUpdate) {
+      gr = new GlideRecord('x_1850706_govsma_0_government_service_request');
+      if (!gr.get(input.payload.sys_id)) {
+        data.success = false;
+        return;
+      }
+    } else {
+      gr = new GlideRecord('x_1850706_govsma_0_government_service_request');
+      gr.initialize();
+
+      var userGR = new GlideRecord('sys_user');
+      if (userGR.get(userId)) {
+        gr.user_name = userGR.first_name + ' ' + userGR.last_name;
+        gr.email = userGR.email;
+        gr.mobile_phone = userGR.mobile_phone;
+        gr.marital_status = userGR.u_marital_status;
+        gr.national_id = userGR.u_national_id;
+        gr.date_of_birth = userGR.u_date_of_birth;
+      }
+    }
+
+    gr.service_type = input.payload.service_type;
+    gr.location = input.payload.location;
+    gr.government = input.payload.government;
+    gr.region = input.payload.region;
+    gr.profession = input.payload.profession;
+    gr.required_license_category = input.payload.required_license_category;
+    gr.blood_type = input.payload.blood_type;
+    gr.does_the_applicant_have_any_medical_conditions_preventing_driving =
+      input.payload.does_the_applicant_have_any_medical_conditions_preventing_driving;
+
+    var recordSysId = isUpdate ? gr.update() : gr.insert();
+
+    // Attachment
+    if (input.payload.fileData && input.payload.fileData.length > 0) {
+      var attachment = new GlideSysAttachment();
+      attachment.writeBase64(gr, input.payload.fileName, input.payload.fileType, input.payload.fileData);
+
+      // Reset task state if update
+      if (isUpdate) {
+        var taskGr = new GlideRecord('x_1850706_govsma_0_empl_task');
+        taskGr.addQuery('requester_data', gr.getUniqueValue());
+        taskGr.query();
+        while (taskGr.next()) {
+          taskGr.document_status = '';
+        taskGr.state = 2; // Work in Progress
+        taskGr.update();
+        }
+      }
+    }
+
+    data.success = true;
+    data.recordSysId = gr.getUniqueValue();
+    return;
+  }
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-03 15:04:56</sys_created_on>
+        <sys_id>af01a5dc83d63ad078c11a30ceaad308</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Renew driver license</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_widget_af01a5dc83d63ad078c11a30ceaad308</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 14:33:01</sys_updated_on>
+        <template><![CDATA[<form name="driverForm" novalidate ng-submit="c.submit()" style="padding-bottom: 80px;">
+
+  <!-- ===================== FORM TITLE ===================== -->
+  <div class="text-center" style="margin-bottom: 25px;">
+    <h2 style="
+          font-weight: 700;
+          color: #2c3e50;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        ">
+      Renew Your Driver’s License
+    </h2>
+  </div>
+
+  <!-- ===================== LOCATION & REQUESTER ===================== -->
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <label>Location</label>
+      <input type="text" class="form-control" ng-model="c.form.location" readonly>
+    </div>
+    <div class="col-md-6 form-group">
+      <label>Requester Name</label>
+      <input type="text" class="form-control" ng-value="data.userDisplayName" readonly>
+    </div>
+  </div>
+
+  <!-- ===================== GOVERNORATE ===================== -->
+  <div class="form-group">
+    <label>Governorate <span class="text-danger">*</span></label>
+    <select class="form-control" name="government" ng-model="c.form.government"
+            ng-change="c.onGovernmentChange()" ng-required="true" ng-disabled="c.submitting">
+      <option value="">-- Select Governorate --</option>
+      <option value="cairo">Cairo</option>
+      <option value="alexandria">Alexandria</option>
+    </select>
+    <div class="error-text" ng-if="driverForm.government.$invalid && driverForm.$submitted">
+      Governorate is required
+    </div>
+  </div>
+
+  <!-- ===================== REGION ===================== -->
+  <div class="form-group">
+    <label>Region <span class="text-danger">*</span></label>
+    <select class="form-control" name="region" ng-model="c.form.region"
+            ng-options="r.value as r.label for r in c.regions"
+            ng-required="true" ng-disabled="!c.regions.length || c.submitting">
+      <option value="">-- Select Region --</option>
+    </select>
+    <div class="error-text" ng-if="driverForm.region.$invalid && driverForm.$submitted">
+      Region is required
+    </div>
+  </div>
+
+  <!-- ===================== PROFESSION ===================== -->
+  <div class="form-group">
+    <label>Profession <span class="text-danger">*</span></label>
+    <input type="text" class="form-control" name="profession" ng-model="c.form.profession"
+           ng-required="true" ng-disabled="c.submitting">
+    <div class="error-text" ng-if="driverForm.profession.$invalid && driverForm.$submitted">
+      Profession is required
+    </div>
+  </div>
+
+  <!-- ===================== REQUIRED LICENSE CATEGORY ===================== -->
+  <div class="form-group">
+    <label>Required License Category <span class="text-danger">*</span></label>
+    <input type="text" class="form-control" name="required_license_category"
+           ng-model="c.form.required_license_category" ng-required="true" ng-disabled="c.submitting">
+    <div class="error-text" ng-if="driverForm.required_license_category.$invalid && driverForm.$submitted">
+      License Category is required
+    </div>
+  </div>
+
+  <!-- ===================== BLOOD TYPE ===================== -->
+  <div class="form-group">
+    <label>Blood Type <span class="text-danger">*</span></label>
+    <input type="text" class="form-control" name="blood_type" ng-model="c.form.blood_type"
+           ng-required="true" ng-disabled="c.submitting">
+    <div class="error-text" ng-if="driverForm.blood_type.$invalid && driverForm.$submitted">
+      Blood Type is required
+    </div>
+  </div>
+
+  <!-- ===================== MEDICAL CONDITIONS ===================== -->
+  <div class="form-group">
+    <label>Do you have any medical condition that prevents you from driving? <span class="text-danger">*</span></label>
+    <select class="form-control" name="medical_conditions"
+            ng-model="c.form.does_the_applicant_have_any_medical_conditions_preventing_driving"
+            ng-required="true" ng-disabled="c.submitting">
+      <option value="">-- Select --</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+    <div class="error-text" ng-if="driverForm.medical_conditions.$invalid && driverForm.$submitted">
+      This field is required
+    </div>
+  </div>
+
+  <!-- ===================== ATTACHMENT ===================== -->
+  <div class="form-group">
+    <label>Supporting Document <span class="text-danger">*</span></label>
+    <input type="file" id="fileInput" class="form-control" ng-disabled="c.submitting"
+           onchange="angular.element(this).scope().c.hasAttachment = this.files.length > 0; angular.element(this).scope().$apply()">
+    <div class="error-text" ng-if="driverForm.$submitted && !c.hasAttachment">
+      Supporting document is required
+    </div>
+  </div>
+
+  <!-- ===================== REVIEW NOTES (EDIT MODE) ===================== -->
+  <div class="form-group" ng-if="c.editingMode && c.form.description">
+    <label>Employee Review Notes</label>
+    <textarea class="form-control alert alert-danger" ng-model="c.form.description"
+              readonly rows="3" style="color:#721c24;background-color:#f8d7da;border-color:#f5c6cb;"></textarea>
+  </div>
+
+  <!-- ===================== STICKY SUBMIT BUTTON ===================== -->
+  <div class="sticky-submit">
+    <button type="submit" class="btn"
+            ng-disabled="driverForm.$invalid || !c.hasAttachment || c.submitting"
+            ng-class="{
+              'btn-primary': driverForm.$valid && c.hasAttachment,
+              'btn-lightgrey': driverForm.$invalid || !c.hasAttachment
+            }">
+      <i class="fa fa-spinner fa-spin" ng-if="c.submitting"></i>
+      Submit Request
+    </button>
+  </div>
+
+</form>
+
+<style>
+/* ===== GENERAL FORM ===== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ===== INPUTS ===== */
+.form-control {
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: all .2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 2px rgba(0,86,179,.15);
+}
+
+/* ===== READONLY ===== */
+input[readonly], textarea[readonly] {
+  background-color: #f8f9fa !important;
+  cursor: not-allowed;
+}
+
+/* ===== ANGULAR VALIDATION ===== */
+.ng-invalid.ng-touched,
+.ng-invalid.ng-submitted {
+  border-color: #dc3545 !important;
+}
+
+/* ===== ERROR MESSAGE ===== */
+.error-text {
+  font-size: 12px;
+  color: #dc3545;
+  margin-top: 4px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-lightgrey {
+  background-color: #d6d6d6;
+  color: #555;
+  border: none;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+}
+
+.btn-primary:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* ===== STICKY BUTTON ===== */
+.sticky-submit {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.sticky-submit .btn {
+  padding: 12px 36px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* ===== SPINNER ===== */
+.fa-spinner {
+  margin-right: 6px;
+}
+</style>
+]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>af01a5dc83d63ad078c11a30ceaad308</id>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-03 15:04:56</sys_created_on>
+        <sys_id>af016150831a3ad078c11a30ceaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-03 15:04:56</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

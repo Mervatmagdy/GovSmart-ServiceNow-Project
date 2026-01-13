@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="government" table="x_1850706_govsma_0_government_service_request">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="mobile_phone" table="x_1850706_govsma_0_government_service_request">
         <active>true</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>3</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Governorate</column_label>
+        <column_label>Mobile Phone</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,40 +21,42 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>government</element>
+        <element>mobile_phone</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
-        <mandatory>true</mandatory>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_1850706_govsma_0_government_service_request</name>
         <next_element/>
         <primary>false</primary>
         <read_only>true</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="sys_user">sys_user</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>mobile_phoneANYTHING^EQ</reference_qual>
+        <reference_qual_condition table="sys_user">mobile_phoneANYTHING^EQ<item endquery="false" field="mobile_phone" goto="false" newquery="false" operator="ANYTHING" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
-        <sys_created_by>mervet.admin</sys_created_by>
-        <sys_created_on>2025-12-13 18:05:23</sys_created_on>
-        <sys_id>56f006618335361078c11a30ceaad352</sys_id>
-        <sys_name>Governorate</sys_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-04 19:11:50</sys_created_on>
+        <sys_id>8223eb2c839afad078c11a30ceaad3a1</sys_id>
+        <sys_name>Mobile Phone</sys_name>
         <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
         <sys_policy/>
         <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
-        <sys_update_name>sys_dictionary_x_1850706_govsma_0_government_service_request_government</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-01-12 18:32:21</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_1850706_govsma_0_government_service_request_mobile_phone</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-09 19:28:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
