@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes>fdacb518b7320110aab961d9ce11a989</includes>
+        <macroponent display_value="Dashboards">3cece993830e32d078c11a30ceaad357</macroponent>
+        <name>Dashboard Widget Clicked</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+	helpers.timing.setTimeout(function() {
+		function isPolaris() {
+			const polarisProperty = api.data.get_system_properties_values_1.output.properties['glide.ui.polaris.experience'];
+			const polarisUserPref = api.data.get_user_prefs__as_object__1.result['glide.ui.polaris.use'];
+			return (polarisProperty.toString().toLowerCase() == "true" && polarisUserPref === "true");
+		}
+		const isPolarisDisabled = !(isPolaris());
+		const {getPayload} = imports['sn_app_analytics_w.ParWidgetsDrilldowns']();	
+    	const payload = getPayload(event, isPolarisDisabled, this);	
+		api.emit('NAV_ITEM_SELECTED', payload);
+	});
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 13:22:43</sys_created_on>
+        <sys_id>b4ece993830e32d078c11a30ceaad371</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Dashboard Widget Clicked</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_client_script_b4ece993830e32d078c11a30ceaad371</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 13:22:43</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_client_script_b4ece993830e32d078c11a30ceaad371</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes&gt;fdacb518b7320110aab961d9ce11a989&lt;/includes&gt;&lt;macroponent display_value="Dashboards"&gt;3cece993830e32d078c11a30ceaad357&lt;/macroponent&gt;&lt;name&gt;Dashboard Widget Clicked&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+	helpers.timing.setTimeout(function() {
+		function isPolaris() {
+			const polarisProperty = api.data.get_system_properties_values_1.output.properties['glide.ui.polaris.experience'];
+			const polarisUserPref = api.data.get_user_prefs__as_object__1.result['glide.ui.polaris.use'];
+			return (polarisProperty.toString().toLowerCase() == "true" &amp;&amp; polarisUserPref === "true");
+		}
+		const isPolarisDisabled = !(isPolaris());
+		const {getPayload} = imports['sn_app_analytics_w.ParWidgetsDrilldowns']();	
+    	const payload = getPayload(event, isPolarisDisabled, this);	
+		api.emit('NAV_ITEM_SELECTED', payload);
+	});
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;menna.admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-31 13:22:43&lt;/sys_created_on&gt;&lt;sys_id&gt;b4ece993830e32d078c11a30ceaad371&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Dashboard Widget Clicked&lt;/sys_name&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_b4ece993830e32d078c11a30ceaad371&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;menna.admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-31 13:22:43&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1535048339</payload_hash>
+        <record_name>Dashboard Widget Clicked</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 13:22:43</sys_created_on>
+        <sys_id>3cece993830e32d078c11a30ceaad376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b7493354e0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 13:22:43</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>38ece993b30e32d03653c669ba35d375</update_guid>
+        <update_guid_history>38ece993b30e32d03653c669ba35d375:1535048339</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 14:35:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>6f240653f9fd472f8394b78e25833bd9</sys_id>
+        <sys_metadata>b4ece993830e32d078c11a30ceaad371</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dashboard Widget Clicked</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_b4ece993830e32d078c11a30ceaad371</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_b4ece993830e32d078c11a30ceaad371">3cece993830e32d078c11a30ceaad376</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:35:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>SetRead Only User ReSubmit</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    if ((g_form.getValue('document_status') == 'expired_document' || g_form.getValue('document_status') == 'missing_document') && g_user.hasRoleExactly('x_1850706_govsma_0.user'))
+        //Type appropriate comment here, and begin script below
+        g_form.setReadOnly('service_type');
+    g_form.setReadOnly('government');
+    g_form.setReadOnly('region');
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-22 23:25:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a4ef51688382fa5078c11a30ceaad372</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>SetRead Only User ReSubmit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_client_a4ef51688382fa5078c11a30ceaad372</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 23:28:37</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_client_a4ef51688382fa5078c11a30ceaad372</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;SetRead Only User ReSubmit&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    if ((g_form.getValue('document_status') == 'expired_document' || g_form.getValue('document_status') == 'missing_document') &amp;&amp; g_user.hasRoleExactly('x_1850706_govsma_0.user'))
+        //Type appropriate comment here, and begin script below
+        g_form.setReadOnly('service_type');
+    g_form.setReadOnly('government');
+    g_form.setReadOnly('region');
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-22 23:25:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a4ef51688382fa5078c11a30ceaad372&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;SetRead Only User ReSubmit&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_a4ef51688382fa5078c11a30ceaad372&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-22 23:28:37&lt;/sys_updated_on&gt;&lt;table&gt;x_1850706_govsma_0_government_service_request&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1075134829</payload_hash>
+        <record_name>SetRead Only User ReSubmit</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-22 23:28:37</sys_created_on>
+        <sys_id>7c41a9ac8382fa5078c11a30ceaad31c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b4864b2b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 23:28:37</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7c41a9ac7d82fa50bea8664ed0425b1b</update_guid>
+        <update_guid_history>7c41a9ac7d82fa50bea8664ed0425b1b:-1075134829,45706de8fd82fa507eeb16f8760c1f5e:-1839933612</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-22 23:33:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>60d051dd7fe74916ba8f407af22aeda9</sys_id>
+        <sys_metadata>a4ef51688382fa5078c11a30ceaad372</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SetRead Only User ReSubmit</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Government Service Request">c93a352583f1361078c11a30ceaad358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_client_a4ef51688382fa5078c11a30ceaad372</sys_update_name>
+        <sys_update_version display_value="sys_script_client_a4ef51688382fa5078c11a30ceaad372">7c41a9ac8382fa5078c11a30ceaad31c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 23:33:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

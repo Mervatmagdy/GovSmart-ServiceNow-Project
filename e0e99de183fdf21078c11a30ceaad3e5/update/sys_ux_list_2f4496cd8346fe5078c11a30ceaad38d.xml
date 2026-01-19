@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
     <sys_ux_list action="INSERT_OR_UPDATE">
         <active>true</active>
-        <category display_value="Government Services ">234496cd8346fe5078c11a30ceaad38a</category>
+        <category display_value="Government Services Information">234496cd8346fe5078c11a30ceaad38a</category>
         <columns>number,service_type,requirement_documents</columns>
         <condition/>
-        <configuration display_value="GovSmart Review &amp;amp; Visit Management System_menu_config">eb4496cd8346fe5078c11a30ceaad32f</configuration>
+        <configuration display_value="GovSmart Review &amp;amp; Visit Management System">eb4496cd8346fe5078c11a30ceaad32f</configuration>
         <fixed_query/>
         <group_by_column/>
         <groups/>

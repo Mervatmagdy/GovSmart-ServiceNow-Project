@@ -3,7 +3,7 @@
         <can_read>true</can_read>
         <can_share>true</can_share>
         <can_write>true</can_write>
-        <dashboard display_value="GovSmart Dashboard For Admins">31ad3d17838e32d078c11a30ceaad32a</dashboard>
+        <dashboard display_value="GovSmart Dashboard - Admins">31ad3d17838e32d078c11a30ceaad32a</dashboard>
         <group/>
         <owner>true</owner>
         <role/>

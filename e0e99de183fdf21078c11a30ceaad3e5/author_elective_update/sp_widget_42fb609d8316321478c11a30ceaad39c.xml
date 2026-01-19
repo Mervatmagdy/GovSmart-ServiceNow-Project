@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($location) {
+  var c = this;
+  c.agreed = false;
+
+  c.nextStep = function() {
+    $location.search({
+      id: 'family_registration_form', 
+      service: $location.search().service_id
+    });
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.service-details-container { padding: 30px; background: #fdfdfd; direction: ltr; }&#13;
+.service-title { text-align: center; font-weight: bold; margin-bottom: 40px; color: #333; }&#13;
+.details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }&#13;
+.info-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 20px; }&#13;
+.card-header { padding: 15px; background: #f9f9f9; border-bottom: 1px solid #eee; font-weight: bold; display: flex; gap: 10px; }&#13;
+.card-body { padding: 20px; color: #555; line-height: 1.6; }&#13;
+.action-footer { text-align: center; margin-top: 40px; }&#13;
+.btn-continue { background: #2b6cb0; color: white; padding: 12px 40px; border: none; border-radius: 25px; cursor: pointer; }&#13;
+.btn-continue:disabled { background: #ccc; }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Copy of service details</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  var serviceId = $sp.getParameter('service_id');
+  
+  if (serviceId == 'family_extract') {
+    data.title = "Family Registration Extract";
+    data.category = "Civil Status";
+    data.description = "Official extract of family registration records.";
+    data.documents = ["Original ID Card", "Proof of kinship"];
+    data.terms = ["First-degree relative only", "Updated civil registry data"];
+    data.similar = ["Birth Certificate", "Marriage Certificate"];
+  } 
+  else if (serviceId == 'renew_id') {
+    data.title = "Renew National ID Card";
+    data.category = "Civil Status";
+    data.description = "Renewal of National ID card before or after expiry.";
+    data.documents = ["Old ID card", "Proof of employment/student status"];
+    data.terms = ["Personal attendance required", "Renewal every 7 years"];
+    data.similar = ["Lost ID replacement", "Change of Address"];
+  } 
+  else if (serviceId == 'renew_license') {
+    data.title = "Renew Driver's License";
+    data.category = "Traffic Services";
+    data.description = "Electronic renewal of driving licenses.";
+    data.documents = ["Expired license", "Medical certificate", "Criminal record"];
+    data.terms = ["No outstanding traffic fines", "Valid for 10 years"];
+    data.similar = ["Vehicle License Renewal", "International Permit"];
+  } 
+  else if (serviceId == 'id_application') {
+    data.title = "National ID Card Application";
+    data.category = "Civil Status";
+    data.description = "First-time issuance for citizens reaching 15 years old.";
+    data.documents = ["Automated Birth certificate", "Parent ID copy"];
+    data.terms = ["Minimum age 15", "Witnesses might be required"];
+    data.similar = ["ID Renewal", "Birth Certificate Request"];
+  }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-06 13:46:56</sys_created_on>
+        <sys_id>42fb609d8316321478c11a30ceaad39c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of service details</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_widget_42fb609d8316321478c11a30ceaad39c</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 13:46:56</sys_updated_on>
+        <template><![CDATA[<div class="service-details-container">
+  <div class="header-tools">
+    <div class="breadcrumbs">Digital Services > {{data.category}} > <strong>{{data.title}}</strong></div>
+  </div>
+
+  <h2 class="service-title">{{data.title}}</h2>
+
+  <div class="details-grid">
+    <div class="details-column">
+      <div class="info-card">
+        <div class="card-header"><i class="fa fa-file-text-o"></i> Service Description</div>
+        <div class="card-body">{{data.description}}</div>
+      </div>
+      <div class="info-card">
+        <div class="card-header"><i class="fa fa-gavel"></i> Terms and Conditions</div>
+        <div class="card-body">
+          <ul><li ng-repeat="term in data.terms">{{term}}</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="details-column">
+      <div class="info-card">
+        <div class="card-header"><i class="fa fa-list-ul"></i> Required Documents</div>
+        <div class="card-body">
+          <ul><li ng-repeat="doc in data.documents">{{doc}}</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="action-footer">
+    <label class="agreement">
+      <input type="checkbox" ng-model="c.agreed"> I agree to the terms and conditions
+    </label>
+    <br>
+    <button class="btn-continue" ng-disabled="!c.agreed" ng-click="c.nextStep()">
+      Continue to fill data <i class="fa fa-arrow-right"></i>
+    </button>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sp_widget_42fb609d8316321478c11a30ceaad39c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller = function($location) {
+  var c = this;
+  c.agreed = false;
+
+  c.nextStep = function() {
+    $location.search({
+      id: 'family_registration_form', 
+      service: $location.search().service_id
+    });
+  };
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.service-details-container { padding: 30px; background: #fdfdfd; direction: ltr; }&amp;#13;
+.service-title { text-align: center; font-weight: bold; margin-bottom: 40px; color: #333; }&amp;#13;
+.details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }&amp;#13;
+.info-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 20px; }&amp;#13;
+.card-header { padding: 15px; background: #f9f9f9; border-bottom: 1px solid #eee; font-weight: bold; display: flex; gap: 10px; }&amp;#13;
+.card-body { padding: 20px; color: #555; line-height: 1.6; }&amp;#13;
+.action-footer { text-align: center; margin-top: 40px; }&amp;#13;
+.btn-continue { background: #2b6cb0; color: white; padding: 12px 40px; border: none; border-radius: 25px; cursor: pointer; }&amp;#13;
+.btn-continue:disabled { background: #ccc; }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Copy of service details&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  var serviceId = $sp.getParameter('service_id');
+  
+  if (serviceId == 'family_extract') {
+    data.title = "Family Registration Extract";
+    data.category = "Civil Status";
+    data.description = "Official extract of family registration records.";
+    data.documents = ["Original ID Card", "Proof of kinship"];
+    data.terms = ["First-degree relative only", "Updated civil registry data"];
+    data.similar = ["Birth Certificate", "Marriage Certificate"];
+  } 
+  else if (serviceId == 'renew_id') {
+    data.title = "Renew National ID Card";
+    data.category = "Civil Status";
+    data.description = "Renewal of National ID card before or after expiry.";
+    data.documents = ["Old ID card", "Proof of employment/student status"];
+    data.terms = ["Personal attendance required", "Renewal every 7 years"];
+    data.similar = ["Lost ID replacement", "Change of Address"];
+  } 
+  else if (serviceId == 'renew_license') {
+    data.title = "Renew Driver's License";
+    data.category = "Traffic Services";
+    data.description = "Electronic renewal of driving licenses.";
+    data.documents = ["Expired license", "Medical certificate", "Criminal record"];
+    data.terms = ["No outstanding traffic fines", "Valid for 10 years"];
+    data.similar = ["Vehicle License Renewal", "International Permit"];
+  } 
+  else if (serviceId == 'id_application') {
+    data.title = "National ID Card Application";
+    data.category = "Civil Status";
+    data.description = "First-time issuance for citizens reaching 15 years old.";
+    data.documents = ["Automated Birth certificate", "Parent ID copy"];
+    data.terms = ["Minimum age 15", "Witnesses might be required"];
+    data.similar = ["ID Renewal", "Birth Certificate Request"];
+  }
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mohamed.admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-06 13:46:56&lt;/sys_created_on&gt;&lt;sys_id&gt;42fb609d8316321478c11a30ceaad39c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of service details&lt;/sys_name&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_42fb609d8316321478c11a30ceaad39c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mohamed.admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-06 13:46:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="service-details-container"&gt;
+  &lt;div class="header-tools"&gt;
+    &lt;div class="breadcrumbs"&gt;Digital Services &gt; {{data.category}} &gt; &lt;strong&gt;{{data.title}}&lt;/strong&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h2 class="service-title"&gt;{{data.title}}&lt;/h2&gt;
+
+  &lt;div class="details-grid"&gt;
+    &lt;div class="details-column"&gt;
+      &lt;div class="info-card"&gt;
+        &lt;div class="card-header"&gt;&lt;i class="fa fa-file-text-o"&gt;&lt;/i&gt; Service Description&lt;/div&gt;
+        &lt;div class="card-body"&gt;{{data.description}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="info-card"&gt;
+        &lt;div class="card-header"&gt;&lt;i class="fa fa-gavel"&gt;&lt;/i&gt; Terms and Conditions&lt;/div&gt;
+        &lt;div class="card-body"&gt;
+          &lt;ul&gt;&lt;li ng-repeat="term in data.terms"&gt;{{term}}&lt;/li&gt;&lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="details-column"&gt;
+      &lt;div class="info-card"&gt;
+        &lt;div class="card-header"&gt;&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt; Required Documents&lt;/div&gt;
+        &lt;div class="card-body"&gt;
+          &lt;ul&gt;&lt;li ng-repeat="doc in data.documents"&gt;{{doc}}&lt;/li&gt;&lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="action-footer"&gt;
+    &lt;label class="agreement"&gt;
+      &lt;input type="checkbox" ng-model="c.agreed"&gt; I agree to the terms and conditions
+    &lt;/label&gt;
+    &lt;br&gt;
+    &lt;button class="btn-continue" ng-disabled="!c.agreed" ng-click="c.nextStep()"&gt;
+      Continue to fill data &lt;i class="fa fa-arrow-right"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1773135214</payload_hash>
+        <record_name>Copy of service details</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-06 13:46:56</sys_created_on>
+        <sys_id>4afb609d8316321478c11a30ceaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b938f89cf0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 13:46:56</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>46fb609d211632140eb8e3bed5b400a3</update_guid>
+        <update_guid_history>46fb609d211632140eb8e3bed5b400a3:-1773135214</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of service details">cab895d9839a321478c11a30ceaad3e1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-06 17:02:26</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>203c2eb8e00a4ba286c2ea7150370291</sys_id>
+        <sys_metadata>42fb609d8316321478c11a30ceaad39c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of service details</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sp_widget_42fb609d8316321478c11a30ceaad39c</sys_update_name>
+        <sys_update_version display_value="sp_widget_42fb609d8316321478c11a30ceaad39c">4afb609d8316321478c11a30ceaad3a4</sys_update_version>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 17:02:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
-        <macroponent display_value="List Menu Template Page">1be74c1b83cefe9078c11a30ceaad3f8</macroponent>
+        <macroponent display_value="List Admin Region">1be74c1b83cefe9078c11a30ceaad3f8</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

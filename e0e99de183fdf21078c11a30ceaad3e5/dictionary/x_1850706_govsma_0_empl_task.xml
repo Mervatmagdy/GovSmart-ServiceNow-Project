@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6fb837598302b29078c11a30ceaad30d" extends="task" label="Reviewer Employee" max_length="40" name="x_1850706_govsma_0_empl_task" type="collection">
+        <element choice="1" label="Document Status" max_length="40" name="document_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed Document" sequence="1" value="Completed Document"/>
+                <element inactive_on_update="false" label="Expired Document" sequence="0" value="Expired Document"/>
+                <element inactive_on_update="false" label="Missing Document" sequence="2" value="Missing Document"/>
+            </choice>
+        </element>
+        <element dependent="number" dependent_on_field="number" label="Requester Data" max_length="32" name="requester_data" read_only="true" reference="x_1850706_govsma_0_government_service_request" type="reference" use_dependent_field="true"/>
+        <element label="Service Type Prefix " max_length="40" name="service_type_prefix" read_only="true" type="string"/>
+        <element label="Task Execution Issue" max_length="255" name="task_execution_issue" type="boolean"/>
+    </element>
+</database>

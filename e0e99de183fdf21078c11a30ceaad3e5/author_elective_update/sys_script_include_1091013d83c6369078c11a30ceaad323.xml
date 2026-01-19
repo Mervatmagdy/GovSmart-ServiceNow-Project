@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1850706_govsma_0.GetEmployeeTaskDocStatus</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetEmployeeTaskDocStatus</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetEmployeeTaskDocStatus = Class.create();
+GetEmployeeTaskDocStatus.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getDocStatus: function () {
+
+        var requestSysId = this.getParameter('sysparm_request_sys_id');
+        if (!requestSysId) {
+            return '';
+        }
+
+        var gr = new GlideRecord('x_1850706_govsma_0_empl_task');
+        gr.addQuery('requester_data', requestSysId); 
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('document_status');
+        }
+
+        return '';
+    },
+
+    type: 'GetEmployeeTaskDocStatus'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-26 18:33:34</sys_created_on>
+        <sys_id>1091013d83c6369078c11a30ceaad323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmployeeTaskDocStatus</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_include_1091013d83c6369078c11a30ceaad323</sys_update_name>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 18:33:34</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_include_1091013d83c6369078c11a30ceaad323</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1850706_govsma_0.GetEmployeeTaskDocStatus&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GetEmployeeTaskDocStatus&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GetEmployeeTaskDocStatus = Class.create();
+GetEmployeeTaskDocStatus.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getDocStatus: function () {
+
+        var requestSysId = this.getParameter('sysparm_request_sys_id');
+        if (!requestSysId) {
+            return '';
+        }
+
+        var gr = new GlideRecord('x_1850706_govsma_0_empl_task');
+        gr.addQuery('requester_data', requestSysId); 
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('document_status');
+        }
+
+        return '';
+    },
+
+    type: 'GetEmployeeTaskDocStatus'
+});
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mervet.admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-26 18:33:34&lt;/sys_created_on&gt;&lt;sys_id&gt;1091013d83c6369078c11a30ceaad323&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetEmployeeTaskDocStatus&lt;/sys_name&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_1091013d83c6369078c11a30ceaad323&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mervet.admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-26 18:33:34&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2136059830</payload_hash>
+        <record_name>GetEmployeeTaskDocStatus</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-26 18:33:35</sys_created_on>
+        <sys_id>8e14c571830a369078c11a30ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5bf007530000001</sys_recorded_at>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 18:33:35</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>8a14c571300a3690c3a1a7718e13f96e</update_guid>
+        <update_guid_history>8a14c571300a3690c3a1a7718e13f96e:2136059830</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-26 19:35:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1e3a23c62d8e414c8c7d166ce8248c69</sys_id>
+        <sys_metadata>1091013d83c6369078c11a30ceaad323</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmployeeTaskDocStatus</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_include_1091013d83c6369078c11a30ceaad323</sys_update_name>
+        <sys_update_version display_value="sys_script_include_1091013d83c6369078c11a30ceaad323">8e14c571830a369078c11a30ceaad36f</sys_update_version>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 19:35:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

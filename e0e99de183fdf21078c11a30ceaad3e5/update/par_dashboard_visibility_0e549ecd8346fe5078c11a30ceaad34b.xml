@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
     <par_dashboard_visibility action="INSERT_OR_UPDATE">
-        <dashboard display_value="GovSmart Review &amp;amp; Visit Management System">39545ecd8346fe5078c11a30ceaad346</dashboard>
+        <dashboard display_value="GovSmart Review Dashboard - Managers">39545ecd8346fe5078c11a30ceaad346</dashboard>
         <experience display_value="GovSmart Review &amp; Visit Management System">ee4416cd7346fe500ef0f13cb92abd09</experience>
         <sys_class_name>par_dashboard_visibility</sys_class_name>
         <sys_created_by>menna.admin</sys_created_by>

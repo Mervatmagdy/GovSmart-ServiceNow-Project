@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="x_1850706_govsma_0_empl_task" section_id="13507181835ebed078c11a30ceaad3ef" sys_domain="global" table="x_1850706_govsma_0_empl_task" version="3" view="Default_view_Copy">
+    <sys_ui_section caption="x_1850706_govsma_0_empl_task" section_id="13507181835ebed078c11a30ceaad3ef" sys_domain="global" table="x_1850706_govsma_0_empl_task" version="3" view="Workspace_Employee">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>assignment_group</element>
             <position>0</position>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>500</order>
+        <published_ref/>
+        <question display_value="Marital Status">f9e53fa9838ef29078c11a30ceaad324</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-26 12:57:10</sys_created_on>
+        <sys_id>8d0737e9838ef29078c11a30ceaad345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Separated</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>question_choice_8d0737e9838ef29078c11a30ceaad345</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 12:57:10</sys_updated_on>
+        <text>Separated</text>
+        <value>Separated</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=8d0737e9838ef29078c11a30ceaad345"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>8d0737e9838ef29078c11a30ceaad345</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-26 12:57:10</sys_created_on>
+        <sys_id>ca17336d838ef29078c11a30ceaad3a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 12:57:10</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>8d0737e9838ef29078c11a30ceaad345</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-26 12:57:10</sys_created_on>
+        <sys_id>8a17336d838ef29078c11a30ceaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 12:57:10</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>question_choice_8d0737e9838ef29078c11a30ceaad345</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><misc>0</misc><order>500</order><published_ref/><question display_value="Marital Status">f9e53fa9838ef29078c11a30ceaad324</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>mohamed.admin</sys_created_by><sys_created_on>2025-12-26 12:57:10</sys_created_on><sys_id>8d0737e9838ef29078c11a30ceaad345</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Separated</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>question_choice_8d0737e9838ef29078c11a30ceaad345</sys_update_name><sys_updated_by>mohamed.admin</sys_updated_by><sys_updated_on>2025-12-26 12:57:10</sys_updated_on><text>Separated</text><value>Separated</value></question_choice><fx_price action="delete_multiple" query="id=8d0737e9838ef29078c11a30ceaad345"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>misc</field><id>8d0737e9838ef29078c11a30ceaad345</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>mohamed.admin</sys_created_by><sys_created_on>2025-12-26 12:57:10</sys_created_on><sys_id>ca17336d838ef29078c11a30ceaad3a3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mohamed.admin</sys_updated_by><sys_updated_on>2025-12-26 12:57:10</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>8d0737e9838ef29078c11a30ceaad345</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>mohamed.admin</sys_created_by><sys_created_on>2025-12-26 12:57:10</sys_created_on><sys_id>8a17336d838ef29078c11a30ceaad3a2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>mohamed.admin</sys_updated_by><sys_updated_on>2025-12-26 12:57:10</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-558778141</payload_hash>
+        <record_name>Separated</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-26 12:57:10</sys_created_on>
+        <sys_id>4a17336d838ef29078c11a30ceaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5abc07a80000001</sys_recorded_at>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 12:57:10</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>4617336da68ef29023b5ecf7a6e522a6</update_guid>
+        <update_guid_history>4617336da68ef29023b5ecf7a6e522a6:-558778141</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Separated">e6e8a4028346b69078c11a30ceaad373</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-27 11:13:19</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0991bd0bfa5f406c91e64c3e7983ecc4</sys_id>
+        <sys_metadata>8d0737e9838ef29078c11a30ceaad345</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Separated</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>question_choice_8d0737e9838ef29078c11a30ceaad345</sys_update_name>
+        <sys_update_version display_value="question_choice_8d0737e9838ef29078c11a30ceaad345">4a17336d838ef29078c11a30ceaad3a7</sys_update_version>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 11:13:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

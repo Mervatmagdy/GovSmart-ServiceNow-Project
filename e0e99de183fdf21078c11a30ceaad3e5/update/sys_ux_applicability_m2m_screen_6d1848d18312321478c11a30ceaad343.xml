@@ -3,7 +3,7 @@
         <active>true</active>
         <applicability display_value="Government Admin Regions">38f64c9783cefe9078c11a30ceaad39c</applicability>
         <order>0</order>
-        <screen display_value="Admin Region List">374744918312321478c11a30ceaad356</screen>
+        <screen/>
         <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-06 11:10:09</sys_created_on>

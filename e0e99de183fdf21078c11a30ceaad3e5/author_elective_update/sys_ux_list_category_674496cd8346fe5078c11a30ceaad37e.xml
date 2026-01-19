@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="DELETE">
+        <active>true</active>
+        <configuration display_value="GovSmart Review &amp;amp; Visit Management System_menu_config">eb4496cd8346fe5078c11a30ceaad32f</configuration>
+        <description/>
+        <order>200</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-24 16:28:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>674496cd8346fe5078c11a30ceaad37e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Government Service Ticket </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_list_category_674496cd8346fe5078c11a30ceaad37e</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-24 16:28:36</sys_updated_on>
+        <title>Government Service Ticket </title>
+    </sys_ux_list_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_list_category_674496cd8346fe5078c11a30ceaad37e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category"><sys_ux_list_category action="INSERT_OR_UPDATE"><active>true</active><configuration display_value="GovSmart Review &amp;amp; Visit Management System_menu_config">eb4496cd8346fe5078c11a30ceaad32f</configuration><description/><order>200</order><sys_class_name>sys_ux_list_category</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-24 16:28:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>674496cd8346fe5078c11a30ceaad37e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Government Service Ticket </sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_list_category_674496cd8346fe5078c11a30ceaad37e</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-24 16:28:36</sys_updated_on><title>Government Service Ticket </title></sys_ux_list_category></record_update>]]></payload>
+        <payload_hash>2130033128</payload_hash>
+        <record_name>Government Service Ticket </record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-24 16:28:36</sys_created_on>
+        <sys_id>2b4496cd8346fe5078c11a30ceaad381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5130e0cf0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-24 16:28:36</sys_updated_on>
+        <type>UX List Category</type>
+        <update_guid>274496cded46fe50e709c641fbe40d80</update_guid>
+        <update_guid_history>274496cded46fe50e709c641fbe40d80:2130033128</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-25 01:35:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_list_category">sys_ux_list_category</sys_db_object>
+        <sys_id>5883662ea4f14163a2027e4f0161b2c1</sys_id>
+        <sys_metadata>674496cd8346fe5078c11a30ceaad37e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Government Service Ticket </sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_list_category_674496cd8346fe5078c11a30ceaad37e</sys_update_name>
+        <sys_update_version display_value="sys_ux_list_category_674496cd8346fe5078c11a30ceaad37e">2b4496cd8346fe5078c11a30ceaad381</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 01:35:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

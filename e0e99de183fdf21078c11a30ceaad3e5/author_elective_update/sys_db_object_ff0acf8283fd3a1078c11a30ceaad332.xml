@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access/>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <filter_extension/>
+        <is_df_table>false</is_df_table>
+        <is_extendable>false</is_extendable>
+        <label>admin governorate  service assignment map</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_1850706_govsma_0_admin_governorate_service_assignment_map</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-15 12:41:40</sys_created_on>
+        <sys_id>ff0acf8283fd3a1078c11a30ceaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Govsma 0 Admin Governorate Service Assignment Map</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_db_object_ff0acf8283fd3a1078c11a30ceaad332</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 12:41:40</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role/>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_db_object_ff0acf8283fd3a1078c11a30ceaad332</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><filter_extension/><is_df_table>false</is_df_table><is_extendable>false</is_extendable><label>admin governorate  service assignment map</label><live_feed_enabled>false</live_feed_enabled><name>x_1850706_govsma_0_admin_governorate_service_assignment_map</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>mohamed.admin</sys_created_by><sys_created_on>2025-12-15 12:41:40</sys_created_on><sys_id>ff0acf8283fd3a1078c11a30ceaad332</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Govsma 0 Admin Governorate Service Assignment Map</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_db_object_ff0acf8283fd3a1078c11a30ceaad332</sys_update_name><sys_updated_by>mohamed.admin</sys_updated_by><sys_updated_on>2025-12-15 12:41:40</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>222521517</payload_hash>
+        <record_name>admin governorate  service assignment map</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-15 12:41:41</sys_created_on>
+        <sys_id>3b0acf8283fd3a1078c11a30ceaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b2207e40b0000001</sys_recorded_at>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 12:41:41</sys_updated_on>
+        <type>Table</type>
+        <update_guid>770acf82d0fd3a10b4c725157ce27f62</update_guid>
+        <update_guid_history>770acf82d0fd3a10b4c725157ce27f62:222521517</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-15 13:21:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>5a5aa6b56b784691844c36360e55e209</sys_id>
+        <sys_metadata>ff0acf8283fd3a1078c11a30ceaad332</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Govsma 0 Admin Governorate Service Assignment Map</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_db_object_ff0acf8283fd3a1078c11a30ceaad332</sys_update_name>
+        <sys_update_version display_value="sys_db_object_ff0acf8283fd3a1078c11a30ceaad332">3b0acf8283fd3a1078c11a30ceaad363</sys_update_version>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 13:21:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

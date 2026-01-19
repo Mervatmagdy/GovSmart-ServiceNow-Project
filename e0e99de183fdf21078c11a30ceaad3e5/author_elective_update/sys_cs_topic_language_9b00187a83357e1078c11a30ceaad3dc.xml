@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="DELETE">
+        <cs_topic_id display_value="_PRVW__96da0235f98f43baa9bd7f82f41ce372">5b00147a83357e1078c11a30ceaad3ef</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[]</nlu_entities>
+        <nlu_intent>StartVM</nlu_intent>
+        <nlu_intent_label>StartVM</nlu_intent_label>
+        <nlu_model>ml_sn_sn_managevm_va_global_e5d7bcceeb1130103dedddde2352282e</nlu_model>
+        <nlu_model_label>VM Management NLU for Virtual Agent-CAI</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:04:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9b00187a83357e1078c11a30ceaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_cs_topic_language_9b00187a83357e1078c11a30ceaad3dc</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:04:27</sys_updated_on>
+    </sys_cs_topic_language>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_cs_topic_language_9b00187a83357e1078c11a30ceaad3dc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language"><sys_cs_topic_language action="INSERT_OR_UPDATE"><cs_topic_id display_value="_PRVW__96da0235f98f43baa9bd7f82f41ce372">5b00147a83357e1078c11a30ceaad3ef</cs_topic_id><language_code>en</language_code><nlu_entities>[]</nlu_entities><nlu_intent>StartVM</nlu_intent><nlu_intent_label>StartVM</nlu_intent_label><nlu_model>ml_sn_sn_managevm_va_global_e5d7bcceeb1130103dedddde2352282e</nlu_model><nlu_model_label>VM Management NLU for Virtual Agent-CAI</nlu_model_label><nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider><sys_class_name>sys_cs_topic_language</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-17 07:04:27</sys_created_on><sys_domain>global</sys_domain><sys_id>9b00187a83357e1078c11a30ceaad3dc</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_cs_topic_language_9b00187a83357e1078c11a30ceaad3dc</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-17 07:04:27</sys_updated_on></sys_cs_topic_language></record_update>]]></payload>
+        <payload_hash>-1316736624</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:04:27</sys_created_on>
+        <sys_id>1300187a83357e1078c11a30ceaad3e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b2b1fdd040000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:04:27</sys_updated_on>
+        <type>CS Topic Language</type>
+        <update_guid>1f00187a33357e103f786aa665d812de</update_guid>
+        <update_guid_history>1f00187a33357e103f786aa665d812de:-1316736624</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 19:36:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_language">sys_cs_topic_language</sys_db_object>
+        <sys_id>0742df834fb54d87a5d88ad715f02589</sys_id>
+        <sys_metadata>9b00187a83357e1078c11a30ceaad3dc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_language_9b00187a83357e1078c11a30ceaad3dc</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_language_9b00187a83357e1078c11a30ceaad3dc">1300187a83357e1078c11a30ceaad3e0</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 19:36:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

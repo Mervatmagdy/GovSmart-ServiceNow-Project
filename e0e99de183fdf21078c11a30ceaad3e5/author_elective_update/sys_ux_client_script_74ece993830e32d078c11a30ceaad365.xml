@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Dashboards">3cece993830e32d078c11a30ceaad357</macroponent>
+        <name>Navigate to dashboard scheduled export</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.emit('NAV_ITEM_SELECTED', {
+        route: 'scheduled-export',
+        icon: 'calendar-days-clock-outline',
+        title: 'Scheduled Export',
+         fields: {
+            sysId:'new' + Date.now(),
+        },
+        params: {
+            dashboardId: event.payload.dashboardSysId,
+        }
+    });
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 13:22:42</sys_created_on>
+        <sys_id>74ece993830e32d078c11a30ceaad365</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Navigate to dashboard scheduled export</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_client_script_74ece993830e32d078c11a30ceaad365</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 13:22:42</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_client_script_74ece993830e32d078c11a30ceaad365</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Dashboards"&gt;3cece993830e32d078c11a30ceaad357&lt;/macroponent&gt;&lt;name&gt;Navigate to dashboard scheduled export&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    api.emit('NAV_ITEM_SELECTED', {
+        route: 'scheduled-export',
+        icon: 'calendar-days-clock-outline',
+        title: 'Scheduled Export',
+         fields: {
+            sysId:'new' + Date.now(),
+        },
+        params: {
+            dashboardId: event.payload.dashboardSysId,
+        }
+    });
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;menna.admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-31 13:22:42&lt;/sys_created_on&gt;&lt;sys_id&gt;74ece993830e32d078c11a30ceaad365&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Navigate to dashboard scheduled export&lt;/sys_name&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_74ece993830e32d078c11a30ceaad365&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;menna.admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-31 13:22:42&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1719860249</payload_hash>
+        <record_name>Navigate to dashboard scheduled export</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 13:22:43</sys_created_on>
+        <sys_id>b0ece993830e32d078c11a30ceaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b749334fd0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 13:22:43</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>bcece993df0e32d0b506294b0f99bf6c</update_guid>
+        <update_guid_history>bcece993df0e32d0b506294b0f99bf6c:1719860249</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 14:35:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0769218e188341a8868c6130bc54bdd1</sys_id>
+        <sys_metadata>74ece993830e32d078c11a30ceaad365</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Navigate to dashboard scheduled export</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_74ece993830e32d078c11a30ceaad365</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_74ece993830e32d078c11a30ceaad365">b0ece993830e32d078c11a30ceaad36e</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:35:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

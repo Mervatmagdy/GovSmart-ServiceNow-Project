@@ -8,7 +8,7 @@
         <billable>false</billable>
         <can_cancel>false</can_cancel>
         <category/>
-        <checked_out/>
+        <checked_out>false</checked_out>
         <cost>0</cost>
         <create_universal_request>false</create_universal_request>
         <custom_cart/>
@@ -86,7 +86,7 @@
         <short_description/>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state/>
+        <state>published</state>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>mohamed.admin</sys_created_by>
         <sys_created_on>2025-12-28 14:29:19</sys_created_on>

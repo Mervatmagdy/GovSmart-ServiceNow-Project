@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_change_log">
+    <gsw_change_log action="INSERT_OR_UPDATE">
+        <change_date>2025-12-14 06:37:23</change_date>
+        <changed_by/>
+        <content display_value="Survey Designer">0b369c57db421050ab1354e4dc9619c9</content>
+        <related_change_log_entry/>
+        <related_task_entry/>
+        <sys_class_name>gsw_change_log</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-14 06:37:23</sys_created_on>
+        <sys_id>651d28fd83f5761078c11a30ceaad352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2025-12-14 06:37:23</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>gsw_change_log_651d28fd83f5761078c11a30ceaad352</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-14 06:37:23</sys_updated_on>
+        <type>5</type>
+    </gsw_change_log>
+</record_update>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Family registration extract" section_id="26c824b583f5761078c11a30ceaad327" sys_domain="global" table="x_1850706_govsma_0_government_service_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>head_of_family_name</element>
+            <position>0</position>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+            <sys_id>aec824b583f5761078c11a30ceaad343</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>head_of_family_national_id</element>
+            <position>1</position>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+            <sys_id>2ec824b583f5761078c11a30ceaad344</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>family_register_number</element>
+            <position>2</position>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+            <sys_id>aac824b583f5761078c11a30ceaad345</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mother_name</element>
+            <position>3</position>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+            <sys_id>2ac824b583f5761078c11a30ceaad346</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>children_names</element>
+            <position>4</position>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+            <sys_id>a6c824b583f5761078c11a30ceaad347</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applicant_relationship</element>
+            <position>5</position>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+            <sys_id>26c824b583f5761078c11a30ceaad348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Family registration extract</caption>
+            <header>false</header>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26c824b583f5761078c11a30ceaad327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1850706_govsma_0_government_service_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+            <sys_update_name>sys_ui_section_26c824b583f5761078c11a30ceaad327</sys_update_name>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ui_section_26c824b583f5761078c11a30ceaad327</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Family registration extract" section_id="26c824b583f5761078c11a30ceaad327" sys_domain="global" table="x_1850706_govsma_0_government_service_request" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>head_of_family_name</element><position>0</position><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 06:18:36</sys_created_on><sys_id>aec824b583f5761078c11a30ceaad343</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 06:18:36</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>head_of_family_national_id</element><position>1</position><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 06:18:36</sys_created_on><sys_id>2ec824b583f5761078c11a30ceaad344</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 06:18:36</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>family_register_number</element><position>2</position><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 06:18:36</sys_created_on><sys_id>aac824b583f5761078c11a30ceaad345</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 06:18:36</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>mother_name</element><position>3</position><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 06:18:36</sys_created_on><sys_id>2ac824b583f5761078c11a30ceaad346</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 06:18:36</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>children_names</element><position>4</position><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 06:18:36</sys_created_on><sys_id>a6c824b583f5761078c11a30ceaad347</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 06:18:36</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>applicant_relationship</element><position>5</position><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 06:18:36</sys_created_on><sys_id>26c824b583f5761078c11a30ceaad348</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Family registration extract" display_value="Family registration extract" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">26c824b583f5761078c11a30ceaad327</sys_ui_section><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 06:18:36</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Family registration extract</caption><header>false</header><name>x_1850706_govsma_0_government_service_request</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 06:18:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>26c824b583f5761078c11a30ceaad327</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1850706_govsma_0_government_service_request</sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ui_section_26c824b583f5761078c11a30ceaad327</sys_update_name><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 06:18:36</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-246752866</payload_hash>
+        <record_name>Government Service Request</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-14 06:18:36</sys_created_on>
+        <sys_id>2ac824b583f5761078c11a30ceaad34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b1b82d0250000001</sys_recorded_at>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-14 06:18:36</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>2ac824b5b7f576107667a5e1ed03b44b</update_guid>
+        <update_guid_history>2ac824b5b7f576107667a5e1ed03b44b:-246752866</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-14 08:46:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0a764934f00548428ca664db41f78da4</sys_id>
+        <sys_metadata>26c824b583f5761078c11a30ceaad327</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Family registration extract</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Government Service Request">c93a352583f1361078c11a30ceaad358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ui_section_26c824b583f5761078c11a30ceaad327</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_26c824b583f5761078c11a30ceaad327">2ac824b583f5761078c11a30ceaad34c</sys_update_version>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-14 08:46:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

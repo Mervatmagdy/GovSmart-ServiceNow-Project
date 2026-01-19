@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_1850706_govsma_0.GovsmaRecordUtilsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GovsmaRecordUtilsAjax</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var GovsmaRecordUtilsAjax = Class.create();
+GovsmaRecordUtilsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    ajaxGetValue: function () {
+        var gr = new GlideRecord(this.getParameter('sysparm_table'));
+        if (gr.get(this.getParameter('sysparm_sys_id'))) {
+            return gr.getValue(this.getParameter('sysparm_field'));
+        }
+        return '';
+    },
+
+    ajaxUpdateValue: function () {
+        var gr = new GlideRecord(this.getParameter('sysparm_table'));
+        if (gr.get(this.getParameter('sysparm_sys_id'))) {
+            gr.setValue(
+                this.getParameter('sysparm_field'),
+                this.getParameter('sysparm_value')
+            );
+            gr.update();
+            return 'ok';
+        }
+        return 'fail';
+    },
+
+    type: 'GovsmaRecordUtilsAjax'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-26 22:38:08</sys_created_on>
+        <sys_id>77ebb53183ce369078c11a30ceaad39d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>GovsmaRecordUtilsAjax</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_include_77ebb53183ce369078c11a30ceaad39d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 00:43:41</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_include_77ebb53183ce369078c11a30ceaad39d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_1850706_govsma_0.GovsmaRecordUtilsAjax&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GovsmaRecordUtilsAjax&lt;/name&gt;&lt;sandbox_callable&gt;true&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GovsmaRecordUtilsAjax = Class.create();
+GovsmaRecordUtilsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    ajaxGetValue: function () {
+        var gr = new GlideRecord(this.getParameter('sysparm_table'));
+        if (gr.get(this.getParameter('sysparm_sys_id'))) {
+            return gr.getValue(this.getParameter('sysparm_field'));
+        }
+        return '';
+    },
+
+    ajaxUpdateValue: function () {
+        var gr = new GlideRecord(this.getParameter('sysparm_table'));
+        if (gr.get(this.getParameter('sysparm_sys_id'))) {
+            gr.setValue(
+                this.getParameter('sysparm_field'),
+                this.getParameter('sysparm_value')
+            );
+            gr.update();
+            return 'ok';
+        }
+        return 'fail';
+    },
+
+    type: 'GovsmaRecordUtilsAjax'
+});
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-26 22:38:08&lt;/sys_created_on&gt;&lt;sys_id&gt;77ebb53183ce369078c11a30ceaad39d&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;GovsmaRecordUtilsAjax&lt;/sys_name&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_77ebb53183ce369078c11a30ceaad39d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-27 00:43:41&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>37304647</payload_hash>
+        <record_name>GovsmaRecordUtilsAjax</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 00:43:41</sys_created_on>
+        <sys_id>97c8d23583c2769078c11a30ceaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5d42dc430000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 00:43:41</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>97c8d23587c27690507d40a06bb4bfa3</update_guid>
+        <update_guid_history>97c8d23587c27690507d40a06bb4bfa3:37304647,8d4752b17fc27690255d9862c646fee4:-1785221256,2556d6fd538276907f6d010e9c3de0ef:-1472229065,2b95de7d13827690dae17a90e14f04cd:-2072575062,ac1cfdf1bfce3690711e1e3e6c5ee390:-143004179</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 01:43:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>5b6a13ad90c7484dbbe8bc2a4fbfe5d9</sys_id>
+        <sys_metadata>77ebb53183ce369078c11a30ceaad39d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GovsmaRecordUtilsAjax</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_include_77ebb53183ce369078c11a30ceaad39d</sys_update_name>
+        <sys_update_version display_value="sys_script_include_77ebb53183ce369078c11a30ceaad39d">97c8d23583c2769078c11a30ceaad3a4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 01:43:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

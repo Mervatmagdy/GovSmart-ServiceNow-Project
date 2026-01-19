@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="renewal_reason" table="x_1850706_govsma_0_government_service_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>renewal_reason</element>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 09:01:14</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>renewal_reason</sys_name>
+            <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+            <sys_update_name>sys_choice_x_1850706_govsma_0_government_service_request_renewal_reason</sys_update_name>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 09:01:14</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Expiration</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 09:01:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 09:01:14</sys_updated_on>
+            <value>expiration</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Data Update</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 09:01:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 09:01:14</sys_updated_on>
+            <value>data_update</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Address Change</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 09:01:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 09:01:14</sys_updated_on>
+            <value>address_change</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Profession Change</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 09:01:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 09:01:14</sys_updated_on>
+            <value>profession_change</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>renewal_reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Marriage/Divorce</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 09:01:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 09:01:14</sys_updated_on>
+            <value>marriage_divorce</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

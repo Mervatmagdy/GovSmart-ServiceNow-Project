@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>body</name>
+        <rest_message_function display_value="send whatsapp message">33b1c11f838632d078c11a30ceaad3ab</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-31 15:18:16</sys_created_on>
+        <sys_id>af37ca5b83ce32d078c11a30ceaad384</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>body</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_af37ca5b83ce32d078c11a30ceaad384</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-02 23:30:40</sys_updated_on>
+        <type>string</type>
+        <value/>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_rest_message_fn_parameters_af37ca5b83ce32d078c11a30ceaad384</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>body</name><rest_message_function display_value="send whatsapp message">33b1c11f838632d078c11a30ceaad3ab</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-31 15:18:16</sys_created_on><sys_id>af37ca5b83ce32d078c11a30ceaad384</sys_id><sys_mod_count>5</sys_mod_count><sys_name>body</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_rest_message_fn_parameters_af37ca5b83ce32d078c11a30ceaad384</sys_update_name><sys_updated_by>mohamed.admin</sys_updated_by><sys_updated_on>2026-01-02 23:30:40</sys_updated_on><type>string</type><value/></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-1844019402</payload_hash>
+        <record_name>body</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-02 23:30:40</sys_created_on>
+        <sys_id>393b8a4083deb6d078c11a30ceaad304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b810c85d00000001</sys_recorded_at>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-02 23:30:40</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>393b8a4018deb6d0f90a72184d986703</update_guid>
+        <update_guid_history>393b8a4018deb6d0f90a72184d986703:-1844019402,f3fa42400ddeb6d0fc3af377bfb5a6d5:-679375834,f6c2b03f6e8636d08aafd4b4eddd02b5:-1844019402,f0e1f4bb6e8636d0d52b9ca8dba63e38:-679375834,4dea8653ae0272d08ed5392225a9541b:-1844019402,a1578e5b7bce32d066f6451969b37302:1902991442</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2026-01-09 19:57:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>01184e47d20a406c904684fc92478310</sys_id>
+        <sys_metadata>af37ca5b83ce32d078c11a30ceaad384</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>body</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="send whatsapp message">33b1c11f838632d078c11a30ceaad3ab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_af37ca5b83ce32d078c11a30ceaad384</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_af37ca5b83ce32d078c11a30ceaad384">393b8a4083deb6d078c11a30ceaad304</sys_update_version>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2026-01-09 19:57:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

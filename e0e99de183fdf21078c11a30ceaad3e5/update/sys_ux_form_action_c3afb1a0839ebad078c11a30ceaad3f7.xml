@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-01-04 11:57:11</sys_updated_on>
         <table>x_1850706_govsma_0_government_service_ticket</table>
-        <ui_action display_value="Reject">e74fb1a0839ebad078c11a30ceaad334</ui_action>
+        <ui_action display_value="On Hold">e74fb1a0839ebad078c11a30ceaad334</ui_action>
     </sys_ux_form_action>
     <sys_translated_text action="delete_multiple" query="documentkey=c3afb1a0839ebad078c11a30ceaad3f7"/>
 </record_update>

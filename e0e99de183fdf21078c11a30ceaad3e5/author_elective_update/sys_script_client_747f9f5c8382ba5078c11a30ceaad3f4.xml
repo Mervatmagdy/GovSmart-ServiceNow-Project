@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>service_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Service Type Prefix</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var prefix = '';
+
+    switch (newValue) {
+        case 'family_registration_extract':
+            prefix = 'FRE';
+            break;
+
+        case 'renew_the_national_id_card':
+            prefix = 'NID-R';
+            break;
+
+        case 'renew_your_driver_s_license':
+            prefix = 'DL-R';
+            break;
+
+        case 'national_id_card_application':
+            prefix = 'NID-A';
+            break;
+
+        default:
+            prefix = '';
+    }
+
+    g_form.setValue('service_type_prefix', prefix);
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-22 14:06:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>747f9f5c8382ba5078c11a30ceaad3f4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Set Service Type Prefix</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_client_747f9f5c8382ba5078c11a30ceaad3f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 01:57:45</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_client_747f9f5c8382ba5078c11a30ceaad3f4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;service_type&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Set Service Type Prefix&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var prefix = '';
+
+    switch (newValue) {
+        case 'family_registration_extract':
+            prefix = 'FRE';
+            break;
+
+        case 'renew_the_national_id_card':
+            prefix = 'NID-R';
+            break;
+
+        case 'renew_your_driver_s_license':
+            prefix = 'DL-R';
+            break;
+
+        case 'national_id_card_application':
+            prefix = 'NID-A';
+            break;
+
+        default:
+            prefix = '';
+    }
+
+    g_form.setValue('service_type_prefix', prefix);
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-22 14:06:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;747f9f5c8382ba5078c11a30ceaad3f4&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Service Type Prefix&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_747f9f5c8382ba5078c11a30ceaad3f4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-26 01:57:45&lt;/sys_updated_on&gt;&lt;table&gt;x_1850706_govsma_0_government_service_request&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-885558226</payload_hash>
+        <record_name>Set Service Type Prefix</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-26 01:57:45</sys_created_on>
+        <sys_id>6a20212d830eb29078c11a30ceaad3a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b58604e560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 01:57:45</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>2a20212dd50eb2908d50a445999ecf9f</update_guid>
+        <update_guid_history>2a20212dd50eb2908d50a445999ecf9f:-885558226,951ba790ac06ba502882293a37278eda:-1314849253,44a0a310afc2ba5065cf0ed4964ac272:120435153</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-26 03:55:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>568787301f3d4b0197e69ddea04ccfd9</sys_id>
+        <sys_metadata>747f9f5c8382ba5078c11a30ceaad3f4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Service Type Prefix</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Government Service Request">c93a352583f1361078c11a30ceaad358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_client_747f9f5c8382ba5078c11a30ceaad3f4</sys_update_name>
+        <sys_update_version display_value="sys_script_client_747f9f5c8382ba5078c11a30ceaad3f4">6a20212d830eb29078c11a30ceaad3a0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 03:55:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="applicant_relationship" table="x_1850706_govsma_0_government_service_request" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>applicant_relationship</element>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:34</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>applicant_relationship</sys_name>
+            <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+            <sys_update_name>sys_choice_x_1850706_govsma_0_government_service_request_applicant_relationship</sys_update_name>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:34</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>applicant_relationship</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Head of Family</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:34</sys_updated_on>
+            <value>head_of_family</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>applicant_relationship</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Spouse</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:34</sys_updated_on>
+            <value>spouse</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>applicant_relationship</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Son / Daughter</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:34</sys_updated_on>
+            <value>son_daughter</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>applicant_relationship</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Brother / Sister</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:34</sys_updated_on>
+            <value>brother_sister</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>applicant_relationship</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Legal Guardian</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:34</sys_updated_on>
+            <value>legal_guardian</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>applicant_relationship</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>First-Degree Relative</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 06:18:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 06:18:34</sys_updated_on>
+            <value>first_degree_relative</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

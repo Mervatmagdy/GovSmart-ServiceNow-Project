@@ -3,7 +3,7 @@
         <active>true</active>
         <applicability display_value="Government Reviewer">c1f0ad47838abe9078c11a30ceaad33d</applicability>
         <order>0</order>
-        <screen display_value="Default">e69598118392321478c11a30ceaad3e4</screen>
+        <screen/>
         <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-01-06 12:09:12</sys_created_on>

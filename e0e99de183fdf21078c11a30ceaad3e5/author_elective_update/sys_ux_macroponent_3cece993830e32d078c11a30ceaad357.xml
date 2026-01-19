@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="DELETE">
+        <associated_types/>
+        <bundles>[]</bundles>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[
+    {
+        "definition": {
+            "id": "f552e6a932780394b6f06c14071aa115",
+            "type": "MACROPONENT"
+        },
+        "elementId": "dashboard_1",
+        "elementLabel": "Dashboard 1",
+        "eventMappings": [
+            {
+                "eventMappingId": "claagnddeeoqaacciirddwggyggoqshhikii",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_dashboard.DASHBOARD_DESIGNER#REDIRECT_DASHBOARDS_OVERVIEW",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_dashboard.DASHBOARD_DESIGNER#REDIRECT_DASHBOARDS_OVERVIEW",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "sysId": "b8ece993830e32d078c11a30ceaad392"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "claagnddeeoqaacciisddwggyddkfaaffxig",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "clzbjjaaaazaabbxggddbiidddwiijbbjjjg",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_dashboard.DASHBOARD#OPEN_SCHEDULED_EXPORT",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_dashboard.DASHBOARD#OPEN_SCHEDULED_EXPORT",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            },
+                            "sysId": "74ece993830e32d078c11a30ceaad365"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "clzbjjaaaazaabbxhhddbiiddhxzmcxta",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "tZXmlPEjDaaZWjjZiiCzVYyMdCy",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_dashboard.DASHBOARD_DESIGNER#WIDGET_CLICKED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_dashboard.DASHBOARD_DESIGNER#WIDGET_CLICKED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            },
+                            "sysId": "b4ece993830e32d078c11a30ceaad371"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "reehhlOLfcRCaaZUjjaaaaBiRViiknLV",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            }
+        ],
+        "extensionPoints": [],
+        "isHero": false,
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "isNonDestructive": false,
+        "items": [],
+        "overrides": null,
+        "preset": {
+            "controllerElementId": "dashboard_controller_1",
+            "disabledEventTargetIds": [],
+            "id": "b97f37adc340521020677602b4013139"
+        },
+        "propertyValues": {
+            "dashboardSysId": {
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "defaultDashboard": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "defaultDrilldowns": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "drilldownToCoreUI": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "editMode": {
+                "binding": {
+                    "address": [
+                        "edit"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "element": {
+                "binding": {
+                    "address": [
+                        "element"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "experienceId": {
+                "binding": {
+                    "address": [
+                        "appId"
+                    ],
+                    "category": "app"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "exportMode": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "filterId": {
+                "binding": {
+                    "address": [
+                        "filter"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "globalFilters": {
+                "binding": {
+                    "address": [
+                        "unifiedFilters"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "hideCreateNewButton": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideDashboardPicker": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideEditButton": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideHeader": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideShareButton": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "queryInactive": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "showPrintPreview": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "tabSysId": {
+                "binding": {
+                    "address": [
+                        "tabSysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "useAsEmbedded": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "userInfo": {
+                "binding": {
+                    "address": [
+                        "user"
+                    ],
+                    "category": "session"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition>
+        <da_relay_models/>
+        <data>[
+    {
+        "definition": {
+            "id": "e7defb6dc340521020677602b4013173",
+            "type": "CONTROLLER"
+        },
+        "dependencies": {},
+        "elementId": "dashboard_controller_1",
+        "elementLabel": "Dashboard controller 1",
+        "eventMappings": [],
+        "inputValues": {
+            "dashboardSysId": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "operation": {
+                                    "left": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "sysId"
+                                                            ],
+                                                            "category": "props"
+                                                        },
+                                                        "type": "CONTEXT_BINDING"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "EMPTY"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    },
+                                    "operator": "OR",
+                                    "right": {
+                                        "operation": {
+                                            "left": {
+                                                "binding": {
+                                                    "address": [
+                                                        "sysId"
+                                                    ],
+                                                    "category": "props"
+                                                },
+                                                "type": "CONTEXT_BINDING"
+                                            },
+                                            "operator": "EQUAL",
+                                            "right": {
+                                                "type": "JSON_LITERAL",
+                                                "value": ""
+                                            }
+                                        },
+                                        "type": "BINARY"
+                                    }
+                                },
+                                "type": "BINARY"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "null"
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "sysId"
+                                    ],
+                                    "category": "props"
+                                },
+                                "type": "CONTEXT_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "IF"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "experienceId": {
+                "binding": {
+                    "address": [
+                        "appId"
+                    ],
+                    "category": "app"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "filterId": {
+                "binding": {
+                    "address": [
+                        "filter"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "059c1a8db7c60210cc4880408e11a9d2",
+            "type": "TRANSFORM"
+        },
+        "elementId": "get_system_properties_values_1",
+        "elementLabel": "Get System Properties Values 1",
+        "eventMappings": [],
+        "inputValues": {
+            "properties": {
+                "type": "JSON_LITERAL",
+                "value": "glide.ui.polaris.experience"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "a409e55077311110960ced43ba5a99bd",
+            "type": "COMPOSITE"
+        },
+        "elementId": "get_user_prefs__as_object__1",
+        "elementLabel": "Get user prefs (as object) 1",
+        "eventMappings": [],
+        "inputValues": {
+            "preferences": {
+                "type": "JSON_LITERAL",
+                "value": "glide.ui.polaris.use"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
+        <description>Provides the ability to display multiple kinds of information, including data visualizations, filters, and text on a single screen with one or more tabs. Use dashboards to create a story with data that you can share with multiple users.</description>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events>b0ece993830e32d078c11a30ceaad39c</dispatched_events>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{}</internal_event_mappings>
+        <layout>{
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "dashboard_1",
+                "styles": {
+                    "height": ""
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "flex-direction": "column",
+            "height": "100%"
+        },
+        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+        "type": "flex"
+    },
+    "version": "3.0.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>GovSmart Dashboard For Admins</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": null,
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Element",
+        "mandatory": false,
+        "name": "element",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "filter",
+        "mandatory": false,
+        "name": "filter",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "tabSysId",
+        "mandatory": false,
+        "name": "tabSysId",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Edit",
+        "mandatory": false,
+        "name": "edit",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "sysId",
+        "mandatory": false,
+        "name": "sysId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "Unified Filters are sent to the dashboard serve as filters for the visualizations within the dashboard.\n\nExample: JSON.stringify({\"encodedQueries\":{\"incident\":\"category=inquiry^state=7\"},\"parFilters\":[{\"order\":0,\"label\":\"Priority\",\"type\":\"choice\",\"apply_to\":[\"incident.priority\"],\"values\":[\"3\",\"5\"]}]})",
+        "fieldType": "json",
+        "id": "unifiedFilters",
+        "label": "unifiedFilters",
+        "name": "unifiedFilters",
+        "translatable": false
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config>{}</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties>[]</state_properties>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 13:22:42</sys_created_on>
+        <sys_id>3cece993830e32d078c11a30ceaad357</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GovSmart Dashboard For Admins</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_macroponent_3cece993830e32d078c11a30ceaad357</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 13:22:43</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="DELETE" query="documentkey=3cece993830e32d078c11a30ceaad357"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_macroponent_3cece993830e32d078c11a30ceaad357</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent"><sys_ux_macroponent action="INSERT_OR_UPDATE"><associated_types/><bundles>[]</bundles><category>page</category><component_dependencies/><composition>[
+    {
+        "definition": {
+            "id": "f552e6a932780394b6f06c14071aa115",
+            "type": "MACROPONENT"
+        },
+        "elementId": "dashboard_1",
+        "elementLabel": "Dashboard 1",
+        "eventMappings": [
+            {
+                "eventMappingId": "claagnddeeoqaacciirddwggyggoqshhikii",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_dashboard.DASHBOARD_DESIGNER#REDIRECT_DASHBOARDS_OVERVIEW",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_dashboard.DASHBOARD_DESIGNER#REDIRECT_DASHBOARDS_OVERVIEW",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "sysId": "b8ece993830e32d078c11a30ceaad392"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "claagnddeeoqaacciisddwggyddkfaaffxig",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "clzbjjaaaazaabbxggddbiidddwiijbbjjjg",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_dashboard.DASHBOARD#OPEN_SCHEDULED_EXPORT",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_dashboard.DASHBOARD#OPEN_SCHEDULED_EXPORT",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            },
+                            "sysId": "74ece993830e32d078c11a30ceaad365"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "clzbjjaaaazaabbxhhddbiiddhxzmcxta",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            },
+            {
+                "eventMappingId": "tZXmlPEjDaaZWjjZiiCzVYyMdCy",
+                "isConfiguration": false,
+                "offRowStorageId": null,
+                "sourceEventApiName": "sn_dashboard.DASHBOARD_DESIGNER#WIDGET_CLICKED",
+                "sourceEventCorrelationId": null,
+                "sourceEventDefinition": {
+                    "apiName": "sn_dashboard.DASHBOARD_DESIGNER#WIDGET_CLICKED",
+                    "id": null,
+                    "type": "UXEVENT"
+                },
+                "sourceEventSysId": null,
+                "targets": [
+                    {
+                        "broker": null,
+                        "clientScript": {
+                            "payload": {
+                                "type": "JSON_LITERAL",
+                                "value": {}
+                            },
+                            "sysId": "b4ece993830e32d078c11a30ceaad371"
+                        },
+                        "conditional": null,
+                        "declarativeAction": null,
+                        "event": null,
+                        "operation": null,
+                        "targetId": "reehhlOLfcRCaaZUjjaaaaBiRViiknLV",
+                        "type": "CLIENT_SCRIPT"
+                    }
+                ]
+            }
+        ],
+        "extensionPoints": [],
+        "isHero": false,
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "isNonDestructive": false,
+        "items": [],
+        "overrides": null,
+        "preset": {
+            "controllerElementId": "dashboard_controller_1",
+            "disabledEventTargetIds": [],
+            "id": "b97f37adc340521020677602b4013139"
+        },
+        "propertyValues": {
+            "dashboardSysId": {
+                "binding": {
+                    "address": [
+                        "sysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "defaultDashboard": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "defaultDrilldowns": {
+                "type": "JSON_LITERAL",
+                "value": true
+            },
+            "drilldownToCoreUI": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "editMode": {
+                "binding": {
+                    "address": [
+                        "edit"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "element": {
+                "binding": {
+                    "address": [
+                        "element"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "experienceId": {
+                "binding": {
+                    "address": [
+                        "appId"
+                    ],
+                    "category": "app"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "exportMode": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "filterId": {
+                "binding": {
+                    "address": [
+                        "filter"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "globalFilters": {
+                "binding": {
+                    "address": [
+                        "unifiedFilters"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "hideCreateNewButton": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideDashboardPicker": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideEditButton": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideHeader": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "hideShareButton": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "queryInactive": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "showPrintPreview": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "tabSysId": {
+                "binding": {
+                    "address": [
+                        "tabSysId"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "useAsEmbedded": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "userInfo": {
+                "binding": {
+                    "address": [
+                        "user"
+                    ],
+                    "category": "session"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "slot": null,
+        "styles": null
+    }
+]</composition><da_relay_models/><data>[
+    {
+        "definition": {
+            "id": "e7defb6dc340521020677602b4013173",
+            "type": "CONTROLLER"
+        },
+        "dependencies": {},
+        "elementId": "dashboard_controller_1",
+        "elementLabel": "Dashboard controller 1",
+        "eventMappings": [],
+        "inputValues": {
+            "dashboardSysId": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "operation": {
+                                    "left": {
+                                        "transform": {
+                                            "operands": {
+                                                "container": [
+                                                    {
+                                                        "binding": {
+                                                            "address": [
+                                                                "sysId"
+                                                            ],
+                                                            "category": "props"
+                                                        },
+                                                        "type": "CONTEXT_BINDING"
+                                                    }
+                                                ],
+                                                "type": "LIST_CONTAINER"
+                                            },
+                                            "operator": "EMPTY"
+                                        },
+                                        "type": "CLIENT_TRANSFORM"
+                                    },
+                                    "operator": "OR",
+                                    "right": {
+                                        "operation": {
+                                            "left": {
+                                                "binding": {
+                                                    "address": [
+                                                        "sysId"
+                                                    ],
+                                                    "category": "props"
+                                                },
+                                                "type": "CONTEXT_BINDING"
+                                            },
+                                            "operator": "EQUAL",
+                                            "right": {
+                                                "type": "JSON_LITERAL",
+                                                "value": ""
+                                            }
+                                        },
+                                        "type": "BINARY"
+                                    }
+                                },
+                                "type": "BINARY"
+                            },
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "null"
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "sysId"
+                                    ],
+                                    "category": "props"
+                                },
+                                "type": "CONTEXT_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "IF"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "experienceId": {
+                "binding": {
+                    "address": [
+                        "appId"
+                    ],
+                    "category": "app"
+                },
+                "type": "CONTEXT_BINDING"
+            },
+            "filterId": {
+                "binding": {
+                    "address": [
+                        "filter"
+                    ],
+                    "category": "props"
+                },
+                "type": "CONTEXT_BINDING"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "059c1a8db7c60210cc4880408e11a9d2",
+            "type": "TRANSFORM"
+        },
+        "elementId": "get_system_properties_values_1",
+        "elementLabel": "Get System Properties Values 1",
+        "eventMappings": [],
+        "inputValues": {
+            "properties": {
+                "type": "JSON_LITERAL",
+                "value": "glide.ui.polaris.experience"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    },
+    {
+        "definition": {
+            "id": "a409e55077311110960ced43ba5a99bd",
+            "type": "COMPOSITE"
+        },
+        "elementId": "get_user_prefs__as_object__1",
+        "elementLabel": "Get user prefs (as object) 1",
+        "eventMappings": [],
+        "inputValues": {
+            "preferences": {
+                "type": "JSON_LITERAL",
+                "value": "glide.ui.polaris.use"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data><description>Provides the ability to display multiple kinds of information, including data visualizations, filters, and text on a single screen with one or more tabs. Use dashboards to create a story with data that you can share with multiple users.</description><disable_auto_reflow>false</disable_auto_reflow><dispatched_events>b0ece993830e32d078c11a30ceaad39c</dispatched_events><ext_controller_dep/><extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends><extension_point/><form_factors>{}</form_factors><handled_events/><interactions/><interfaces/><internal_event_mappings>{}</internal_event_mappings><layout>{
+    "default": {
+        "children": null,
+        "isInline": null,
+        "items": [
+            {
+                "element_id": "dashboard_1",
+                "styles": {
+                    "height": ""
+                }
+            }
+        ],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "flex-direction": "column",
+            "height": "100%"
+        },
+        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+        "type": "flex"
+    },
+    "version": "3.0.0"
+}</layout><macroponent_dependencies/><name>GovSmart Dashboard For Admins</name><output_prop_mapping/><props>[
+    {
+        "defaultValue": null,
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Element",
+        "mandatory": false,
+        "name": "element",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "filter",
+        "mandatory": false,
+        "name": "filter",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": null,
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "tabSysId",
+        "mandatory": false,
+        "name": "tabSysId",
+        "readOnly": false,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "Edit",
+        "mandatory": false,
+        "name": "edit",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "defaultValue": "",
+        "description": "",
+        "disabled": false,
+        "fieldType": "string",
+        "label": "sysId",
+        "mandatory": false,
+        "name": "sysId",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    },
+    {
+        "description": "Unified Filters are sent to the dashboard serve as filters for the visualizations within the dashboard.\n\nExample: JSON.stringify({\"encodedQueries\":{\"incident\":\"category=inquiry^state=7\"},\"parFilters\":[{\"order\":0,\"label\":\"Priority\",\"type\":\"choice\",\"apply_to\":[\"incident.priority\"],\"values\":[\"3\",\"5\"]}]})",
+        "fieldType": "json",
+        "id": "unifiedFilters",
+        "label": "unifiedFilters",
+        "name": "unifiedFilters",
+        "translatable": false
+    }
+]</props><required_translations>[ ]</required_translations><root_component/><root_component_config>{}</root_component_config><root_component_definition/><schema_version>1.0.0</schema_version><state_persistence_config/><state_properties>[]</state_properties><style_config>{}</style_config><sys_class_name>sys_ux_macroponent</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-31 13:22:42</sys_created_on><sys_id>3cece993830e32d078c11a30ceaad357</sys_id><sys_mod_count>2</sys_mod_count><sys_name>GovSmart Dashboard For Admins</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_macroponent_3cece993830e32d078c11a30ceaad357</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-31 13:22:43</sys_updated_on></sys_ux_macroponent><sys_translated_text action="delete_multiple" query="documentkey=3cece993830e32d078c11a30ceaad357"/></record_update>]]></payload>
+        <payload_hash>-923900752</payload_hash>
+        <record_name>GovSmart Dashboard For Admins</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 13:22:43</sys_created_on>
+        <sys_id>05ece993830e32d078c11a30ceaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b749338760000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 13:22:43</sys_updated_on>
+        <type>UX Macroponent Definition</type>
+        <update_guid>05ece993300e32d0f93bee76c70831f7</update_guid>
+        <update_guid_history>05ece993300e32d0f93bee76c70831f7:-923900752,45ece9935f0e32d0a39bf19674532ea8:1909986328,f8ece9936b0e32d010eb77718ac00e61:-371551433</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-31 14:35:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_macroponent">sys_ux_macroponent</sys_db_object>
+        <sys_id>11fca200525a44608bf88428b010e390</sys_id>
+        <sys_metadata>3cece993830e32d078c11a30ceaad357</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GovSmart Dashboard For Admins</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_macroponent_3cece993830e32d078c11a30ceaad357</sys_update_name>
+        <sys_update_version display_value="sys_ux_macroponent_3cece993830e32d078c11a30ceaad357">05ece993830e32d078c11a30ceaad3f8</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:35:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

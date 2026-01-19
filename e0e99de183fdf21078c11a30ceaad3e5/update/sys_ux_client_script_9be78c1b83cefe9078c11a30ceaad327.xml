@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="List Menu Template Page">1be74c1b83cefe9078c11a30ceaad3f8</macroponent>
+        <macroponent display_value="List Admin Region">1be74c1b83cefe9078c11a30ceaad3f8</macroponent>
         <name>Refresh List</name>
         <preset/>
         <required_translations>[]</required_translations>

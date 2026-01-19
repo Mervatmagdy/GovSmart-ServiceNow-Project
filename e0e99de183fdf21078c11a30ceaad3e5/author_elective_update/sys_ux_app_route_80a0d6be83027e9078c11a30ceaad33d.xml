@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Mail</name>
+        <optional_parameters>listId,sysId</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>mail</route_type>
+        <screen_type display_value="Mail">00a09efa83027e9078c11a30ceaad35a</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-30 02:41:53</sys_created_on>
+        <sys_id>80a0d6be83027e9078c11a30ceaad33d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Mail</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_app_route_80a0d6be83027e9078c11a30ceaad33d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 03:36:38</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=80a0d6be83027e9078c11a30ceaad33d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_app_route_80a0d6be83027e9078c11a30ceaad33d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config><description/><extension_point/><fields/><icon/><name>Mail</name><optional_parameters>listId,sysId</optional_parameters><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>mail</route_type><screen_type display_value="Mail">00a09efa83027e9078c11a30ceaad35a</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-30 02:41:53</sys_created_on><sys_id>80a0d6be83027e9078c11a30ceaad33d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Mail</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_app_route_80a0d6be83027e9078c11a30ceaad33d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-30 03:36:38</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=80a0d6be83027e9078c11a30ceaad33d"/></record_update>]]></payload>
+        <payload_hash>-1327461818</payload_hash>
+        <record_name>Mail</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-30 03:36:38</sys_created_on>
+        <sys_id>022d563a83827e9078c11a30ceaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b6d5446700000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 03:36:38</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>022d563a8b827e901d8a267606aa17cf</update_guid>
+        <update_guid_history>022d563a8b827e901d8a267606aa17cf:-1327461818,c8a0d6be82027e9092ceb0c76157d641:-389370462</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-30 03:57:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>20bee4b4c85846e5b3ecc7885dbf2fb1</sys_id>
+        <sys_metadata>80a0d6be83027e9078c11a30ceaad33d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mail</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_80a0d6be83027e9078c11a30ceaad33d</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_80a0d6be83027e9078c11a30ceaad33d">022d563a83827e9078c11a30ceaad3d0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 03:57:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

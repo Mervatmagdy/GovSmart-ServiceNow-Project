@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+ if (g_user.hasRoleExactly('x_1850706_govsma_0.user')) {
+      g_form.setSectionDisplay('employee_section', true);
+   }
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+ if (g_user.hasRoleExactly('x_1850706_govsma_0.user')) {
+      g_form.setSectionDisplay('employee_section', false);
+   }
+}]]></script_true>
+        <set_values/>
+        <short_description>Hide Employee Section from user</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 12:50:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bdd7268383b5325078c11a30ceaad319</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Hide Employee Section from user</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ui_policy_bdd7268383b5325078c11a30ceaad319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 13:08:20</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ui_policy_bdd7268383b5325078c11a30ceaad319</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions/&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;true&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+ if (g_user.hasRoleExactly('x_1850706_govsma_0.user')) {
+      g_form.setSectionDisplay('employee_section', true);
+   }
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+ if (g_user.hasRoleExactly('x_1850706_govsma_0.user')) {
+      g_form.setSectionDisplay('employee_section', false);
+   }
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Hide Employee Section from user&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-18 12:50:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bdd7268383b5325078c11a30ceaad319&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hide Employee Section from user&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_bdd7268383b5325078c11a30ceaad319&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-18 13:08:20&lt;/sys_updated_on&gt;&lt;table&gt;x_1850706_govsma_0_government_service_request&lt;/table&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1749629597</payload_hash>
+        <record_name>Hide Employee Section from user</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 13:08:20</sys_created_on>
+        <sys_id>a3ec2a0f83b5325078c11a30ceaad30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b31935f3d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 13:08:20</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>efec660f34b5325011c5c085d987597a</update_guid>
+        <update_guid_history>efec660f34b5325011c5c085d987597a:-1749629597,edcce6cbb9b53250e60eec6f1466dd6b:490708005,398aaa87e5b53250bf5609b0c327d5c6:881907469,76d866c307b53250089ae3da4d9bd0aa:72247410,98d8ee8360b53250aa736d980635b2fa:1839282119</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-26 01:02:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>03d273363c2f4ad4800fcc373ac8aa84</sys_id>
+        <sys_metadata>bdd7268383b5325078c11a30ceaad319</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Employee Section from user</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Government Service Request">c93a352583f1361078c11a30ceaad358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_bdd7268383b5325078c11a30ceaad319</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_bdd7268383b5325078c11a30ceaad319">a3ec2a0f83b5325078c11a30ceaad30f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 01:02:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

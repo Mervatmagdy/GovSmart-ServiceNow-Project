@@ -33,4 +33,15 @@
         <sys_updated_on>2025-12-30 12:30:03</sys_updated_on>
         <template><![CDATA[<div><!-- your widget template --></div>]]></template>
     </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3337540b8302be9078c11a30ceaad354</id>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-30 12:30:03</sys_created_on>
+        <sys_id>bb3790478342be9078c11a30ceaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 12:30:03</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="List Menu Template Page">64f57b85835efed078c11a30ceaad37a</macroponent>
+        <macroponent display_value="Default">64f57b85835efed078c11a30ceaad37a</macroponent>
         <name>Refresh List</name>
         <preset/>
         <required_translations>[]</required_translations>

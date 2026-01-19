@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>List</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent/>
+        <parent_macroponent_composition_element_id/>
+        <route_type>list</route_type>
+        <screen_type display_value="List">ecbeb40c773a2110583f78dabd5a998a</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-30 03:19:08</sys_created_on>
+        <sys_id>6ff81ebe83427e9078c11a30ceaad33d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>List</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_app_route_6ff81ebe83427e9078c11a30ceaad33d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 03:21:01</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=6ff81ebe83427e9078c11a30ceaad33d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_app_route_6ff81ebe83427e9078c11a30ceaad33d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config><description/><extension_point/><fields/><icon/><name>List</name><optional_parameters/><order>0</order><parent_macroponent/><parent_macroponent_composition_element_id/><route_type>list</route_type><screen_type display_value="List">ecbeb40c773a2110583f78dabd5a998a</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-30 03:19:08</sys_created_on><sys_id>6ff81ebe83427e9078c11a30ceaad33d</sys_id><sys_mod_count>1</sys_mod_count><sys_name>List</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_app_route_6ff81ebe83427e9078c11a30ceaad33d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-30 03:21:01</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=6ff81ebe83427e9078c11a30ceaad33d"/></record_update>]]></payload>
+        <payload_hash>309297834</payload_hash>
+        <record_name>List</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-30 03:21:01</sys_created_on>
+        <sys_id>1d99defe83427e9078c11a30ceaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b6d45fa610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 03:21:01</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>1d99defe44427e90ae5b48fd44d2a27c</update_guid>
+        <update_guid_history>1d99defe44427e90ae5b48fd44d2a27c:309297834,ad2992fe54427e907bb91dd1a381c7c3:-2039989851</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-30 03:53:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>0d8a641791ad496aa30770ca9c685109</sys_id>
+        <sys_metadata>6ff81ebe83427e9078c11a30ceaad33d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_6ff81ebe83427e9078c11a30ceaad33d</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_6ff81ebe83427e9078c11a30ceaad33d">1d99defe83427e9078c11a30ceaad37d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 03:53:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -4,7 +4,7 @@
         <controller/>
         <description/>
         <name>Edit Record In New Tab</name>
-        <parent_macroponent display_value="Analytics center">e79e290e838eb69078c11a30ceaad34f</parent_macroponent>
+        <parent_macroponent display_value="Analytics Center Default">e79e290e838eb69078c11a30ceaad34f</parent_macroponent>
         <source_component/>
         <source_da display_value="edit_({{count}})">d655b480c59f5510f877a9d5199de99c</source_da>
         <source_element_id>nam_kpis</source_element_id>

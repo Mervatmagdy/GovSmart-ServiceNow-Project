@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="Default">46eb8c1d8312321478c11a30ceaad322</macroponent>
+        <macroponent display_value="Admin Region List">46eb8c1d8312321478c11a30ceaad322</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

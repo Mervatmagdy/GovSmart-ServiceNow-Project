@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view_workspace">
+    <sysrule_view_workspace action="DELETE">
+        <active>true</active>
+        <condition/>
+        <default_tab_focus>Details</default_tab_focus>
+        <default_tab_order>true</default_tab_order>
+        <description/>
+        <disable_section_collapse>false</disable_section_collapse>
+        <experience_restricted>false</experience_restricted>
+        <hide_details>false</hide_details>
+        <hide_journal_input_fields>false</hide_journal_input_fields>
+        <hide_section_menu>false</hide_section_menu>
+        <name>Gov Reviewer </name>
+        <order>100</order>
+        <roles>x_1850706_govsma_0.Service Admin Region,x_1850706_govsma_0.Service Reviwer,admin,x_1850706_govsma_0.admin</roles>
+        <sys_class_name>sysrule_view_workspace</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-05 21:56:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2bd19101831abed078c11a30ceaad37a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Gov Reviewer </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sysrule_view_workspace_2bd19101831abed078c11a30ceaad37a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-05 23:45:18</sys_updated_on>
+        <table>x_1850706_govsma_0_empl_task</table>
+        <tabs_order>[{"label":"Details","value":"Details"},{"label":"Task SLA-&gt;Task","value":"task_sla.task"},{"label":"Approvers","value":"sysapproval_approver.sysapproval"},{"label":"Attachments","value":"REL:b9edf0ca0a0a0b010035de2d6b579a03"}]</tabs_order>
+        <view display_value="Default view" name="NULL">Default view</view>
+        <workspace/>
+    </sysrule_view_workspace>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sysrule_view_workspace_2bd19101831abed078c11a30ceaad37a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_view_workspace"><sysrule_view_workspace action="INSERT_OR_UPDATE"><active>true</active><condition/><default_tab_focus>Details</default_tab_focus><default_tab_order>true</default_tab_order><description/><disable_section_collapse>false</disable_section_collapse><experience_restricted>false</experience_restricted><hide_details>false</hide_details><hide_journal_input_fields>false</hide_journal_input_fields><hide_section_menu>false</hide_section_menu><name>Gov Reviewer </name><order>100</order><roles>x_1850706_govsma_0.Service Admin Region,x_1850706_govsma_0.Service Reviwer,admin,x_1850706_govsma_0.admin</roles><sys_class_name>sysrule_view_workspace</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-05 21:56:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2bd19101831abed078c11a30ceaad37a</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Gov Reviewer </sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sysrule_view_workspace_2bd19101831abed078c11a30ceaad37a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-05 23:45:18</sys_updated_on><table>x_1850706_govsma_0_empl_task</table><tabs_order>[{"label":"Details","value":"Details"},{"label":"Task SLA-&gt;Task","value":"task_sla.task"},{"label":"Approvers","value":"sysapproval_approver.sysapproval"},{"label":"Attachments","value":"REL:b9edf0ca0a0a0b010035de2d6b579a03"}]</tabs_order><view display_value="Default view" name="NULL">Default view</view><workspace/></sysrule_view_workspace></record_update>]]></payload>
+        <payload_hash>374360257</payload_hash>
+        <record_name>Gov Reviewer </record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-05 23:45:18</sys_created_on>
+        <sys_id>e95b2109831ebed078c11a30ceaad32a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b908d00b00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-05 23:45:18</sys_updated_on>
+        <type>View Rule</type>
+        <update_guid>a15badc5141ebed08122ec571fb9bbff</update_guid>
+        <update_guid_history>a15badc5141ebed08122ec571fb9bbff:374360257,7fd65989171abed08249d96ea5a428a0:1109977484,a3639981541abed0aaed4c8cd2849a35:-295758277,d2829541741abed04d8daba302c13bb8:2089106290</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-05 23:48:18</sys_created_on>
+        <sys_db_object display_value="" name="sysrule_view_workspace">sysrule_view_workspace</sys_db_object>
+        <sys_id>124d69adb2af4516afed6383d27e5004</sys_id>
+        <sys_metadata>2bd19101831abed078c11a30ceaad37a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gov Reviewer </sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sysrule_view_workspace_2bd19101831abed078c11a30ceaad37a</sys_update_name>
+        <sys_update_version display_value="sysrule_view_workspace_2bd19101831abed078c11a30ceaad37a">e95b2109831ebed078c11a30ceaad32a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-05 23:48:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

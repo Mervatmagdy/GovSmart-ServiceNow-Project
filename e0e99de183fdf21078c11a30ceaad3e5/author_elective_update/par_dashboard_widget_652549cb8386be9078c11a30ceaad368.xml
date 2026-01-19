@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">a12549cb8386be9078c11a30ceaad316</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"auto","headingPosition":"top","sparklineStyle":"area","scoreIcon":"","iconStyle":"background","showScoreDate":false,"chartSize":null,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":true,"colorConfig":null,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":null,"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"title":null,"headerTitle":null,"headingLevel":2,"description":null,"showBorder":true,"groupByConfig":null,"bareBorder":false,"formats":null,"dataCategory":null,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":null,"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"forecastConfig":null,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"6a22nggw","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"backgroundRefreshInterval":null,"standardFormatData":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"chartExtraConfig":null,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","startTime":null,"endTime":null,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"isComponentInView":null,"pageId":null,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"refreshFrequency","value":null,"noDebounce":true,"propLabel":"Live refresh rate (seconds)"}</component_props>
+        <h>12</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-30 15:50:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>652549cb8386be9078c11a30ceaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_widget_652549cb8386be9078c11a30ceaad368</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 15:50:36</sys_updated_on>
+        <visualization/>
+        <w>12</w>
+        <widget_props/>
+        <x>36</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>par_dashboard_widget_652549cb8386be9078c11a30ceaad368</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">a12549cb8386be9078c11a30ceaad316</canvas><component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component><component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","scoreSize":"auto","headingPosition":"top","sparklineStyle":"area","scoreIcon":"","iconStyle":"background","showScoreDate":false,"chartSize":null,"useRelativeScoreTime":false,"showScoreUpdateTime":false,"showZero":true,"colorConfig":null,"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":null,"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"title":null,"headerTitle":null,"headingLevel":2,"description":null,"showBorder":true,"groupByConfig":null,"bareBorder":false,"formats":null,"dataCategory":null,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":false,"metrics":null,"groupBy":null,"filterPerMetric":[],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"forecastConfig":null,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"6a22nggw","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"backgroundRefreshInterval":null,"standardFormatData":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"chartExtraConfig":null,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","startTime":null,"endTime":null,"useCurrentDateForEnd":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"isComponentInView":null,"pageId":null,"dateFormat":"default","showRefresh":true,"showFilterAsSeparateSeries":false,"id":"refreshFrequency","value":null,"noDebounce":true,"propLabel":"Live refresh rate (seconds)"}</component_props><h>12</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-30 15:50:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>652549cb8386be9078c11a30ceaad368</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>par_dashboard_widget_652549cb8386be9078c11a30ceaad368</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-30 15:50:36</sys_updated_on><visualization/><w>12</w><widget_props/><x>36</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1710226851</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-30 15:50:37</sys_created_on>
+        <sys_id>a52549cb8386be9078c11a30ceaad36b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b6ff440dc0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 15:50:37</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>a12549cbea86be909e08aac041d4ad6a</update_guid>
+        <update_guid_history>a12549cbea86be909e08aac041d4ad6a:-1710226851</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">b7a50d0f8386be9078c11a30ceaad324</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-30 15:52:57</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>869b075e98cb427a90db8e65db00dbc4</sys_id>
+        <sys_metadata>652549cb8386be9078c11a30ceaad368</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_652549cb8386be9078c11a30ceaad368</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_652549cb8386be9078c11a30ceaad368">a52549cb8386be9078c11a30ceaad36b</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 15:52:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

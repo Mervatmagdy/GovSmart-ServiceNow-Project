@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-01-04 09:25:15</sys_updated_on>
         <table>x_1850706_govsma_0_empl_task</table>
-        <ui_action display_value="Approve Reviewer">3c4b59648356bad078c11a30ceaad3a0</ui_action>
+        <ui_action display_value="Approve ">3c4b59648356bad078c11a30ceaad3a0</ui_action>
     </sys_ux_form_action>
     <sys_translated_text action="delete_multiple" query="documentkey=e5ec9d688356bad078c11a30ceaad3d9"/>
 </record_update>

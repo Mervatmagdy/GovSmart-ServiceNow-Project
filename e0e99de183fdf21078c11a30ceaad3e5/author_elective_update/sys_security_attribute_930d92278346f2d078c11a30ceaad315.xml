@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_attribute">
+    <sys_security_attribute action="DELETE">
+        <active>true</active>
+        <condition>RoleExplicit!=2831a114c611228501d4ea6c309d626d^ORRoleExplicit!=64e9dde183fdf21078c11a30ceaad34d^ORRoleExplicit!=da63693d83f1b61078c11a30ceaad32f^ORRoleExplicit!=41332d3d83f1b61078c11a30ceaad3b9</condition>
+        <description>Auto Created Attribute - ACL_1102de238306f2d078c11a30ceaad382</description>
+        <is_dynamic>true</is_dynamic>
+        <is_localized>true</is_localized>
+        <is_system>false</is_system>
+        <label>ACL_1102de238306f2d078c11a30ceaad382</label>
+        <lookup_table/>
+        <lookup_table_column/>
+        <name>x_1850706_govsma_0__ACL_1102de238306f2d078c11a30ceaad382</name>
+        <script/>
+        <sys_class_name>sys_security_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 11:31:37</sys_created_on>
+        <sys_id>930d92278346f2d078c11a30ceaad315</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1850706_govsma_0__ACL_1102de238306f2d078c11a30ceaad382</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_security_attribute_930d92278346f2d078c11a30ceaad315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 11:33:03</sys_updated_on>
+        <type>compound</type>
+    </sys_security_attribute>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_security_attribute_930d92278346f2d078c11a30ceaad315</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_attribute"><sys_security_attribute action="INSERT_OR_UPDATE"><active>true</active><condition>RoleExplicit!=2831a114c611228501d4ea6c309d626d^ORRoleExplicit!=64e9dde183fdf21078c11a30ceaad34d^ORRoleExplicit!=da63693d83f1b61078c11a30ceaad32f^ORRoleExplicit!=41332d3d83f1b61078c11a30ceaad3b9</condition><description>Auto Created Attribute - ACL_1102de238306f2d078c11a30ceaad382</description><is_dynamic>true</is_dynamic><is_localized>true</is_localized><is_system>false</is_system><label>ACL_1102de238306f2d078c11a30ceaad382</label><lookup_table/><lookup_table_column/><name>x_1850706_govsma_0__ACL_1102de238306f2d078c11a30ceaad382</name><script/><sys_class_name>sys_security_attribute</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-01 11:31:37</sys_created_on><sys_id>930d92278346f2d078c11a30ceaad315</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_1850706_govsma_0__ACL_1102de238306f2d078c11a30ceaad382</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_security_attribute_930d92278346f2d078c11a30ceaad315</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-01 11:33:03</sys_updated_on><type>compound</type></sys_security_attribute></record_update>]]></payload>
+        <payload_hash>-143900134</payload_hash>
+        <record_name>x_1850706_govsma_0__ACL_1102de238306f2d078c11a30ceaad382</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 11:33:03</sys_created_on>
+        <sys_id>1c6d56a78346f2d078c11a30ceaad3f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b79552cdb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 11:33:03</sys_updated_on>
+        <type>Security Attribute</type>
+        <update_guid>1c6d56a75246f2d0be8d5094ffbdfef5</update_guid>
+        <update_guid_history>1c6d56a75246f2d0be8d5094ffbdfef5:-143900134,2f0dda67a546f2d032119b5916d7d5e7:1665373752</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 12:02:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_attribute">sys_security_attribute</sys_db_object>
+        <sys_id>15b059a8171c4bf987093d0ea9edd9d9</sys_id>
+        <sys_metadata>930d92278346f2d078c11a30ceaad315</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1850706_govsma_0__ACL_1102de238306f2d078c11a30ceaad382</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_security_attribute_930d92278346f2d078c11a30ceaad315</sys_update_name>
+        <sys_update_version display_value="sys_security_attribute_930d92278346f2d078c11a30ceaad315">1c6d56a78346f2d078c11a30ceaad3f6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 12:02:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Styling Not Verified btn</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    var verifiedFields = [
+        'employer_educational_institution_flag',
+        'profession_flag',
+        'spouse_name_flag',
+		'head_of_family_name_flag',
+		'head_of_family_national_id_flag',
+		'family_register_number_flag',
+		'mother_name_flag',
+		'children_names_flag',
+		'medical_conditions_preventing_driving_flag',
+		'old_id_number_flag',
+		'attachment_flag'
+    ];
+
+    verifiedFields.forEach(function(field) {
+        styleVerified(field);
+    });
+}
+
+function styleVerified(field) {
+    
+      
+        // g_form.addDecoration(field, 'icon-alert');
+		g_form.(field, 'icon-error', 'not ','#C62828');
+    
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-06 21:31:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36c4da918392721478c11a30ceaad302</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Styling Not Verified btn</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_client_36c4da918392721478c11a30ceaad302</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 22:01:31</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_client_36c4da918392721478c11a30ceaad302</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Styling Not Verified btn&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    var verifiedFields = [
+        'employer_educational_institution_flag',
+        'profession_flag',
+        'spouse_name_flag',
+		'head_of_family_name_flag',
+		'head_of_family_national_id_flag',
+		'family_register_number_flag',
+		'mother_name_flag',
+		'children_names_flag',
+		'medical_conditions_preventing_driving_flag',
+		'old_id_number_flag',
+		'attachment_flag'
+    ];
+
+    verifiedFields.forEach(function(field) {
+        styleVerified(field);
+    });
+}
+
+function styleVerified(field) {
+    
+      
+        // g_form.addDecoration(field, 'icon-alert');
+		g_form.(field, 'icon-error', 'not ','#C62828');
+    
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-06 21:31:39&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;36c4da918392721478c11a30ceaad302&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Styling Not Verified btn&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_36c4da918392721478c11a30ceaad302&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-06 22:01:31&lt;/sys_updated_on&gt;&lt;table&gt;x_1850706_govsma_0_government_service_request&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1510776156</payload_hash>
+        <record_name>Styling Not Verified btn</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-06 22:01:31</sys_created_on>
+        <sys_id>4f2d1e9183d2721478c11a30ceaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b9554572c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 22:01:31</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>4f2d1e919bd272145c7382d57e7c533d</update_guid>
+        <update_guid_history>4f2d1e919bd272145c7382d57e7c533d:-1510776156,5fca9619c09272140039eb1eefcf7395:1654385042,ab6a1e5d35927214d2e34fd5036ad64f:-542576795,f40a52594a9272148aa2a46f9bd22f6d:-1592394347,4dc9d61dce9272141e17786732f6013a:1842424228,02595a99ab9272145c59e44b815ecb44:-872300392,61b8d695bf927214115dfae7111d4dc6:-728242904,e5f712594e927214c062324d671f3605:-1422372428,cea71a95d39272149b880f6ed79bf4fc:-313119405,6d561a558c9272141d6c1190fff7e7be:-2030653013</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-09 20:03:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>60d075b6165e4c10a37bf3678caa1910</sys_id>
+        <sys_metadata>36c4da918392721478c11a30ceaad302</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Styling Not Verified btn</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Government Service Request">c93a352583f1361078c11a30ceaad358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_client_36c4da918392721478c11a30ceaad302</sys_update_name>
+        <sys_update_version display_value="sys_script_client_36c4da918392721478c11a30ceaad302">4f2d1e9183d2721478c11a30ceaad33e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-09 20:03:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

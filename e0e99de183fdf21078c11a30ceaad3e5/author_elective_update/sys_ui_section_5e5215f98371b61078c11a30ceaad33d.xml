@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Employee Section" section_id="5e5215f98371b61078c11a30ceaad33d" sys_domain="global" table="x_1850706_govsma_0_government_service_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_type_prefix</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:31</sys_created_on>
+            <sys_id>19a52b5883c2ba5078c11a30ceaad309</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignmen_group</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:31</sys_created_on>
+            <sys_id>95a52b5883c2ba5078c11a30ceaad30a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:32</sys_created_on>
+            <sys_id>15a52b5883c2ba5078c11a30ceaad30b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:32</sys_created_on>
+            <sys_id>91a52b5883c2ba5078c11a30ceaad30c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:32</sys_created_on>
+            <sys_id>11a52b5883c2ba5078c11a30ceaad30d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>document_status</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:32</sys_created_on>
+            <sys_id>9da52b5883c2ba5078c11a30ceaad30d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reason</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:32</sys_created_on>
+            <sys_id>1da52b5883c2ba5078c11a30ceaad30e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>employee_cannot_make_task</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-22 14:28:32</sys_created_on>
+            <sys_id>99a52b5883c2ba5078c11a30ceaad30f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-22 14:28:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Employee Section</caption>
+            <header>false</header>
+            <name>x_1850706_govsma_0_government_service_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2025-12-14 09:20:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5e5215f98371b61078c11a30ceaad33d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1850706_govsma_0_government_service_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+            <sys_update_name>sys_ui_section_5e5215f98371b61078c11a30ceaad33d</sys_update_name>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2025-12-14 09:20:10</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ui_section_5e5215f98371b61078c11a30ceaad33d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Employee Section" section_id="5e5215f98371b61078c11a30ceaad33d" sys_domain="global" table="x_1850706_govsma_0_government_service_request" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>service_type_prefix</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:31</sys_created_on><sys_id>19a52b5883c2ba5078c11a30ceaad309</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assignmen_group</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:31</sys_created_on><sys_id>95a52b5883c2ba5078c11a30ceaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:31</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_to</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:32</sys_created_on><sys_id>15a52b5883c2ba5078c11a30ceaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>status</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:32</sys_created_on><sys_id>91a52b5883c2ba5078c11a30ceaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>priority</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:32</sys_created_on><sys_id>11a52b5883c2ba5078c11a30ceaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>document_status</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:32</sys_created_on><sys_id>9da52b5883c2ba5078c11a30ceaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>reason</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:32</sys_created_on><sys_id>1da52b5883c2ba5078c11a30ceaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>employee_cannot_make_task</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-22 14:28:32</sys_created_on><sys_id>99a52b5883c2ba5078c11a30ceaad30f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Employee Section" display_value="Employee Section" name="x_1850706_govsma_0_government_service_request" sys_domain="global" view="Default view">5e5215f98371b61078c11a30ceaad33d</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-22 14:28:32</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Employee Section</caption><header>false</header><name>x_1850706_govsma_0_government_service_request</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>mervet.admin</sys_created_by><sys_created_on>2025-12-14 09:20:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5e5215f98371b61078c11a30ceaad33d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1850706_govsma_0_government_service_request</sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ui_section_5e5215f98371b61078c11a30ceaad33d</sys_update_name><sys_updated_by>mervet.admin</sys_updated_by><sys_updated_on>2025-12-14 09:20:10</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1388123831</payload_hash>
+        <record_name>Government Service Request</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-22 14:28:32</sys_created_on>
+        <sys_id>51a52b5883c2ba5078c11a30ceaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b46763b0b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 14:28:32</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>91a52b5832c2ba50872f2fc81e0c5813</update_guid>
+        <update_guid_history>91a52b5832c2ba50872f2fc81e0c5813:-1388123831,c83f935c6c82ba5024d06364ead59b85:778429411,23fbab1ef171fa102eebc93311451f11:1333287238,d25215f90471b610c92e04ab922a929f:-1373199603</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-26 01:59:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>05a519f1f7494126a615cecbdaf000d1</sys_id>
+        <sys_metadata>5e5215f98371b61078c11a30ceaad33d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employee Section</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Government Service Request">c93a352583f1361078c11a30ceaad358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ui_section_5e5215f98371b61078c11a30ceaad33d</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_5e5215f98371b61078c11a30ceaad33d">51a52b5883c2ba5078c11a30ceaad314</sys_update_version>
+        <sys_updated_by>mervet.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 01:59:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">f0e5d9e88316bad078c11a30ceaad322</canvas>
+        <component display_value="Rich text">2d56f06d55f46bbd4e79b5e624beb940</component>
+        <component_props>{"html":"&lt;p&gt;&lt;span style=\"font-family: tahoma, arial, helvetica, sans-serif; font-size: 24pt; background-color: rgb(255, 255, 255); color: rgb(65, 105, 225);\"&gt;&lt;strong&gt;Reviewers Tracking🔍&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;","id":"html","value":"&lt;p&gt;&lt;span style=\"font-family: tahoma, arial, helvetica, sans-serif; font-size: 24pt; background-color: rgb(255, 255, 255); color: rgb(65, 105, 225);\"&gt;&lt;strong&gt;Reviewers Tracking🔍&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;","noDebounce":true,"propLabel":"HTML"}</component_props>
+        <h>4</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 08:54:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bce5d9e88316bad078c11a30ceaad331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_widget_bce5d9e88316bad078c11a30ceaad331</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 08:54:37</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>par_dashboard_widget_bce5d9e88316bad078c11a30ceaad331</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">f0e5d9e88316bad078c11a30ceaad322</canvas><component display_value="Rich text">2d56f06d55f46bbd4e79b5e624beb940</component><component_props>{"html":"&lt;p&gt;&lt;span style=\"font-family: tahoma, arial, helvetica, sans-serif; font-size: 24pt; background-color: rgb(255, 255, 255); color: rgb(65, 105, 225);\"&gt;&lt;strong&gt;Reviewers Tracking]]>🔍<![CDATA[&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;","id":"html","value":"&lt;p&gt;&lt;span style=\"font-family: tahoma, arial, helvetica, sans-serif; font-size: 24pt; background-color: rgb(255, 255, 255); color: rgb(65, 105, 225);\"&gt;&lt;strong&gt;Reviewers Tracking]]>🔍<![CDATA[&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;","noDebounce":true,"propLabel":"HTML"}</component_props><h>4</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2026-01-04 08:54:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bce5d9e88316bad078c11a30ceaad331</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>par_dashboard_widget_bce5d9e88316bad078c11a30ceaad331</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2026-01-04 08:54:37</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1301189894</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 08:54:37</sys_created_on>
+        <sys_id>70e5d9e88316bad078c11a30ceaad335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b8837349a0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 08:54:37</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>7ce5d9e80a16bad016c38b4f2ab29c33</update_guid>
+        <update_guid_history>7ce5d9e80a16bad016c38b4f2ab29c33:1301189894</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c9e51de88316bad078c11a30ceaad32a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 08:54:39</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>2918612dfa584e4298d1fd977e2f4ec4</sys_id>
+        <sys_metadata>bce5d9e88316bad078c11a30ceaad331</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_bce5d9e88316bad078c11a30ceaad331</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_bce5d9e88316bad078c11a30ceaad331">70e5d9e88316bad078c11a30ceaad335</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 08:54:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

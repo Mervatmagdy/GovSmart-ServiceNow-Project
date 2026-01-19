@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes/>
-        <macroponent display_value="Government Service Request">2c545acd8346fe5078c11a30ceaad38a</macroponent>
+        <macroponent display_value="Government Service Request Record Page">2c545acd8346fe5078c11a30ceaad38a</macroponent>
         <name>viewport_gph/initiallyCollapsed</name>
         <preset/>
         <required_translations>[]</required_translations>

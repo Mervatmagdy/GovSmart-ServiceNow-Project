@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab">
+    <par_dashboard_tab action="DELETE">
+        <active>true</active>
+        <background_color/>
+        <dashboard display_value="GovSmart Review Dashboard - Reviewers ">54e5d5288316bad078c11a30ceaad3ef</dashboard>
+        <name>New Tab 11</name>
+        <order>0</order>
+        <sys_class_name>par_dashboard_tab</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 08:54:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8e599e88316bad078c11a30ceaad3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 11</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_tab_a8e599e88316bad078c11a30ceaad3ba</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 08:54:36</sys_updated_on>
+    </par_dashboard_tab>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>par_dashboard_tab_a8e599e88316bad078c11a30ceaad3ba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab"><par_dashboard_tab action="INSERT_OR_UPDATE"><active>true</active><background_color/><dashboard display_value="GovSmart Review Dashboard - Reviewers ">54e5d5288316bad078c11a30ceaad3ef</dashboard><name>New Tab 11</name><order>0</order><sys_class_name>par_dashboard_tab</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2026-01-04 08:54:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a8e599e88316bad078c11a30ceaad3ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New Tab 11</sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>par_dashboard_tab_a8e599e88316bad078c11a30ceaad3ba</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2026-01-04 08:54:36</sys_updated_on></par_dashboard_tab></record_update>]]></payload>
+        <payload_hash>-1006986403</payload_hash>
+        <record_name>New Tab 11</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 08:54:36</sys_created_on>
+        <sys_id>a0e599e88316bad078c11a30ceaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b88372e540000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 08:54:36</sys_updated_on>
+        <type>PAR Dashboard Tab</type>
+        <update_guid>ace599e80016bad0e01d82a7791332bd</update_guid>
+        <update_guid_history>ace599e80016bad0e01d82a7791332bd:-1006986403</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="New Tab 11">38e5d9e88316bad078c11a30ceaad337</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 08:54:38</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_tab">par_dashboard_tab</sys_db_object>
+        <sys_id>3123623639864336a865ea45bec7cde4</sys_id>
+        <sys_metadata>a8e599e88316bad078c11a30ceaad3ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 11</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>par_dashboard_tab_a8e599e88316bad078c11a30ceaad3ba</sys_update_name>
+        <sys_update_version display_value="par_dashboard_tab_a8e599e88316bad078c11a30ceaad3ba">a0e599e88316bad078c11a30ceaad3bf</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 08:54:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

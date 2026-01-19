@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table,sysId</fields>
+        <icon/>
+        <name>KB</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>kb_view</route_type>
+        <screen_type display_value="KB">2e44d2cd3b46fe5077b6d3a4a70e59f8</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-24 16:28:32</sys_created_on>
+        <sys_id>2a44d2cd7746fe50cdb58d00948ce6f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_app_route_2a44d2cd7746fe50cdb58d00948ce6f9</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-24 16:28:32</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_app_route_2a44d2cd7746fe50cdb58d00948ce6f9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config><description/><extension_point/><fields>table,sysId</fields><icon/><name>KB</name><optional_parameters/><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>kb_view</route_type><screen_type display_value="KB">2e44d2cd3b46fe5077b6d3a4a70e59f8</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-24 16:28:32</sys_created_on><sys_id>2a44d2cd7746fe50cdb58d00948ce6f9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>KB</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_app_route_2a44d2cd7746fe50cdb58d00948ce6f9</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-24 16:28:32</sys_updated_on></sys_ux_app_route></record_update>]]></payload>
+        <payload_hash>-1407874772</payload_hash>
+        <record_name>KB</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-27 12:49:39</sys_created_on>
+        <sys_id>e5fef002830ab69078c11a30ceaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5fdb81800000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 12:49:39</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>a5fef0021c0ab69085aaffbd364d20a9</update_guid>
+        <update_guid_history>a5fef0021c0ab69085aaffbd364d20a9:-1407874772</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-27 12:49:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>1cef806685eb487a9b7e9729d9464c49</sys_id>
+        <sys_metadata>2a44d2cd7746fe50cdb58d00948ce6f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>KB</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_2a44d2cd7746fe50cdb58d00948ce6f9</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_2a44d2cd7746fe50cdb58d00948ce6f9">e5fef002830ab69078c11a30ceaad3a9</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 12:49:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

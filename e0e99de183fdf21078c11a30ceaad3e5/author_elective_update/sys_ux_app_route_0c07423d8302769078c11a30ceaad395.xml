@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config>
+        <description/>
+        <extension_point/>
+        <fields>table,sysId</fields>
+        <icon/>
+        <name>Reviewer Manager Overview</name>
+        <optional_parameters>query,views,activityLogs,extraParams,fields,screen,selectedTabIndex,userPrefs</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>reviewer-manager-overview</route_type>
+        <screen_type display_value="Reviewer Manager Overview">4c07423d8302769078c11a30ceaad390</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-26 23:25:54</sys_created_on>
+        <sys_id>0c07423d8302769078c11a30ceaad395</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Reviewer Manager Overview</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_app_route_0c07423d8302769078c11a30ceaad395</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 00:39:01</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=0c07423d8302769078c11a30ceaad395"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_app_route_0c07423d8302769078c11a30ceaad395</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config><description/><extension_point/><fields>table,sysId</fields><icon/><name>Reviewer Manager Overview</name><optional_parameters>query,views,activityLogs,extraParams,fields,screen,selectedTabIndex,userPrefs</optional_parameters><order>0</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><parent_macroponent_composition_element_id/><route_type>reviewer-manager-overview</route_type><screen_type display_value="Reviewer Manager Overview">4c07423d8302769078c11a30ceaad390</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-26 23:25:54</sys_created_on><sys_id>0c07423d8302769078c11a30ceaad395</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Reviewer Manager Overview</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_app_route_0c07423d8302769078c11a30ceaad395</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-27 00:39:01</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=0c07423d8302769078c11a30ceaad395"/></record_update>]]></payload>
+        <payload_hash>275714509</payload_hash>
+        <record_name>Reviewer Manager Overview</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-27 00:39:01</sys_created_on>
+        <sys_id>47b7d2f183c2769078c11a30ceaad34a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5d3e97410000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 00:39:01</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>07b7d2f1c9c27690806d4287bc8b1849</update_guid>
+        <update_guid_history>07b7d2f1c9c27690806d4287bc8b1849:275714509,cc07423d38027690f58ed83de03af798:-83346939</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-27 00:48:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>67daa87735fc4ca6a2bdc1d53acbb439</sys_id>
+        <sys_metadata>0c07423d8302769078c11a30ceaad395</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reviewer Manager Overview</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_0c07423d8302769078c11a30ceaad395</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_0c07423d8302769078c11a30ceaad395">47b7d2f183c2769078c11a30ceaad34a</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 00:48:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

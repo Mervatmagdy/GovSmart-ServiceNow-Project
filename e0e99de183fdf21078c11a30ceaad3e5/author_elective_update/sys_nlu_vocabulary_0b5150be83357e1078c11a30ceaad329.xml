@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_nlu_vocabulary">
+    <sys_nlu_vocabulary action="DELETE">
+        <field_name/>
+        <filter_condition/>
+        <model display_value="Gov Assist Model ">176d8cb283357e1078c11a30ceaad3b5</model>
+        <name>Service Requirements Guide</name>
+        <pattern/>
+        <primary_vocabulary/>
+        <related_terms>Service Requirements Guide</related_terms>
+        <solution_name/>
+        <sys_class_name>sys_nlu_vocabulary</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:10:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0b5150be83357e1078c11a30ceaad329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Requirements Guide</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_nlu_vocabulary_0b5150be83357e1078c11a30ceaad329</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:10:09</sys_updated_on>
+        <table/>
+        <type>regular</type>
+        <vocabulary_json/>
+    </sys_nlu_vocabulary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_nlu_vocabulary_0b5150be83357e1078c11a30ceaad329</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_nlu_vocabulary"><sys_nlu_vocabulary action="INSERT_OR_UPDATE"><field_name/><filter_condition/><model display_value="Gov Assist Model ">176d8cb283357e1078c11a30ceaad3b5</model><name>Service Requirements Guide</name><pattern/><primary_vocabulary/><related_terms>Service Requirements Guide</related_terms><solution_name/><sys_class_name>sys_nlu_vocabulary</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-17 07:10:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0b5150be83357e1078c11a30ceaad329</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Requirements Guide</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_nlu_vocabulary_0b5150be83357e1078c11a30ceaad329</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-17 07:10:09</sys_updated_on><table/><type>regular</type><vocabulary_json/></sys_nlu_vocabulary></record_update>]]></payload>
+        <payload_hash>32829551</payload_hash>
+        <record_name>Service Requirements Guide</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:10:10</sys_created_on>
+        <sys_id>035194be83357e1078c11a30ceaad30d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b2b2518640000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:10:10</sys_updated_on>
+        <type>NLU Vocabulary</type>
+        <update_guid>cf5150be82357e10f8189d8ca7ff372f</update_guid>
+        <update_guid_history>cf5150be82357e10f8189d8ca7ff372f:32829551</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 08:24:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_nlu_vocabulary">sys_nlu_vocabulary</sys_db_object>
+        <sys_id>3306d9f717754df09b3219684e243309</sys_id>
+        <sys_metadata>0b5150be83357e1078c11a30ceaad329</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Requirements Guide</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_nlu_vocabulary_0b5150be83357e1078c11a30ceaad329</sys_update_name>
+        <sys_update_version display_value="sys_nlu_vocabulary_0b5150be83357e1078c11a30ceaad329">035194be83357e1078c11a30ceaad30d</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 08:24:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

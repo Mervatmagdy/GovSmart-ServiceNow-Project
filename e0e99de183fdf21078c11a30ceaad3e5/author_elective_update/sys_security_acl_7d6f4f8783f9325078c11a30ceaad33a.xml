@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1850706_govsma_0_government_service_request</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 15:39:46</sys_created_on>
+        <sys_id>7d6f4f8783f9325078c11a30ceaad33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1850706_govsma_0_government_service_request</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_security_acl_7d6f4f8783f9325078c11a30ceaad33a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 15:39:46</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_security_acl_7d6f4f8783f9325078c11a30ceaad33a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Local</local_or_existing><name>x_1850706_govsma_0_government_service_request</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-18 15:39:46</sys_created_on><sys_id>7d6f4f8783f9325078c11a30ceaad33a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1850706_govsma_0_government_service_request</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_security_acl_7d6f4f8783f9325078c11a30ceaad33a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-18 15:39:46</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-313004207</payload_hash>
+        <record_name>x_1850706_govsma_0_government_service_request</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-18 15:39:46</sys_created_on>
+        <sys_id>b59f07c783f9325078c11a30ceaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b321e04f80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-18 15:39:46</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>b19f07c7f1f93250351b4b276a524b0d</update_guid>
+        <update_guid_history>b19f07c7f1f93250351b4b276a524b0d:-313004207</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 03:58:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>959ee1eb699d454687473d9a1725fd11</sys_id>
+        <sys_metadata>7d6f4f8783f9325078c11a30ceaad33a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1850706_govsma_0_government_service_request</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="x_1850706_govsma_0_government_service_request">453a352583f1361078c11a30ceaad3cc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_security_acl_7d6f4f8783f9325078c11a30ceaad33a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_7d6f4f8783f9325078c11a30ceaad33a">b59f07c783f9325078c11a30ceaad30e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 03:58:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

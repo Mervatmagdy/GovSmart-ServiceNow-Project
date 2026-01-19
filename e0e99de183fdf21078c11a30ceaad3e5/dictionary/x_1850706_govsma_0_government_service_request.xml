@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" db_object_id="c93a352583f1361078c11a30ceaad358" label="Government Service Request" max_length="40" name="x_1850706_govsma_0_government_service_request" text_index="true" type="collection">
+        <element label="Blood Type" max_length="3" name="blood_type" read_only="true" type="string"/>
+        <element label="Email" max_length="40" name="email" read_only="true" type="string"/>
+        <element active="false" label="Not Verified" max_length="255" name="employer_educational_institution_flag" type="boolean"/>
+        <element active="false" label="Not Verified" max_length="255" name="family_register_number_flag" type="boolean"/>
+        <element active="false" label="Not Verified" max_length="255" name="medical_conditions_preventing_driving_flag" type="boolean"/>
+        <element choice="3" label="Region" mandatory="true" max_length="40" name="region" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="None" sequence="0" value="none"/>
+            </choice>
+        </element>
+        <element label="Full Name" mandatory="true" max_length="40" name="full_name" reference="sys_user" type="reference"/>
+        <element label="Head Of Family National Id" max_length="14" name="head_of_family_national_id" read_only="true" type="string"/>
+        <element label="Head Of Family Name" max_length="40" name="head_of_family_name" read_only="true" type="string"/>
+        <element label="Spouse Name" max_length="40" name="spouse_name" read_only="true" type="string"/>
+        <element label="National Id" max_length="40" name="national_id" read_only="true" type="string"/>
+        <element choice="3" label="Does the applicant have any medical conditions preventing driving?" max_length="40" name="does_the_applicant_have_any_medical_conditions_preventing_driving" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element active="false" label="Not Verified" max_length="255" name="children_names_flag" type="boolean"/>
+        <element active="false" label="Not Verified" max_length="255" name="head_of_family_national_id_flag" type="boolean"/>
+        <element choice="3" label="Governorate" mandatory="true" max_length="40" name="government" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Alexandria" sequence="1" value="alexandria"/>
+                <element inactive_on_update="false" label="Cairo" sequence="0" value="cairo"/>
+            </choice>
+        </element>
+        <element label="Attachment" max_length="40" name="attachment" type="file_attachment"/>
+        <element label="Old ID Number" max_length="14" name="old_id_number" read_only="true" type="string"/>
+        <element choice="3" label="Renewal Reason" max_length="40" name="renewal_reason" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Expiration" sequence="0" value="expiration"/>
+                <element inactive_on_update="false" label="Data Update" sequence="1" value="data_update"/>
+                <element inactive_on_update="false" label="Profession Change" sequence="3" value="profession_change"/>
+                <element inactive_on_update="false" label="Marriage/Divorce" sequence="4" value="marriage_divorce"/>
+                <element inactive_on_update="false" label="Address Change" sequence="2" value="address_change"/>
+            </choice>
+        </element>
+        <element label="Profession" max_length="40" name="profession" read_only="true" type="string"/>
+        <element label="Children Names" max_length="100" name="children_names" read_only="true" type="string"/>
+        <element label="Mobile Phone" max_length="40" name="mobile_phone" read_only="true" reference="sys_user" reference_qual="mobile_phoneANYTHING^EQ" reference_qual_condition="mobile_phoneANYTHING^EQ" type="string"/>
+        <element label="Date of birth" max_length="40" name="date_of_birth" read_only="true" type="glide_date"/>
+        <element active="false" label="Not Verified" max_length="255" name="head_of_family_name_flag" type="boolean"/>
+        <element active="false" label="Not Verified" max_length="255" name="mother_name_flag" type="boolean"/>
+        <element active="false" label="Not Verified" max_length="255" name="old_id_number_flag" type="boolean"/>
+        <element default="Egypt" label="Location" max_length="40" name="location" read_only="true" type="string"/>
+        <element label="Marital Status" mandatory="true" max_length="40" name="marital_status" read_only="true" type="string"/>
+        <element label="Employer / Educational Institution" max_length="40" name="employer_educational_institution" read_only="true" type="string"/>
+        <element active="false" label="Not Verified" max_length="255" name="profession_flag" type="boolean"/>
+        <element choice="3" display="true" label="Service Type" mandatory="true" max_length="32" name="service_type" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Renew your driver's license" sequence="2" value="renew_your_driver_s_license"/>
+                <element inactive_on_update="false" label="National ID Card Application" sequence="3" value="national_id_card_application"/>
+                <element inactive_on_update="false" label="Renew the national ID card" sequence="1" value="renew_the_national_id_card"/>
+                <element inactive_on_update="false" label="Family registration extract" sequence="0" value="family_registration_extract"/>
+            </choice>
+        </element>
+        <element label="Family Register Number" max_length="40" name="family_register_number" read_only="true" type="string"/>
+        <element label="User Name" max_length="40" name="user_name" read_only="true" type="string"/>
+        <element active="false" label="Not Verified" max_length="255" name="spouse_name_flag" type="boolean"/>
+        <element label="Employee cannot make task" max_length="255" name="employee_cannot_make_task" type="boolean"/>
+        <element active="false" label="Not Verified" max_length="255" name="attachment_flag" type="boolean"/>
+        <element label="Mother Name" max_length="40" name="mother_name" read_only="true" type="string"/>
+        <element label="Required License Category" max_length="40" name="required_license_category" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="3" label="Applicant Relationship" max_length="40" name="applicant_relationship" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Head of Family" sequence="0" value="head_of_family"/>
+                <element inactive_on_update="false" label="First-Degree Relative" sequence="5" value="first_degree_relative"/>
+                <element inactive_on_update="false" label="Brother / Sister" sequence="3" value="brother_sister"/>
+                <element inactive_on_update="false" label="Spouse" sequence="1" value="spouse"/>
+                <element inactive_on_update="false" label="Son / Daughter" sequence="2" value="son_daughter"/>
+                <element inactive_on_update="false" label="Legal Guardian" sequence="4" value="legal_guardian"/>
+            </choice>
+        </element>
+        <element choice="3" label="Religion" max_length="40" name="religion" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Islam" sequence="0" value="islam"/>
+                <element inactive_on_update="false" label="Christianity" sequence="1" value="christianity"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="service_type"/>
+        </index>
+    </element>
+</database>

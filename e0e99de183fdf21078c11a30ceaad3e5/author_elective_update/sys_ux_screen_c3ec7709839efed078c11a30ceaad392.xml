@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <event_mappings>[]</event_mappings>
+        <macroponent display_value="Default">4fecb309839efed078c11a30ceaad3b5</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Default copy</name>
+        <order>100</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Gov List">7491aefe83827e9078c11a30ceaad312</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-06 10:21:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3ec7709839efed078c11a30ceaad392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default copy</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_screen_c3ec7709839efed078c11a30ceaad392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 10:21:22</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=c3ec7709839efed078c11a30ceaad392"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_screen_c3ec7709839efed078c11a30ceaad392</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="GovSmart Review &amp;amp; Visit Management System App Config">2e4416cd7246fe50719c1bda362c6c08</app_config><description/><disable_auto_reflow>false</disable_auto_reflow><event_mappings>[]</event_mappings><macroponent display_value="Default">4fecb309839efed078c11a30ceaad3b5</macroponent><macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": true
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "JSON_LITERAL",
+        "value": ""
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config><name>Default copy</name><order>100</order><parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen/><screen_condition/><screen_type display_value="Gov List">7491aefe83827e9078c11a30ceaad312</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-06 10:21:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c3ec7709839efed078c11a30ceaad392</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default copy</sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_screen_c3ec7709839efed078c11a30ceaad392</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-06 10:21:22</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=c3ec7709839efed078c11a30ceaad392"/></record_update>]]></payload>
+        <payload_hash>546866426</payload_hash>
+        <record_name>Default copy</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-06 10:21:22</sys_created_on>
+        <sys_id>47ec7709839efed078c11a30ceaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b92d3580c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 10:21:22</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>43ec77094d9efed048cd27e02fb54f97</update_guid>
+        <update_guid_history>43ec77094d9efed048cd27e02fb54f97:546866426</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-06 10:22:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>0eb7bf31e1f341c48ac2818ed1726910</sys_id>
+        <sys_metadata>c3ec7709839efed078c11a30ceaad392</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default copy</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_c3ec7709839efed078c11a30ceaad392</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_c3ec7709839efed078c11a30ceaad392">47ec7709839efed078c11a30ceaad398</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-06 10:22:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>whatsapp sandbox [ Default GET ]</qualified_name>
+        <rest_endpoint>https://api.twilio.com/2010-04-01/Accounts/ACfc477e6d7532e8736d65ec60e8b0ae44/Messages.json</rest_endpoint>
+        <rest_message display_value="whatsapp sandbox">7230855b838632d078c11a30ceaad398</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-31 10:13:09</sys_created_on>
+        <sys_id>8c810d5f834632d078c11a30ceaad30a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_rest_message_fn_8c810d5f834632d078c11a30ceaad30a</sys_update_name>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 10:13:09</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_rest_message_fn_8c810d5f834632d078c11a30ceaad30a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>whatsapp sandbox [ Default GET ]</qualified_name><rest_endpoint>https://api.twilio.com/2010-04-01/Accounts/ACfc477e6d7532e8736d65ec60e8b0ae44/Messages.json</rest_endpoint><rest_message display_value="whatsapp sandbox">7230855b838632d078c11a30ceaad398</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>mohamed.admin</sys_created_by><sys_created_on>2025-12-31 10:13:09</sys_created_on><sys_id>8c810d5f834632d078c11a30ceaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_rest_message_fn_8c810d5f834632d078c11a30ceaad30a</sys_update_name><sys_updated_by>mohamed.admin</sys_updated_by><sys_updated_on>2025-12-31 10:13:09</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>219060037</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-31 10:13:09</sys_created_on>
+        <sys_id>0c81c9db838632d078c11a30ceaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b73e5a8e50000001</sys_recorded_at>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 10:13:09</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>0881c9db7d8632d0bbf18ff3a50ebe7f</update_guid>
+        <update_guid_history>0881c9db7d8632d0bbf18ff3a50ebe7f:219060037</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mohamed.admin</sys_created_by>
+        <sys_created_on>2025-12-31 14:52:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>2c3d36cbc7fd4f5493f7de30f622cf04</sys_id>
+        <sys_metadata>8c810d5f834632d078c11a30ceaad30a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="whatsapp sandbox">7230855b838632d078c11a30ceaad398</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_8c810d5f834632d078c11a30ceaad30a</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_8c810d5f834632d078c11a30ceaad30a">0c81c9db838632d078c11a30ceaad380</sys_update_version>
+        <sys_updated_by>mohamed.admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 14:52:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

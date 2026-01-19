@@ -2,7 +2,7 @@
     <sys_ux_registry_m2m_category action="INSERT_OR_UPDATE">
         <experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category>
         <order/>
-        <page_registry display_value="GovSmart Review &amp;amp; Visit Management System">ee4416cd7346fe500ef0f13cb92abd09</page_registry>
+        <page_registry display_value="GovSmart Review &amp; Visit Management System">ee4416cd7346fe500ef0f13cb92abd09</page_registry>
         <sys_class_name>sys_ux_registry_m2m_category</sys_class_name>
         <sys_created_by>menna.admin</sys_created_by>
         <sys_created_on>2025-12-24 16:28:33</sys_created_on>

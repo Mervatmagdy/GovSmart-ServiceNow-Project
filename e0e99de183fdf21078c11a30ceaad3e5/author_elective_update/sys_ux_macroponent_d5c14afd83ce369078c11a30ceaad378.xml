@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="DELETE">
+        <associated_types/>
+        <bundles/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition/>
+        <da_relay_models/>
+        <data/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <dispatched_events/>
+        <ext_controller_dep/>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <extension_point/>
+        <form_factors>{
+    "custom_ff_1": {
+        "max-width": 640,
+        "reference": "macroponent"
+    }
+}</form_factors>
+        <handled_events/>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings/>
+        <layout>{
+    "default": {
+        "children": null,
+        "items": [],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "flex-direction": "column"
+        },
+        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+        "type": "flex"
+    },
+    "queries": [
+        {
+            "layout": {
+                "items": [],
+                "styles": {
+                    "flex-direction": "column",
+                    "height": "auto",
+                    "min-width": null
+                },
+                "type": "flex"
+            },
+            "queryId": "custom_ff_1"
+        }
+    ],
+    "version": "3.1.0"
+}</layout>
+        <macroponent_dependencies/>
+        <name>Default</name>
+        <output_prop_mapping/>
+        <props>[
+    {
+        "defaultValue": "",
+        "description": null,
+        "disabled": false,
+        "fieldType": "string",
+        "label": "table",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ ]</required_translations>
+        <root_component/>
+        <root_component_config/>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_persistence_config/>
+        <state_properties/>
+        <style_config>{}</style_config>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-26 23:03:04</sys_created_on>
+        <sys_id>d5c14afd83ce369078c11a30ceaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_macroponent_d5c14afd83ce369078c11a30ceaad378</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 23:03:04</sys_updated_on>
+    </sys_ux_macroponent>
+    <sys_translated_text action="DELETE" query="documentkey=d5c14afd83ce369078c11a30ceaad378"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_macroponent_d5c14afd83ce369078c11a30ceaad378</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent"><sys_ux_macroponent action="INSERT_OR_UPDATE"><associated_types/><bundles/><category>page</category><component_dependencies/><composition/><da_relay_models/><data/><description/><disable_auto_reflow>false</disable_auto_reflow><dispatched_events/><ext_controller_dep/><extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends><extension_point/><form_factors>{
+    "custom_ff_1": {
+        "max-width": 640,
+        "reference": "macroponent"
+    }
+}</form_factors><handled_events/><interactions/><interfaces/><internal_event_mappings/><layout>{
+    "default": {
+        "children": null,
+        "items": [],
+        "root": null,
+        "rules": null,
+        "styles": {
+            "flex-direction": "column"
+        },
+        "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+        "type": "flex"
+    },
+    "queries": [
+        {
+            "layout": {
+                "items": [],
+                "styles": {
+                    "flex-direction": "column",
+                    "height": "auto",
+                    "min-width": null
+                },
+                "type": "flex"
+            },
+            "queryId": "custom_ff_1"
+        }
+    ],
+    "version": "3.1.0"
+}</layout><macroponent_dependencies/><name>Default</name><output_prop_mapping/><props>[
+    {
+        "defaultValue": "",
+        "description": null,
+        "disabled": false,
+        "fieldType": "string",
+        "label": "table",
+        "mandatory": false,
+        "name": "table",
+        "readOnly": true,
+        "selectable": false,
+        "typeMetadata": null,
+        "valueType": "string"
+    }
+]</props><required_translations>[ ]</required_translations><root_component/><root_component_config/><root_component_definition/><schema_version>1.0.0</schema_version><state_persistence_config/><state_properties/><style_config>{}</style_config><sys_class_name>sys_ux_macroponent</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-26 23:03:04</sys_created_on><sys_id>d5c14afd83ce369078c11a30ceaad378</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_macroponent_d5c14afd83ce369078c11a30ceaad378</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-26 23:03:04</sys_updated_on></sys_ux_macroponent><sys_translated_text action="delete_multiple" query="documentkey=d5c14afd83ce369078c11a30ceaad378"/></record_update>]]></payload>
+        <payload_hash>-1925808382</payload_hash>
+        <record_name>Default</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-26 23:03:04</sys_created_on>
+        <sys_id>11c14afd83ce369078c11a30ceaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5ce6bd130000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 23:03:04</sys_updated_on>
+        <type>UX Macroponent Definition</type>
+        <update_guid>1dc14afdd5ce36902823e8b2d854fd7e</update_guid>
+        <update_guid_history>1dc14afdd5ce36902823e8b2d854fd7e:-1925808382</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-26 23:09:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_macroponent">sys_ux_macroponent</sys_db_object>
+        <sys_id>061b1cba08d140b8900be8cfd9799a40</sys_id>
+        <sys_metadata>d5c14afd83ce369078c11a30ceaad378</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_macroponent_d5c14afd83ce369078c11a30ceaad378</sys_update_name>
+        <sys_update_version display_value="sys_ux_macroponent_d5c14afd83ce369078c11a30ceaad378">11c14afd83ce369078c11a30ceaad380</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-26 23:09:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

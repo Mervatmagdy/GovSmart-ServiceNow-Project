@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="sn_help_setup_player" name="sn_help_setup_player">c3e3e78fe77c9a102deb055992f80ca7</contains>
+        <role display_value="x_1850706_govsma_0.Service Reviwer" name="x_1850706_govsma_0.Service Reviwer">41332d3d83f1b61078c11a30ceaad3b9</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 07:43:18</sys_created_on>
+        <sys_id>72c821a3834eb2d078c11a30ceaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_help_setup_player.x_1850706_govsma_0.Service Reviwer</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_user_role_contains_72c821a3834eb2d078c11a30ceaad38d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 07:43:18</sys_updated_on>
+    </sys_user_role_contains>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_user_role_contains_72c821a3834eb2d078c11a30ceaad38d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains"><sys_user_role_contains action="INSERT_OR_UPDATE"><contains display_value="sn_help_setup_player" name="sn_help_setup_player">c3e3e78fe77c9a102deb055992f80ca7</contains><role display_value="x_1850706_govsma_0.Service Reviwer" name="x_1850706_govsma_0.Service Reviwer">41332d3d83f1b61078c11a30ceaad3b9</role><sys_class_name>sys_user_role_contains</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-01-01 07:43:18</sys_created_on><sys_id>72c821a3834eb2d078c11a30ceaad38d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sn_help_setup_player.x_1850706_govsma_0.Service Reviwer</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_user_role_contains_72c821a3834eb2d078c11a30ceaad38d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-01-01 07:43:18</sys_updated_on></sys_user_role_contains></record_update>]]></payload>
+        <payload_hash>603138519</payload_hash>
+        <record_name>sn_help_setup_player.x_1850706_govsma_0.Service Reviwer</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 07:43:19</sys_created_on>
+        <sys_id>cfc861a3834eb2d078c11a30ceaad33c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b7882d7020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 07:43:19</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>cbc861a37d4eb2d04e0b7b32bd4c763b</update_guid>
+        <update_guid_history>cbc861a37d4eb2d04e0b7b32bd4c763b:603138519</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 07:45:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>9c8fdeba105e4bdfa5373796b8bf2dc9</sys_id>
+        <sys_metadata>72c821a3834eb2d078c11a30ceaad38d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_help_setup_player.x_1850706_govsma_0.Service Reviwer</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_72c821a3834eb2d078c11a30ceaad38d</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_72c821a3834eb2d078c11a30ceaad38d">cfc861a3834eb2d078c11a30ceaad33c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 07:45:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

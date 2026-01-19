@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="DELETE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="GovSmart Review Dashboard - Reviewers ">54e5d5288316bad078c11a30ceaad3ef</dashboard>
+        <group display_value="Civil Registry Cairo Reviewer" name="Civil Registry Cairo Reviewer">b635a5fd83f1b61078c11a30ceaad3e7</group>
+        <owner>false</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 10:44:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b8fe6d20831abad078c11a30ceaad3e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>54e5d5288316bad078c11a30ceaad3ef</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_permission_b8fe6d20831abad078c11a30ceaad3e1</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 10:44:07</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>par_dashboard_permission_b8fe6d20831abad078c11a30ceaad3e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission"><par_dashboard_permission action="INSERT_OR_UPDATE"><can_read>true</can_read><can_share>false</can_share><can_write>false</can_write><dashboard display_value="GovSmart Review Dashboard - Reviewers ">54e5d5288316bad078c11a30ceaad3ef</dashboard><group display_value="Civil Registry Cairo Reviewer" name="Civil Registry Cairo Reviewer">b635a5fd83f1b61078c11a30ceaad3e7</group><owner>false</owner><role/><sys_class_name>par_dashboard_permission</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2026-01-04 10:44:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b8fe6d20831abad078c11a30ceaad3e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>54e5d5288316bad078c11a30ceaad3ef</sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>par_dashboard_permission_b8fe6d20831abad078c11a30ceaad3e1</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2026-01-04 10:44:07</sys_updated_on><user/></par_dashboard_permission></record_update>]]></payload>
+        <payload_hash>-2138314820</payload_hash>
+        <record_name>54e5d5288316bad078c11a30ceaad3ef</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 10:44:07</sys_created_on>
+        <sys_id>f4fe6d20831abad078c11a30ceaad3e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b889b73cb0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 10:44:07</sys_updated_on>
+        <type>PAR Dashboard Permission</type>
+        <update_guid>f0fe6d203b1abad04f737870ef21eae4</update_guid>
+        <update_guid_history>f0fe6d203b1abad04f737870ef21eae4:-2138314820</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="GovSmart Review Dashboard - Reviewers ">4084396c831abad078c11a30ceaad368</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2026-01-04 11:08:23</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_permission">par_dashboard_permission</sys_db_object>
+        <sys_id>3a884f5fe0e84126b4822cf7a4772304</sys_id>
+        <sys_metadata>b8fe6d20831abad078c11a30ceaad3e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>54e5d5288316bad078c11a30ceaad3ef</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>par_dashboard_permission_b8fe6d20831abad078c11a30ceaad3e1</sys_update_name>
+        <sys_update_version display_value="par_dashboard_permission_b8fe6d20831abad078c11a30ceaad3e1">f4fe6d20831abad078c11a30ceaad3e5</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2026-01-04 11:08:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

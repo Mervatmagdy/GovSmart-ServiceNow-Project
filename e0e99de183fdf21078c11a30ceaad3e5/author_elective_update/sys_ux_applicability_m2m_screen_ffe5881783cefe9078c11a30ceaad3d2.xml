@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="DELETE">
+        <active>true</active>
+        <applicability display_value="Government Reviewer">c1f0ad47838abe9078c11a30ceaad33d</applicability>
+        <order>0</order>
+        <screen display_value="Default">a360533e830a7e9078c11a30ceaad352</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-31 05:52:54</sys_created_on>
+        <sys_id>ffe5881783cefe9078c11a30ceaad3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_ffe5881783cefe9078c11a30ceaad3d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 05:52:54</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_ux_applicability_m2m_screen_ffe5881783cefe9078c11a30ceaad3d2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen"><sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE"><active>true</active><applicability display_value="Government Reviewer">c1f0ad47838abe9078c11a30ceaad33d</applicability><order>0</order><screen display_value="Default">a360533e830a7e9078c11a30ceaad352</screen><sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-31 05:52:54</sys_created_on><sys_id>ffe5881783cefe9078c11a30ceaad3d2</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_ux_applicability_m2m_screen_ffe5881783cefe9078c11a30ceaad3d2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-31 05:52:54</sys_updated_on></sys_ux_applicability_m2m_screen></record_update>]]></payload>
+        <payload_hash>-1434766309</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-31 05:52:54</sys_created_on>
+        <sys_id>3be5881783cefe9078c11a30ceaad3d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b72f764cb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 05:52:54</sys_updated_on>
+        <type>Screen Applicability</type>
+        <update_guid>37e58817b1cefe902915b0e7a93dcfd6</update_guid>
+        <update_guid_history>37e58817b1cefe902915b0e7a93dcfd6:-1434766309</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-01 07:02:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_screen">sys_ux_applicability_m2m_screen</sys_db_object>
+        <sys_id>433e4e8689d94e7e96d6d96f7aecff79</sys_id>
+        <sys_metadata>ffe5881783cefe9078c11a30ceaad3d2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_screen_ffe5881783cefe9078c11a30ceaad3d2</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_screen_ffe5881783cefe9078c11a30ceaad3d2">3be5881783cefe9078c11a30ceaad3d7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-01 07:02:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

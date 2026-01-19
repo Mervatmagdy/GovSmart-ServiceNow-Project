@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="sla_engine=true" db_object_id="70b7d5b583b1b61078c11a30ceaad3b1" label="Government Service Ticket " max_length="40" name="x_1850706_govsma_0_government_service_ticket" reference_qual="null" reference_qual_condition="null" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true&#13;&#10;" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="sla_basis,sla_closure=true" choice="3" label="Status" max_length="40" name="status" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Booked" sequence="0" value="booked"/>
+                <element inactive_on_update="false" label="Expired" sequence="1" value="expired"/>
+            </choice>
+        </element>
+        <element label="Service Type Prefix" max_length="40" name="service_type_prefix" read_only="true" type="string"/>
+        <element default="Egypt" label="Location" max_length="40" name="location" read_only="true" type="string"/>
+        <element label="Government" max_length="40" name="government" read_only="true" type="string"/>
+        <element label="Service Type" max_length="40" name="service_type" read_only="true" type="string"/>
+        <element label="Order Number" max_length="40" name="order_number" read_only="true" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="3" label="State" max_length="40" name="state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="0" value="in_progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="2" value="complete"/>
+                <element inactive_on_update="false" label="On Hold" sequence="1" value="on_hold"/>
+            </choice>
+        </element>
+        <element label="Region" max_length="40" name="region" read_only="true" type="string"/>
+        <element label="Requester Data" max_length="32" name="requester_data" read_only="true" reference="x_1850706_govsma_0_government_service_request" reference_qual="null" reference_qual_condition="null" type="reference"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" read_only="true" reference="sys_user_group" type="reference"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element choice="1" default="Not Yet Requested" function_definition="Not Yet Requested" label="Approval" max_length="40" name="approval" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not Yet Requested" sequence="0" value="not_yet_requested"/>
+                <element inactive_on_update="false" label="Requested" sequence="1" value="requested"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Date" max_length="255" name="date" type="glide_date_time"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="requester_data"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

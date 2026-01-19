@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[]</event_mappings>
-        <macroponent display_value="Analytics Center Default copy">e79e290e838eb69078c11a30ceaad34f</macroponent>
+        <macroponent display_value="Analytics Center Default">e79e290e838eb69078c11a30ceaad34f</macroponent>
         <macroponent_config/>
         <name>Analytics Center Default</name>
         <order>0</order>

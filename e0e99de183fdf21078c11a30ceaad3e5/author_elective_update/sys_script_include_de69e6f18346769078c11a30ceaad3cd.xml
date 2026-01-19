@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1850706_govsma_0.GetEmployeeTaskState</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetEmployeeTaskState</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetEmployeeTaskState = Class.create();
+GetEmployeeTaskState.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getDocStatus: function () {
+
+        var requestSysId = this.getParameter('sysparm_request_sys_id');
+        if (!requestSysId) {
+            return '';
+        }
+
+        var gr = new GlideRecord('x_1850706_govsma_0_empl_task');
+        gr.addQuery('requester_data', requestSysId); 
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('state');
+        }
+
+        return '';
+    },
+
+    type: 'GetEmployeeTaskState'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 02:06:15</sys_created_on>
+        <sys_id>de69e6f18346769078c11a30ceaad3cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GetEmployeeTaskState</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_include_de69e6f18346769078c11a30ceaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 02:07:57</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_include_de69e6f18346769078c11a30ceaad3cd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1850706_govsma_0.GetEmployeeTaskState&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GetEmployeeTaskState&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GetEmployeeTaskState = Class.create();
+GetEmployeeTaskState.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getDocStatus: function () {
+
+        var requestSysId = this.getParameter('sysparm_request_sys_id');
+        if (!requestSysId) {
+            return '';
+        }
+
+        var gr = new GlideRecord('x_1850706_govsma_0_empl_task');
+        gr.addQuery('requester_data', requestSysId); 
+        gr.setLimit(1);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('state');
+        }
+
+        return '';
+    },
+
+    type: 'GetEmployeeTaskState'
+});
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-27 02:06:15&lt;/sys_created_on&gt;&lt;sys_id&gt;de69e6f18346769078c11a30ceaad3cd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetEmployeeTaskState&lt;/sys_name&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_de69e6f18346769078c11a30ceaad3cd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-27 02:07:57&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>171135267</payload_hash>
+        <record_name>GetEmployeeTaskState</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 02:07:57</sys_created_on>
+        <sys_id>f11c2af98346769078c11a30ceaad3e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5d9001f70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 02:07:57</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>611c2af997467690b50de9c8bce2e9e4</update_guid>
+        <update_guid_history>611c2af997467690b50de9c8bce2e9e4:171135267,3cbb66f964467690cfd525a8d7e03f6b:840286705</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 02:10:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>10f33a981a9b4de49a96df315a494810</sys_id>
+        <sys_metadata>de69e6f18346769078c11a30ceaad3cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmployeeTaskState</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_include_de69e6f18346769078c11a30ceaad3cd</sys_update_name>
+        <sys_update_version display_value="sys_script_include_de69e6f18346769078c11a30ceaad3cd">f11c2af98346769078c11a30ceaad3e5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 02:10:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

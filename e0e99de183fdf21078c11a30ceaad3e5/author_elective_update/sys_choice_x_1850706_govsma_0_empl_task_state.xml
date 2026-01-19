@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_1850706_govsma_0_empl_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:02</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+            <sys_update_name>sys_choice_x_1850706_govsma_0_empl_task_state</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:02</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:02</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Review Approval</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:02</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Review</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:02</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Region Admin Approval</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:02</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approved Ticket Generated</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:02</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Completed</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:02</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Awaiting User Update</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-12-26 00:44:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-12-26 00:44:03</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On Hold</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>mervet.admin</sys_created_by>
+            <sys_created_on>2026-01-07 23:05:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mervet.admin</sys_updated_by>
+            <sys_updated_on>2026-01-07 23:05:45</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_1850706_govsma_0_empl_task</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-01-08 23:13:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-01-08 23:13:10</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

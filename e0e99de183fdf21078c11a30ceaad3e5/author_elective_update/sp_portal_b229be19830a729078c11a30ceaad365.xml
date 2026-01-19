@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="DELETE">
+        <alternate_portal/>
+        <communication_channels/>
+        <css_variables/>
+        <dark_theme/>
+        <default>false</default>
+        <enable_ais>true</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage>
+        <icon/>
+        <inactive>false</inactive>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page>
+        <logo/>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 13:50:12</sys_created_on>
+        <sys_id>b229be19830a729078c11a30ceaad365</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Service Portal Requester</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sp_portal_b229be19830a729078c11a30ceaad365</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 14:04:37</sys_updated_on>
+        <theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme>
+        <title>Service Portal Requester</title>
+        <ts_index_group/>
+        <url_suffix>spr</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="DELETE" query="documentkey=b229be19830a729078c11a30ceaad365"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sp_portal_b229be19830a729078c11a30ceaad365</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><alternate_portal/><communication_channels/><css_variables/><dark_theme/><default>false</default><enable_ais>true</enable_ais><enable_certificate_based_authentication>false</enable_certificate_based_authentication><enable_favorites>false</enable_favorites><hide_portal_name>false</hide_portal_name><homepage display_value="index">46cc384147532100ba13a5554ee49009</homepage><icon/><inactive>false</inactive><kb_knowledge_base/><kb_knowledge_page/><login_page display_value="landing">36c61807cb31120000f8d856634c9ca9</login_page><logo/><notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page><quick_start_config/><rtl_enabled>false</rtl_enabled><sc_catalog/><sc_catalog_page/><sc_category_page/><search_application/><search_results_configuration/><sp_chat_queue/><sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu><sys_class_name>sp_portal</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-25 13:50:12</sys_created_on><sys_id>b229be19830a729078c11a30ceaad365</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Service Portal Requester</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sp_portal_b229be19830a729078c11a30ceaad365</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-25 14:04:37</sys_updated_on><theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme><title>Service Portal Requester</title><ts_index_group/><url_suffix>spr</url_suffix></sp_portal><sys_translated_text action="delete_multiple" query="documentkey=b229be19830a729078c11a30ceaad365"/></record_update>]]></payload>
+        <payload_hash>195131874</payload_hash>
+        <record_name>Service Portal Requester</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-25 14:04:37</sys_created_on>
+        <sys_id>1cfcfedd830a729078c11a30ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b55d36c760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-25 14:04:37</sys_updated_on>
+        <type>Service Portal</type>
+        <update_guid>1cfcfedd850a7290971c3ce3e7bb9e52</update_guid>
+        <update_guid_history>1cfcfedd850a7290971c3ce3e7bb9e52:195131874,540a3a99c50a7290fbaf6b2100c85dd8:-2059755784,d9a93e597e0a7290d7517bccfc6480cd:1280527392</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Portal Requester">844c8a7683027e9078c11a30ceaad389</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-30 02:22:47</sys_created_on>
+        <sys_db_object display_value="" name="sp_portal">sp_portal</sys_db_object>
+        <sys_id>0b9a13516807416191c92d85f06b6859</sys_id>
+        <sys_metadata>b229be19830a729078c11a30ceaad365</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Portal Requester</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sp_portal_b229be19830a729078c11a30ceaad365</sys_update_name>
+        <sys_update_version display_value="sp_portal_b229be19830a729078c11a30ceaad365">1cfcfedd830a729078c11a30ceaad353</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 02:22:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-01-04 11:24:03</sys_updated_on>
         <table>x_1850706_govsma_0_empl_task</table>
-        <ui_action display_value="Reject">9037b9a0835abad078c11a30ceaad3fb</ui_action>
+        <ui_action display_value="On Hold">9037b9a0835abad078c11a30ceaad3fb</ui_action>
     </sys_ux_form_action>
     <sys_translated_text action="delete_multiple" query="documentkey=a9187164835abad078c11a30ceaad367"/>
 </record_update>

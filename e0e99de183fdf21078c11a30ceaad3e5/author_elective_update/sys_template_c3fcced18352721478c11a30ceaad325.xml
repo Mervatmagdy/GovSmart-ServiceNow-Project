@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_template">
+    <sys_template action="DELETE">
+        <active>true</active>
+        <global>false</global>
+        <group/>
+        <groups/>
+        <link_element/>
+        <name>TEMPLATE4</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description/>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>alissa.mountjoy</sys_created_by>
+        <sys_created_on>2026-01-06 20:51:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3fcced18352721478c11a30ceaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEMPLATE4</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_template_c3fcced18352721478c11a30ceaad325</sys_update_name>
+        <sys_updated_by>alissa.mountjoy</sys_updated_by>
+        <sys_updated_on>2026-01-06 20:51:04</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <template>attachment_flag=true^government=alexandria^old_id_number=30005231234568^old_id_number_flag=true^profession=Government Employee^profession_flag=true^region=Civil Registry – Sidi Gaber^renewal_reason=expiration^service_type=renew_the_national_id_card^EQ</template>
+        <user display_value="Alissa Mountjoy">6a826bf03710200044e0bfc8bcbe5dec</user>
+        <view/>
+    </sys_template>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_template_c3fcced18352721478c11a30ceaad325</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_template"><sys_template action="INSERT_OR_UPDATE"><active>true</active><global>false</global><group/><groups/><link_element/><name>TEMPLATE4</name><next/><next_child/><roles/><short_description/><show_on_template_bar>true</show_on_template_bar><stand_alone>false</stand_alone><sys_class_name>sys_template</sys_class_name><sys_created_by>alissa.mountjoy</sys_created_by><sys_created_on>2026-01-06 20:51:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c3fcced18352721478c11a30ceaad325</sys_id><sys_mod_count>0</sys_mod_count><sys_name>TEMPLATE4</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_template_c3fcced18352721478c11a30ceaad325</sys_update_name><sys_updated_by>alissa.mountjoy</sys_updated_by><sys_updated_on>2026-01-06 20:51:04</sys_updated_on><table>x_1850706_govsma_0_government_service_request</table><template>attachment_flag=true^government=alexandria^old_id_number=30005231234568^old_id_number_flag=true^profession=Government Employee^profession_flag=true^region=Civil Registry – Sidi Gaber^renewal_reason=expiration^service_type=renew_the_national_id_card^EQ</template><user display_value="Alissa Mountjoy">6a826bf03710200044e0bfc8bcbe5dec</user><view/></sys_template></record_update>]]></payload>
+        <payload_hash>-749002263</payload_hash>
+        <record_name>TEMPLATE4</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>alissa.mountjoy</sys_created_by>
+        <sys_created_on>2026-01-06 20:51:04</sys_created_on>
+        <sys_id>db0d4ad18352721478c11a30ceaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b9513d9f30000001</sys_recorded_at>
+        <sys_updated_by>alissa.mountjoy</sys_updated_by>
+        <sys_updated_on>2026-01-06 20:51:04</sys_updated_on>
+        <type>Template</type>
+        <update_guid>d70d4ad1b552721435c938a6d5287326</update_guid>
+        <update_guid_history>d70d4ad1b552721435c938a6d5287326:-749002263</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>alissa.mountjoy</sys_created_by>
+        <sys_created_on>2026-01-06 20:52:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_template">sys_template</sys_db_object>
+        <sys_id>2e455b028e444d468c4b3b0e57690da1</sys_id>
+        <sys_metadata>c3fcced18352721478c11a30ceaad325</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEMPLATE4</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_template_c3fcced18352721478c11a30ceaad325</sys_update_name>
+        <sys_update_version display_value="sys_template_c3fcced18352721478c11a30ceaad325">db0d4ad18352721478c11a30ceaad327</sys_update_version>
+        <sys_updated_by>alissa.mountjoy</sys_updated_by>
+        <sys_updated_on>2026-01-06 20:52:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e55d1da983fdf21078c11a30ceaad308" label="Government Services " max_length="40" name="x_1850706_govsma_0_government_services" text_index="true" type="collection">
+        <element display="true" label="Service Type" max_length="40" name="service_type" type="translated_text"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="&#10;" label="Requirement documents" max_length="65536" name="requirement_documents" type="translated_text"/>
+    </element>
+</database>

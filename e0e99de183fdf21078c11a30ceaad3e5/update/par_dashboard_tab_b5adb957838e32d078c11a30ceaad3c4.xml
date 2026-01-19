@@ -2,7 +2,7 @@
     <par_dashboard_tab action="INSERT_OR_UPDATE">
         <active>true</active>
         <background_color/>
-        <dashboard display_value="GovSmart Dashboard For Admins">31ad3d17838e32d078c11a30ceaad32a</dashboard>
+        <dashboard display_value="GovSmart Dashboard - Admins">31ad3d17838e32d078c11a30ceaad32a</dashboard>
         <name>New Tab 10</name>
         <order>0</order>
         <sys_class_name>par_dashboard_tab</sys_class_name>

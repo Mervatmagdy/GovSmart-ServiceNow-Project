@@ -2,7 +2,7 @@
     <sys_ux_client_script action="INSERT_OR_UPDATE">
         <controller_preset/>
         <includes>59c9674460031110f87729648b07b76b</includes>
-        <macroponent display_value="Analytics center">e79e290e838eb69078c11a30ceaad34f</macroponent>
+        <macroponent display_value="Analytics Center Default">e79e290e838eb69078c11a30ceaad34f</macroponent>
         <name>Update URL Params</name>
         <preset/>
         <required_translations>[]</required_translations>

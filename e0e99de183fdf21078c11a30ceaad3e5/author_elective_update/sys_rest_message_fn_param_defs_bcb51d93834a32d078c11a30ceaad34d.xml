@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="DELETE">
+        <name>From</name>
+        <order>1</order>
+        <rest_message_function display_value="send whatsapp message">33b1c11f838632d078c11a30ceaad3ab</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-31 11:44:40</sys_created_on>
+        <sys_id>bcb51d93834a32d078c11a30ceaad34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>From</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_bcb51d93834a32d078c11a30ceaad34d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 11:44:40</sys_updated_on>
+        <value>whatsapp:+14155238886</value>
+    </sys_rest_message_fn_param_defs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_rest_message_fn_param_defs_bcb51d93834a32d078c11a30ceaad34d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs"><sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE"><name>From</name><order>1</order><rest_message_function display_value="send whatsapp message">33b1c11f838632d078c11a30ceaad3ab</rest_message_function><sys_class_name>sys_rest_message_fn_param_defs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-31 11:44:40</sys_created_on><sys_id>bcb51d93834a32d078c11a30ceaad34d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>From</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_rest_message_fn_param_defs_bcb51d93834a32d078c11a30ceaad34d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-31 11:44:40</sys_updated_on><value>whatsapp:+14155238886</value></sys_rest_message_fn_param_defs></record_update>]]></payload>
+        <payload_hash>-983387245</payload_hash>
+        <record_name>From</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-31 11:44:40</sys_created_on>
+        <sys_id>7c765dd3834a32d078c11a30ceaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b7439720b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-31 11:44:40</sys_updated_on>
+        <type>HTTP Query Parameters</type>
+        <update_guid>78765dd31b4a32d0b32a24843153b3b1</update_guid>
+        <update_guid_history>78765dd31b4a32d0b32a24843153b3b1:-983387245</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-09 12:06:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_param_defs">sys_rest_message_fn_param_defs</sys_db_object>
+        <sys_id>aefdec6209be46aabcae2ea42baa90f9</sys_id>
+        <sys_metadata>bcb51d93834a32d078c11a30ceaad34d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>From</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="send whatsapp message">33b1c11f838632d078c11a30ceaad3ab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_param_defs_bcb51d93834a32d078c11a30ceaad34d</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_param_defs_bcb51d93834a32d078c11a30ceaad34d">7c765dd3834a32d078c11a30ceaad3b2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-09 12:06:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

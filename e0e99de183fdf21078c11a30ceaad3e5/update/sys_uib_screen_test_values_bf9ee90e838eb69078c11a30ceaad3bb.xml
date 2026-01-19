@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
     <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
         <macroponent_config/>
-        <screen display_value="Analytics Center Default copy">fb9ee90e838eb69078c11a30ceaad393</screen>
+        <screen display_value="Analytics Center Default">fb9ee90e838eb69078c11a30ceaad393</screen>
         <sys_class_name>sys_uib_screen_test_values</sys_class_name>
         <sys_created_by>menna.admin</sys_created_by>
         <sys_created_on>2025-12-27 16:17:53</sys_created_on>

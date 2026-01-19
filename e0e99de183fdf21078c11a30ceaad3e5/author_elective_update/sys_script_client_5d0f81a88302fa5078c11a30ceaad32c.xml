@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Handle User ReSubmit when Document Status Expired or Missed</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Handle User ReSubmit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+
+   
+
+  
+        var ga = new GlideAjax('GovsmaRecordUtilsAjax');
+        ga.addParam('sysparm_name', 'ajaxGetValue');
+        ga.addParam('sysparm_table', 'x_1850706_govsma_0_empl_task');
+        ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+        ga.addParam('sysparm_field', 'state');
+
+        ga.getXMLAnswer(function (state) {
+
+            if (state == '8') {
+
+                var ga1 = new GlideAjax('GovsmaRecordUtilsAjax');
+                ga1.addParam('sysparm_name', 'ajaxUpdateValue');
+                ga1.addParam('sysparm_table', 'x_1850706_govsma_0_empl_task');
+                ga1.addParam('sysparm_sys_id', g_form.getUniqueValue());
+                ga1.addParam('sysparm_field', 'document_status');
+                ga1.addParam('sysparm_value', '');
+
+                ga1.getXMLAnswer(function () {
+
+                    var ga2 = new GlideAjax('GovsmaRecordUtilsAjax');
+                    ga2.addParam('sysparm_name', 'ajaxUpdateValue');
+                    ga2.addParam('sysparm_table', 'x_1850706_govsma_0_empl_task');
+                    ga2.addParam('sysparm_sys_id', g_form.getUniqueValue());
+                    ga2.addParam('sysparm_field', 'state');
+                    ga2.addParam('sysparm_value', 1);
+
+                   
+                });
+
+            } 
+        });
+
+    } 
+
+  
+
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mervet.admin</sys_created_by>
+        <sys_created_on>2025-12-22 22:21:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d0f81a88302fa5078c11a30ceaad32c</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Handle User ReSubmit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_client_5d0f81a88302fa5078c11a30ceaad32c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 00:43:48</sys_updated_on>
+        <table>x_1850706_govsma_0_government_service_request</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_client_5d0f81a88302fa5078c11a30ceaad32c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Handle User ReSubmit when Document Status Expired or Missed&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Handle User ReSubmit&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+
+   
+
+  
+        var ga = new GlideAjax('GovsmaRecordUtilsAjax');
+        ga.addParam('sysparm_name', 'ajaxGetValue');
+        ga.addParam('sysparm_table', 'x_1850706_govsma_0_empl_task');
+        ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+        ga.addParam('sysparm_field', 'state');
+
+        ga.getXMLAnswer(function (state) {
+
+            if (state == '8') {
+
+                var ga1 = new GlideAjax('GovsmaRecordUtilsAjax');
+                ga1.addParam('sysparm_name', 'ajaxUpdateValue');
+                ga1.addParam('sysparm_table', 'x_1850706_govsma_0_empl_task');
+                ga1.addParam('sysparm_sys_id', g_form.getUniqueValue());
+                ga1.addParam('sysparm_field', 'document_status');
+                ga1.addParam('sysparm_value', '');
+
+                ga1.getXMLAnswer(function () {
+
+                    var ga2 = new GlideAjax('GovsmaRecordUtilsAjax');
+                    ga2.addParam('sysparm_name', 'ajaxUpdateValue');
+                    ga2.addParam('sysparm_table', 'x_1850706_govsma_0_empl_task');
+                    ga2.addParam('sysparm_sys_id', g_form.getUniqueValue());
+                    ga2.addParam('sysparm_field', 'state');
+                    ga2.addParam('sysparm_value', 1);
+
+                   
+                });
+
+            } 
+        });
+
+    } 
+
+  
+
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mervet.admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-12-22 22:21:00&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5d0f81a88302fa5078c11a30ceaad32c&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;Handle User ReSubmit&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_5d0f81a88302fa5078c11a30ceaad32c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-12-27 00:43:48&lt;/sys_updated_on&gt;&lt;table&gt;x_1850706_govsma_0_government_service_request&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>284554700</payload_hash>
+        <record_name>Handle User ReSubmit</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 00:43:48</sys_created_on>
+        <sys_id>0dd8163583c2769078c11a30ceaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b5d42f7470000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 00:43:48</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>0dd81635eac27690a5fdd60071b727b2</update_guid>
+        <update_guid_history>0dd81635eac27690a5fdd60071b727b2:284554700,e31816f159c276907067ba9e84b9777b:-619032129,5df796f123c2769005f516d446f02009:1387191841,d9b792f1ddc27690d77cf41bf4eaea39:-293412510,b4971eb1edc276901b6f47683e2572a0:2140816772,58b612fd70827690279f19aa2726effe:-1723293357,5a45de3d2e82769068a05f8ddfc2eea9:1609350864,da051ef90d827690ee92c9ce15faf177:-62363918,8ff316b9a98276909cc27e0482305f40:-1990183426,1d7292f53982769065dd7b46ab8aa907:1728814415,cae11675a0827690916ec1f37f3fe235:-673875325,21a196354b827690ff6141ea3b1e2e82:-219134257,52509271e38276905bc1994844a331c4:383739362,714f4efd8a42769045ad3aa3853a6ba1:-1912568784,7d3e8a7d7f4276904d0f0f580b99631a:1505443420,483901bd830a3690b13a147cd698db9f:-436466253,79b8853dc00a3690501d7ab2e48ab337:-951949210,ac00612dba0eb29076264e033d87b7b7:800324920,6ccf552c5782fa5020912228b4f493f9:-820329371,bd0f5da89882fa500598d0026646705c:1696932803,3bfe1da8ab82fa50d826d511810e56c4:-911128978,f72c51649f82fa50a398376ad68b48e0:1299707301,72961964ec42fa508fa40e70753cee82:-1794822025,f323d9205742fa50b1eafd97520057bf:-996716179,42c1dd685002fa509e036358111d0684:332853816</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-27 01:33:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>143745ba4d334528834bbbb43cffa640</sys_id>
+        <sys_metadata>5d0f81a88302fa5078c11a30ceaad32c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Handle User ReSubmit</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Government Service Request">c93a352583f1361078c11a30ceaad358</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_client_5d0f81a88302fa5078c11a30ceaad32c</sys_update_name>
+        <sys_update_version display_value="sys_script_client_5d0f81a88302fa5078c11a30ceaad32c">0dd8163583c2769078c11a30ceaad3b3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-27 01:33:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity">
+    <m2m_sys_nlu_utterance_entity action="DELETE">
+        <annotation>[{"start":32,"end":46,"annotatedString":"I need to cancel the meeting in {{phrase=\"@conferenceRoom\"}}"}]</annotation>
+        <entity display_value="conferenceRoom">dae01cfa83357e1078c11a30ceaad35f</entity>
+        <sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:08:18</sys_created_on>
+        <sys_id>7fe0503e83357e1078c11a30ceaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>conferenceRoom.I need to cancel the meeting in @conferenceRoom</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_7fe0503e83357e1078c11a30ceaad361</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:08:18</sys_updated_on>
+        <utterance display_value="I need to cancel the meeting in @conferenceRoom">bbe0503e83357e1078c11a30ceaad35d</utterance>
+    </m2m_sys_nlu_utterance_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>m2m_sys_nlu_utterance_entity_7fe0503e83357e1078c11a30ceaad361</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sys_nlu_utterance_entity"><m2m_sys_nlu_utterance_entity action="INSERT_OR_UPDATE"><annotation>[{"start":32,"end":46,"annotatedString":"I need to cancel the meeting in {{phrase=\"@conferenceRoom\"}}"}]</annotation><entity display_value="conferenceRoom">dae01cfa83357e1078c11a30ceaad35f</entity><sys_class_name>m2m_sys_nlu_utterance_entity</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-17 07:08:18</sys_created_on><sys_id>7fe0503e83357e1078c11a30ceaad361</sys_id><sys_mod_count>0</sys_mod_count><sys_name>conferenceRoom.I need to cancel the meeting in @conferenceRoom</sys_name><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>m2m_sys_nlu_utterance_entity_7fe0503e83357e1078c11a30ceaad361</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-17 07:08:18</sys_updated_on><utterance display_value="I need to cancel the meeting in @conferenceRoom">bbe0503e83357e1078c11a30ceaad35d</utterance></m2m_sys_nlu_utterance_entity></record_update>]]></payload>
+        <payload_hash>-1057422555</payload_hash>
+        <record_name>conferenceRoom.I need to cancel the meeting in @conferenceRoom</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 07:08:18</sys_created_on>
+        <sys_id>7be0503e83357e1078c11a30ceaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b2b2365620000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 07:08:18</sys_updated_on>
+        <type>NLU Utterance Entity</type>
+        <update_guid>77e0503ec9357e10091bb014a86c8764</update_guid>
+        <update_guid_history>77e0503ec9357e10091bb014a86c8764:-1057422555</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="conferenceRoom.I need to cancel the meeting in @conferenceRoom">2b28b1fe8371be1078c11a30ceaad34c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-17 14:39:23</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sys_nlu_utterance_entity">m2m_sys_nlu_utterance_entity</sys_db_object>
+        <sys_id>264ee818e09942eca03848bf006f3d11</sys_id>
+        <sys_metadata>7fe0503e83357e1078c11a30ceaad361</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>conferenceRoom.I need to cancel the meeting in @conferenceRoom</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>m2m_sys_nlu_utterance_entity_7fe0503e83357e1078c11a30ceaad361</sys_update_name>
+        <sys_update_version display_value="m2m_sys_nlu_utterance_entity_7fe0503e83357e1078c11a30ceaad361">7be0503e83357e1078c11a30ceaad365</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-17 14:39:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

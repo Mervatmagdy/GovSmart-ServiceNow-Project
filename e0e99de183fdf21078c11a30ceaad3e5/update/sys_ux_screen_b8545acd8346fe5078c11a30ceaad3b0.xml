@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
-        <macroponent display_value="Government Service Request">2c545acd8346fe5078c11a30ceaad38a</macroponent>
+        <macroponent display_value="Government Service Request Record Page">2c545acd8346fe5078c11a30ceaad38a</macroponent>
         <macroponent_config/>
         <name>Government Service Request Record Page</name>
         <order>100</order>

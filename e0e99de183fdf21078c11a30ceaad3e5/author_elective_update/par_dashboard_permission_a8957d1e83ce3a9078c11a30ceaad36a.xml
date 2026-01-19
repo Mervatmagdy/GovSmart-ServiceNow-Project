@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="DELETE">
+        <can_read>true</can_read>
+        <can_share>true</can_share>
+        <can_write>true</can_write>
+        <dashboard display_value="OOO">a095bdda83ce3a9078c11a30ceaad3ba</dashboard>
+        <group/>
+        <owner>true</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 11:26:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8957d1e83ce3a9078c11a30ceaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a095bdda83ce3a9078c11a30ceaad3ba</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_permission_a8957d1e83ce3a9078c11a30ceaad36a</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 11:26:43</sys_updated_on>
+        <user display_value="Menna Khalid">44ee81558331b21078c11a30ceaad30d</user>
+    </par_dashboard_permission>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>par_dashboard_permission_a8957d1e83ce3a9078c11a30ceaad36a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission"><par_dashboard_permission action="INSERT_OR_UPDATE"><can_read>true</can_read><can_share>true</can_share><can_write>true</can_write><dashboard display_value="OOO">a095bdda83ce3a9078c11a30ceaad3ba</dashboard><group/><owner>true</owner><role/><sys_class_name>par_dashboard_permission</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-28 11:26:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a8957d1e83ce3a9078c11a30ceaad36a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>a095bdda83ce3a9078c11a30ceaad3ba</sys_name><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>par_dashboard_permission_a8957d1e83ce3a9078c11a30ceaad36a</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-28 11:26:43</sys_updated_on><user display_value="Menna Khalid">44ee81558331b21078c11a30ceaad30d</user></par_dashboard_permission></record_update>]]></payload>
+        <payload_hash>-1240898386</payload_hash>
+        <record_name>a095bdda83ce3a9078c11a30ceaad3ba</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 11:26:43</sys_created_on>
+        <sys_id>68957d1e83ce3a9078c11a30ceaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b64b5f03b0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 11:26:43</sys_updated_on>
+        <type>PAR Dashboard Permission</type>
+        <update_guid>64957d1e50ce3a90103178ef912de56d</update_guid>
+        <update_guid_history>64957d1e50ce3a90103178ef912de56d:-1240898386</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">72c8751683027a9078c11a30ceaad303</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 11:40:48</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_permission">par_dashboard_permission</sys_db_object>
+        <sys_id>719befa454e54c3da3bd3d0d84f1f5a1</sys_id>
+        <sys_metadata>a8957d1e83ce3a9078c11a30ceaad36a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a095bdda83ce3a9078c11a30ceaad3ba</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>par_dashboard_permission_a8957d1e83ce3a9078c11a30ceaad36a</sys_update_name>
+        <sys_update_version display_value="par_dashboard_permission_a8957d1e83ce3a9078c11a30ceaad36a">68957d1e83ce3a9078c11a30ceaad36e</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 11:40:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

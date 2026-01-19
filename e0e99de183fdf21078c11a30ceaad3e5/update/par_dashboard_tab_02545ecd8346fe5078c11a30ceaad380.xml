@@ -2,7 +2,7 @@
     <par_dashboard_tab action="INSERT_OR_UPDATE">
         <active>true</active>
         <background_color/>
-        <dashboard display_value="GovSmart Review &amp; Visit Management System">39545ecd8346fe5078c11a30ceaad346</dashboard>
+        <dashboard display_value="GovSmart Review Dashboard - Managers">39545ecd8346fe5078c11a30ceaad346</dashboard>
         <name>Overview (Management Summary)</name>
         <order>0</order>
         <sys_class_name>par_dashboard_tab</sys_class_name>

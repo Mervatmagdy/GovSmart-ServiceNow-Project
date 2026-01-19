@@ -5,7 +5,7 @@
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
-        <macroponent display_value="KPI Details">77334e5a83427a9078c11a30ceaad32a</macroponent>
+        <macroponent display_value="Default">77334e5a83427a9078c11a30ceaad32a</macroponent>
         <macroponent_config>{
     "bare": {
         "type": "JSON_LITERAL",

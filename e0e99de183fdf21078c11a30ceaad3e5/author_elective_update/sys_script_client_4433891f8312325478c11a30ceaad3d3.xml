@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>task_execution_issue</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Task issuse</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   if (newValue==true) {
+        g_form.setMandatory('document_status', false);
+    } else{
+		g_form.setMandatory('document_status', true);
+	}
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 20:38:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4433891f8312325478c11a30ceaad3d3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Task issuse</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_script_client_4433891f8312325478c11a30ceaad3d3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:48:55</sys_updated_on>
+        <table>x_1850706_govsma_0_empl_task</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_script_client_4433891f8312325478c11a30ceaad3d3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;task_execution_issue&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Task issuse&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   if (newValue==true) {
+        g_form.setMandatory('document_status', false);
+    } else{
+		g_form.setMandatory('document_status', true);
+	}
+   //Type appropriate comment here, and begin script below
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-01-12 20:38:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4433891f8312325478c11a30ceaad3d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Task issuse&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GovSmart Review &amp;amp;amp; Visit Management System" source="x_1850706_govsma_0"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GovSmart Review &amp;amp;amp; Visit Management System"&gt;e0e99de183fdf21078c11a30ceaad3e5&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_4433891f8312325478c11a30ceaad3d3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-01-12 20:48:55&lt;/sys_updated_on&gt;&lt;table&gt;x_1850706_govsma_0_empl_task&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-544364105</payload_hash>
+        <record_name>Task issuse</record_name>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 20:48:55</sys_created_on>
+        <sys_id>da164d938352325478c11a30ceaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19bb3f80a480000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:48:55</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>da164d934f523254f7b64e248eee25a4</update_guid>
+        <update_guid_history>da164d934f523254f7b64e248eee25a4:-544364105,4b65c153f6523254b90ceaf4c1e63660:-228954850,68358d136f523254ca9a30dd077097a4:-1234466424,c29489dfdc1232547969579787516423:-496535139,e124c99fa6123254eec8a620f31bdcdb:-1234466424,0cb30ddbf412325424309dddb00becfe:601450422</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-01-12 20:49:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>3afc09c500da4c7b95a9c6c8304ce019</sys_id>
+        <sys_metadata>4433891f8312325478c11a30ceaad3d3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task issuse</sys_name>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent display_value="Reviewer Employee">6fb837598302b29078c11a30ceaad30d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_script_client_4433891f8312325478c11a30ceaad3d3</sys_update_name>
+        <sys_update_version display_value="sys_script_client_4433891f8312325478c11a30ceaad3d3">da164d938352325478c11a30ceaad3a5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-01-12 20:49:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

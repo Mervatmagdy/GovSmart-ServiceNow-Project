@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">8a545ecd8346fe5078c11a30ceaad385</canvas>
+        <component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component>
+        <component_props>{"variant":"header-primary","label":"All System Requests Today","wontWrap":true,"hasNoMargin":true,"level":"1","filterConfigurations":[],"noDebounce":true,"contextMenuActions":[],"id":"variant","value":"header-primary","propLabel":"Style"}</component_props>
+        <h>3</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-24 16:28:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86545ecd8346fe5078c11a30ceaad3bc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_widget_86545ecd8346fe5078c11a30ceaad3bc</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 19:37:58</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>par_dashboard_widget_86545ecd8346fe5078c11a30ceaad3bc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">8a545ecd8346fe5078c11a30ceaad385</canvas><component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component><component_props>{"variant":"header-primary","label":"All System Requests Today","wontWrap":true,"hasNoMargin":true,"level":"1","filterConfigurations":[],"noDebounce":true,"contextMenuActions":[],"id":"variant","value":"header-primary","propLabel":"Style"}</component_props><h>3</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-24 16:28:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>86545ecd8346fe5078c11a30ceaad3bc</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>par_dashboard_widget_86545ecd8346fe5078c11a30ceaad3bc</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-30 19:37:58</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-807980776</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-30 19:37:58</sys_created_on>
+        <sys_id>4c3975cb834ebe9078c11a30ceaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b70c4667a0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 19:37:58</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>4c3975cb624ebe90c9794755b6d25da3</update_guid>
+        <update_guid_history>4c3975cb624ebe90c9794755b6d25da3:-807980776,a0d8798baa4ebe90e1742cb3bbc7d024:-1596896946,4578b5d2fb027a904d5df2e1db3320cc:145140945,4c55351ec1ce3a908b6f37ece4c6f38a:-1972290235,8e545ecd8b46fe502dade05fa7a8a7ca:145140945</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">c2bd1e0b8382fe9078c11a30ceaad399</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-30 22:17:34</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>4689c1ea0295427c912b206a67653dd9</sys_id>
+        <sys_metadata>86545ecd8346fe5078c11a30ceaad3bc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_86545ecd8346fe5078c11a30ceaad3bc</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_86545ecd8346fe5078c11a30ceaad3bc">4c3975cb834ebe9078c11a30ceaad3a4</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 22:17:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

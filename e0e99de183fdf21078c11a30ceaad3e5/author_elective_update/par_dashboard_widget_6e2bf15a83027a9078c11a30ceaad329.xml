@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">8a545ecd8346fe5078c11a30ceaad385</canvas>
+        <component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component>
+        <component_props>{"table":"x_1850706_govsma_0_empl_task","columnPreferenceKey":"","fixedQuery":"","followFilters":true,"listTitle":"All Active Tasks","columns":"","maxColumns":5,"query":"active=true","groupByField":"","limit":null,"hideViewAll":false,"hideHighlightedValues":false,"showBorder":false,"bare":true,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true,"id":"groupByField","value":""}</component_props>
+        <h>13</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 11:51:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6e2bf15a83027a9078c11a30ceaad329</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>par_dashboard_widget_6e2bf15a83027a9078c11a30ceaad329</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 19:59:46</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>116</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>par_dashboard_widget_6e2bf15a83027a9078c11a30ceaad329</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">8a545ecd8346fe5078c11a30ceaad385</canvas><component display_value="List - Simple">2b1c080881e05dc63b917044290b233f</component><component_props>{"table":"x_1850706_govsma_0_empl_task","columnPreferenceKey":"","fixedQuery":"","followFilters":true,"listTitle":"All Active Tasks","columns":"","maxColumns":5,"query":"active=true","groupByField":"","limit":null,"hideViewAll":false,"hideHighlightedValues":false,"showBorder":false,"bare":true,"highlightedValueConfigId":"","hideHighlightContent":false,"highlightContent":{"patterns":[],"color":""},"hideLinks":false,"nrlLandmark":true,"wordWrap":false,"overrideWordWrapUserPref":false,"maxCharLimit":4000,"hideEmptyStateImage":false,"hidePersonalization":false,"hideDotwalk":false,"hideColumnReorder":false,"hideRowSelector":false,"hideColumnGrouping":false,"hideColumnResizing":false,"hideColumnFiltering":false,"hideColumnSorting":false,"hideHeader":false,"hideTitle":false,"hideTitleRowCount":false,"hideLastRefreshedText":false,"hideRefreshButton":false,"hideInlineEditing":false,"isDashboard":true,"id":"groupByField","value":""}</component_props><h>13</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-28 11:51:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6e2bf15a83027a9078c11a30ceaad329</sys_id><sys_mod_count>6</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>par_dashboard_widget_6e2bf15a83027a9078c11a30ceaad329</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-30 19:59:46</sys_updated_on><visualization/><w>48</w><widget_props/><x>0</x><y>116</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>82154583</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-30 19:59:46</sys_created_on>
+        <sys_id>ef2ebd47838ebe9078c11a30ceaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b70d85e610000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 19:59:46</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>ef2ebd47b88ebe90f77ed78a587f9a84</update_guid>
+        <update_guid_history>ef2ebd47b88ebe90f77ed78a587f9a84:82154583,490db5c3de8ebe9045158cf0d4aff397:-260497453,b08a318f334ebe90ae930bc514555927:-658876004,a189310f934ebe903cd3a9c05b4ee19e:1788890389,923d890f9ac6be9055dc1b4d7098a866:568004856,ccb50d0f3186be902759ac43b4f7b058:-1830030349,2a2bf15a7e027a90e5a1d557ef73ad2e:-1266054125</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">83924ecf838ebe9078c11a30ceaad325</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-30 20:19:08</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>0842298e816c4a58884345c9c4f26e29</sys_id>
+        <sys_metadata>6e2bf15a83027a9078c11a30ceaad329</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_6e2bf15a83027a9078c11a30ceaad329</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_6e2bf15a83027a9078c11a30ceaad329">ef2ebd47838ebe9078c11a30ceaad385</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-30 20:19:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage">
+    <sys_cs_topic_library_usage action="DELETE">
+        <calling_cs_topic_id display_value="greeting(GovAssit)">4103138683317a1078c11a30ceaad3a4</calling_cs_topic_id>
+        <library_cs_topic_id/>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"","library_topic_id":"","library_topic_is_template":true,"dynamic_topic_block_name":{"type":"String","mode":"string","value":"Request Status Tracker"},"parameter-mappings":[],"return-value-mappings":[],"header_card_fields":[],"input_parameters_mode":"dynamic","output_parameters_mode":"dynamic","output_parameter_variable":"","id":"344752a31458410a9d84ea518a2c4e63","name":"Request Status Tracker","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"input_parameters_script":""}</library_usage>
+        <node_id>344752a31458410a9d84ea518a2c4e63</node_id>
+        <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 16:11:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d22a7f0683757a1078c11a30ceaad37a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_update_name>sys_cs_topic_library_usage_d22a7f0683757a1078c11a30ceaad37a</sys_update_name>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 16:11:50</sys_updated_on>
+    </sys_cs_topic_library_usage>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</application>
+        <file_path/>
+        <instance_id>da19c105ebc45edce483f459bad0cd77</instance_id>
+        <instance_name>dev287455</instance_name>
+        <name>sys_cs_topic_library_usage_d22a7f0683757a1078c11a30ceaad37a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage"><sys_cs_topic_library_usage action="INSERT_OR_UPDATE"><calling_cs_topic_id display_value="greeting(GovAssit)">4103138683317a1078c11a30ceaad3a4</calling_cs_topic_id><library_cs_topic_id/><library_usage>{"type":"LibraryCall","library_topic_name":"","library_topic_id":"","library_topic_is_template":true,"dynamic_topic_block_name":{"type":"String","mode":"string","value":"Request Status Tracker"},"parameter-mappings":[],"return-value-mappings":[],"header_card_fields":[],"input_parameters_mode":"dynamic","output_parameters_mode":"dynamic","output_parameter_variable":"","id":"344752a31458410a9d84ea518a2c4e63","name":"Request Status Tracker","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"input_parameters_script":""}</library_usage><node_id>344752a31458410a9d84ea518a2c4e63</node_id><sys_class_name>sys_cs_topic_library_usage</sys_class_name><sys_created_by>menna.admin</sys_created_by><sys_created_on>2025-12-15 16:11:50</sys_created_on><sys_domain>global</sys_domain><sys_id>d22a7f0683757a1078c11a30ceaad37a</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package><sys_policy/><sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope><sys_update_name>sys_cs_topic_library_usage_d22a7f0683757a1078c11a30ceaad37a</sys_update_name><sys_updated_by>menna.admin</sys_updated_by><sys_updated_on>2025-12-15 16:11:50</sys_updated_on></sys_cs_topic_library_usage></record_update>]]></payload>
+        <payload_hash>546177851</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>1a1ad52583fdf21078c11a30ceaad384</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-15 16:11:50</sys_created_on>
+        <sys_id>1a2a7f0683757a1078c11a30ceaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b22c849fa0000001</sys_recorded_at>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-15 16:11:50</sys_updated_on>
+        <type>Topic Library Usage</type>
+        <update_guid>162a7f06a7757a10b052a4d40d40047c</update_guid>
+        <update_guid_history>162a7f06a7757a10b052a4d40d40047c:546177851</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>menna.admin</sys_created_by>
+        <sys_created_on>2025-12-28 16:52:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_library_usage">sys_cs_topic_library_usage</sys_db_object>
+        <sys_id>8783bc67c6f04c8d90b17ca5182a0a21</sys_id>
+        <sys_metadata>d22a7f0683757a1078c11a30ceaad37a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GovSmart Review &amp;amp; Visit Management System" source="x_1850706_govsma_0">e0e99de183fdf21078c11a30ceaad3e5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GovSmart Review &amp;amp; Visit Management System">e0e99de183fdf21078c11a30ceaad3e5</sys_scope>
+        <sys_scope_delete display_value="">567f831133164384b254c53d6b9d7324</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_library_usage_d22a7f0683757a1078c11a30ceaad37a</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_library_usage_d22a7f0683757a1078c11a30ceaad37a">1a2a7f0683757a1078c11a30ceaad37d</sys_update_version>
+        <sys_updated_by>menna.admin</sys_updated_by>
+        <sys_updated_on>2025-12-28 16:52:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

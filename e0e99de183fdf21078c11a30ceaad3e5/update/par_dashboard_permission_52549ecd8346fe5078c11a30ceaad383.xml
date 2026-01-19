@@ -3,7 +3,7 @@
         <can_read>true</can_read>
         <can_share>false</can_share>
         <can_write>false</can_write>
-        <dashboard display_value="GovSmart Review &amp;amp; Visit Management System">39545ecd8346fe5078c11a30ceaad346</dashboard>
+        <dashboard display_value="GovSmart Review Dashboard - Managers">39545ecd8346fe5078c11a30ceaad346</dashboard>
         <group/>
         <owner>false</owner>
         <role display_value="x_1850706_govsma_0.user" name="x_1850706_govsma_0.user">a8e9dde183fdf21078c11a30ceaad359</role>
